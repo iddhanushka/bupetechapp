@@ -1,0 +1,42 @@
+.impact-enterprise {
+  background-color: $lightBlue;
+  padding: 5.625rem 0;
+
+  &__together {
+    padding: 6.875rem 0;
+
+    .partners {
+      .partner-logos {
+        max-width: 85%;
+      }
+    }
+
+    .content {
+      position: relative;
+      top: 1.875rem;
+
+      .tag {
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      .title {
+        font-size: 2.625rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .get-quote {
+    margin: auto;
+    display: block;
+    margin-top: 6.25rem;
+  }
+
+  &__services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+}

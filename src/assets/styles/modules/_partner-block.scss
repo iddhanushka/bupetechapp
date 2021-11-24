@@ -1,0 +1,33 @@
+.partner-block {
+  border-bottom: 0.125rem solid $darkGray;
+  padding-top: 1.875rem;
+
+  .main-list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  .sub-list {
+    list-style: none;
+    padding-left: 2.5rem;
+  }
+
+  &__count {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $blue;
+    width: 13.125rem;
+  }
+
+  &__logo {
+    margin-bottom: 1.25rem;
+  }
+
+  &__content {
+    p {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+}

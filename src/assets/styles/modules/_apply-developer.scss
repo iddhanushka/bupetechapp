@@ -1,0 +1,74 @@
+.apply-developer {
+  overflow-x: hidden;
+
+  .col-same-height {
+    flex: 1;
+  }
+
+  &__form {
+    padding: 5.625rem 2.5rem 2.5rem 5.625rem;
+
+    .title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3.75rem;
+    }
+
+    .resume {
+      .upload-input {
+        display: none;
+      }
+
+      .resume-title {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $darkGreen;
+        margin-bottom: 0.625rem;
+      }
+
+      .upload-btn-title {
+        font-size: 0.875rem;
+        color: $darkGreen;
+        margin-bottom: 0.3125rem;
+      }
+
+      .upload-cv-btn {
+        color: $blue;
+        font-weight: 700;
+        padding: 0.5rem 1.875rem;
+        border: 0.125rem solid $blue;
+        border-radius: 0.1875rem;
+      }
+
+      .file-format-text {
+        font-size: 0.75rem;
+        color: $darkGreen;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__details {
+    height: 100%;
+    background-color: $lightBlue;
+    padding: 10rem 2.5rem 2.5rem 3.75rem;
+
+    .title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 3.125rem;
+    }
+
+    .description {
+      padding-left: 2.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $darkGreen;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.button {
+  background-color: $green;
+  padding: 0.75rem 0.625rem;
+  color: $white;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.1875rem;
+  height: 2.875rem;
+  width: 13.6875rem;
+  line-height: normal;
+  text-align: center;
+
+  &:hover {
+    color: $white;
+  }
+
+  &--blue {
+    background-color: $blue;
+    width: 12.4375rem;
+  }
+
+  &--no-background {
+    background-color: unset;
+    border: 0.125rem solid $blue;
+    color: $blue;
+    font-weight: 700;
+    width: 9.25rem;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &--submit {
+    border: none;
+    width: 10.6875rem;
+  }
+}

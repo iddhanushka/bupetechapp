@@ -1,0 +1,29 @@
+.kpi-detail-tabs {
+  position: relative;
+  top: -2.875rem;
+
+  &__menu {
+    .nav-link {
+      font-size: 1rem;
+      font-weight: 700;
+      height: 46px;
+      width: 110px;
+      color: $darkBlue;
+
+      &:hover {
+        border: unset;
+      }
+
+      .active {
+        border-top: 2px solid $blue;
+      }
+    }
+
+    .nav-tabs {
+      display: inline-flex;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

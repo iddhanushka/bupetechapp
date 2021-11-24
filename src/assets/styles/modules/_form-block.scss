@@ -1,0 +1,38 @@
+.form-block {
+  .form-label {
+    color: $red;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .input-field {
+    border: 1px solid $lightGray;
+    border-radius: 0.5rem;
+    height: 2.848rem;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  textarea {
+    height: 6.063rem;
+    border: 1px solid $lightGray;
+    border-radius: 0.5rem;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .capture {
+    border: 1px solid $lightGray;
+    height: 77px;
+  }
+
+  .form-submit-btn {
+    margin: auto;
+    display: block;
+    margin-top: 1.25rem;
+  }
+}
