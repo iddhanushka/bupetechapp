@@ -1,4 +1,8 @@
 .wrapper {
   max-width: 1200px;
   margin: auto;
+
+  &--header {
+    max-width: 1290px;
+  }
 }

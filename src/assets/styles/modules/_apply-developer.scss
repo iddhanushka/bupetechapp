@@ -47,6 +47,11 @@
         font-weight: 400;
       }
     }
+
+    .data-privacy-link {
+      color: $darkBlue;
+      text-decoration: none;
+    }
   }
 
   &__details {
@@ -65,7 +70,12 @@
       padding-left: 2.5rem;
     }
 
-    p {
+    .des-list {
+      list-style: none;
+    }
+
+    p,
+    .list-line {
       font-size: 1.25rem;
       font-weight: 400;
       color: $darkGreen;

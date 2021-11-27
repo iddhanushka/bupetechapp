@@ -1,0 +1,90 @@
+.site-footer {
+  padding: 5rem 0;
+
+  &--bg-lightWhite {
+    background-color: $lightWhite;
+  }
+
+  &__content {
+    .logo {
+      width: 100%;
+      max-width: 15%;
+      margin: auto;
+      display: block;
+      margin-bottom: 2.5rem;
+    }
+
+    .first-list,
+    .second-list {
+      display: inline-flex;
+      list-style: none;
+      padding-left: 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .list-line {
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        color: $darkBlue;
+        font-weight: 600;
+      }
+    }
+
+    .copyright-tag {
+      font-size: 0.75rem;
+      color: $darkBlue;
+      font-weight: 500;
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .social-media {
+      display: inline-flex;
+      padding-left: 0;
+      list-style: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .sm-icon {
+      width: 1.875rem;
+      height: 1.875rem;
+      border-radius: 50%;
+      margin: 0 0.4375rem;
+      margin-top: 1.875rem;
+
+      svg {
+        color: $white;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0.189rem;
+      }
+
+      &--twitter {
+        background-color: $twitter;
+      }
+
+      &--linkedin {
+        background-color: $linkedin;
+      }
+
+      &--youtube {
+        background-color: $youtube;
+      }
+
+      &--instagram {
+        background-color: $instagram;
+      }
+    }
+  }
+}

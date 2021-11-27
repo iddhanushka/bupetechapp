@@ -12,8 +12,8 @@
                 <h4 class="welcome__tag">{{$t(tag)}}</h4>
                 <h1 class="welcome__title">{{$t(title)}}</h1>
                 <ul class="welcome__action-btn">
-                  <li class="get-quote"><a href="" class="button">{{$t(button1)}}</a></li>
-                  <li class="watch-demo"><a href="" class="button button--blue">{{$t(button2)}}</a></li>
+                  <li class="get-quote"><router-link to="/contact" class="button">{{$t(button1)}}</router-link></li>
+                  <li class="watch-demo"><router-link  to="/demo" class="button button--blue">{{$t(button2)}}</router-link></li>
                 </ul>
               </div>
             </div>

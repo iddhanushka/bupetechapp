@@ -6,6 +6,8 @@
 @import "base/variables";
 @import "base/global";
 @import "base/mixins";
+@import "modules/site-footer";
+@import "modules/site-header";
 @import "modules/welcome";
 @import "modules/button";
 @import "modules/kpi-solution";
@@ -17,3 +19,9 @@
 @import "modules/service-block";
 @import "modules/apply-developer";
 @import "modules/form-block";
+@import "modules/term-block";
+@import "modules/terms-service";
+@import "modules/corevalue-block";
+@import "modules/about-us";
+@import "modules/management-crew";
+@import "modules/watch-demo-action";

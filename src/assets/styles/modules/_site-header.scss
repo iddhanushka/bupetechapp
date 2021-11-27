@@ -1,0 +1,54 @@
+.site-header {
+  padding: 0.75rem 0;
+
+  &__menubar {
+    display: flex;
+
+    .menu-name {
+      font-size: 1.125rem;
+      color: $darkBlue !important;
+    }
+
+    .active + .underline {
+      border-bottom: 2px solid $blue;
+      position: relative;
+      top: 1.313rem;
+    }
+
+    .logo {
+      max-width: 80%;
+    }
+
+    .site-logo {
+      border-right: 1px solid $lightBlack;
+      padding-right: 0.625rem;
+      margin-right: 1.875rem;
+    }
+
+    .menu-list {
+      &:not(:last-child) {
+        margin-right: 0.938rem;
+      }
+    }
+  }
+
+  &__options {
+    .search {
+      margin-right: 1.25rem;
+      svg {
+        color: $green;
+      }
+    }
+
+    .get-quote {
+      margin-right: 1.25rem;
+    }
+
+    .login {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: $darkBlue;
+      text-decoration: none;
+    }
+  }
+}

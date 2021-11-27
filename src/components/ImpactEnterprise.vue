@@ -106,7 +106,7 @@
           </div>
         </div>
 
-        <a class="get-quote button" href="">Get a Quote</a>
+        <router-link class="get-quote button" to="/contact">Get a Quote</router-link>
       </div>
 
       <div class="impact-enterprise__services">
@@ -125,7 +125,7 @@
             <p>Give it a boost with expert support, 
               leveraging years and years of our 
               exposure in impact creation.</p>
-            <a class="visit-more" href="">Explore our training catalogue ></a>
+            <router-link class="visit-more" to="/training">Explore our training catalogue ></router-link>
           </div>
           <div class="service-block">
             <img class="service-block__logo" src="../assets/images/help-logo.png" alt="">

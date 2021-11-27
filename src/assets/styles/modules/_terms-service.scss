@@ -1,0 +1,44 @@
+.terms-service {
+  padding: 5rem 0;
+  background: linear-gradient(109.98deg, rgba(248, 248, 248, 0.4) 8.99%, rgba(223, 223, 223, 0.4) 51.88%, rgba(239, 239, 239, 0.4) 94.78%);
+  opacity: 0.9;
+
+  &--sec-policies-bg-img {
+    background-image: url("/app/assets/images/sec-bg-img.jpg");
+    background-size: cover;
+  }
+
+  &--sec-clt-bg-img {
+    background-image: url("/app/assets/images/sec-clt-bg-img.jpg");
+    background-size: cover;
+  }
+
+  .terms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+  }
+
+  .terms-col {
+    margin-bottom: 2.5rem;
+
+    &--no-mb {
+      margin-bottom: auto;
+    }
+  }
+
+  .main-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $darkBlue;
+    margin-bottom: 3.125rem;
+  }
+
+  .sec-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: $darkBlue;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+}
