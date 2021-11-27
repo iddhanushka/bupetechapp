@@ -1,0 +1,21 @@
+{
+  "home": {
+    "welcome_bupe": {
+      "tag": "Welcome to bupe",
+      "title": "Performance measured right, continuosly exactly.",
+      "button1":"Get a Quote",
+      "button2":"Watch a Demo"
+    },
+    "get_a_quote":{
+      "tag":"Organization to thrive, people to perfor",
+      "title":"To launch with a strategy is to set goals to people, is BUPE.",
+      "button1":"Learn more",
+      "button2":"Get a Quote"
+    },
+    "kpi-solutions":{
+      "tag":"Kpi solution perspectives",
+      "title":"For your work at any level any scale"
+    }
+
+  }
+}

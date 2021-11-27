@@ -1,13 +1,13 @@
 <template>
    <section class="welcome-to-bupe">
   <div class="container">
-    <WelcomeBupe msg="Welcome to Your Vue.js App"/>
-    <GetaQuote msg="Welcome to Your Vue.js App"/>
-    <BupePartners msg="Welcome to Your Vue.js App"/>
-    <KpiSolutions msg="Welcome to Your Vue.js App"/>
+    <WelcomeBupe  tag="home.welcome_bupe.tag" title="home.welcome_bupe.title" imagename="welcome-lady.png" button1="home.welcome_bupe.button1" button2="home.welcome_bupe.button2"/>
+    <GetaQuote tag="home.get_a_quote.tag" title="home.get_a_quote.title" imagename="organization-man.png" button1="home.get_a_quote.button1" button2="home.get_a_quote.button2"/>
+    <BupePartners v-bind:logos="['ceylinco.png','dcs.png','kti.png','watersedge.png','limara.png','eguardian.png']"/>
+    <KpiSolutions tag="home.kpi-solutions.tag" title="home.kpi-solutions.title"/>
     </div>
   </section>
-   <KpiDetailTabs msg="Welcome to Your Vue.js App"/>
+   <KpiDetailTabs v-bind:tabs="['Overview','CEO','CFO','CTO','CPO']" msg="Welcome to Your Vue.js App"/>
    <ImpactEnterprise msg="Welcome to Your Vue.js App"/>
 </template>
 
