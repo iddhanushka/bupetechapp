@@ -28,7 +28,7 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/kpi-overview.png" alt="">
+                    <video style="width:100%" class="elementor-video" src="https://www.bupetech.com/wp-content/uploads/2021/01/BUPE-1080p-210127.mp4" controls="" controlslist="nodownload" poster="https://www.bupetech.com/wp-content/uploads/2021/02/Introduction_to_bupe.jpg"></video>
                   </div>
                 </div>
     
@@ -47,15 +47,14 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/kpi-overview.png" alt="">
+                    <img class="video-thumbnail" src="../assets/images/ceo.png" alt="">
                   </div>
                 </div>
     
                 <div class="col-xl-7">
                   <div class="kpi-solution__content">
-                    <h1 class="title">Brings buisness & people together, connecting every individual with strategic objectives.</h1>
-                    <p>A single solution to Plan, Measure and Manage business performance.</p>
-                    <p>At top level, organization layout the buisness strategy. Our solution will make sure aligning and empowering every individual within oraganization to achieve desired goals.</p>
+                    <h1 class="title">CEO</h1>
+                    <p>Use of multidimensional set-of performance measures for planning, budgeting and management of a business. </p>
                   </div>
                 </div>
               </div>
@@ -66,15 +65,14 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/kpi-overview.png" alt="">
+                    <img class="video-thumbnail" src="../assets/images/cfo.png" alt="">
                   </div>
                 </div>
     
                 <div class="col-xl-7">
                   <div class="kpi-solution__content">
-                    <h1 class="title">Brings buisness & people together, connecting every individual with strategic objectives.</h1>
-                    <p>A single solution to Plan, Measure and Manage business performance.</p>
-                    <p>At top level, organization layout the buisness strategy. Our solution will make sure aligning and empowering every individual within oraganization to achieve desired goals.</p>
+                    <h1 class="title">CFO</h1>
+                    <p>Translates business strategies in to deliverable results, combining financial, strategic and operational measures to gauge how well a company meets its targets. </p>
                   </div>
                 </div>
               </div>
@@ -85,16 +83,15 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/kpi-overview.png" alt="">
+                    <img class="video-thumbnail" src="../assets/images/cto.png" alt="">
                   </div>
                 </div>
     
                 <div class="col-xl-7">
                   <div class="kpi-solution__content">
-                    <h1 class="title">Brings buisness & people together, connecting every individual with strategic objectives.</h1>
-                    <p>A single solution to Plan, Measure and Manage business performance.</p>
-                    <p>At top level, organization layout the buisness strategy. Our solution will make sure aligning and empowering every individual within oraganization to achieve desired goals.</p>
-                  </div>
+                    <h1 class="title">CTO</h1>
+                    <p>Integrated set of planning and review procedures which cascades down through the organisation to provide a link between each individual and the overall strategy of the organisation. 	</p>
+                    </div>
                 </div>
               </div>
             </div>
@@ -104,15 +101,14 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/kpi-overview.png" alt="">
+                    <img class="video-thumbnail" src="../assets/images/cpo.png" alt="">
                   </div>
                 </div>
     
                 <div class="col-xl-7">
                   <div class="kpi-solution__content">
-                    <h1 class="title">Brings buisness & people together, connecting every individual with strategic objectives.</h1>
-                    <p>A single solution to Plan, Measure and Manage business performance.</p>
-                    <p>At top level, organization layout the buisness strategy. Our solution will make sure aligning and empowering every individual within oraganization to achieve desired goals.</p>
+                    <h1 class="title">CPO</h1>
+                    <p>Using Technology to standardise and speed processors, being humane. </p>
                   </div>
                 </div>
               </div>
