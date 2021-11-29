@@ -47,7 +47,7 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/ceo.png" alt="">
+                    <img class="image-thumbnail" src="../assets/images/ceo.png" alt="">
                   </div>
                 </div>
     
@@ -65,7 +65,7 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/cfo.png" alt="">
+                    <img class="image-thumbnail" src="../assets/images/cfo.png" alt="">
                   </div>
                 </div>
     
@@ -83,7 +83,7 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/cto.png" alt="">
+                    <img class="image-thumbnail" src="../assets/images/cto.png" alt="">
                   </div>
                 </div>
     
@@ -101,7 +101,7 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <img class="video-thumbnail" src="../assets/images/cpo.png" alt="">
+                    <img class="image-thumbnail" src="../assets/images/cpo.png" alt="">
                   </div>
                 </div>
     

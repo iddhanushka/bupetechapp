@@ -17,7 +17,7 @@
               <ul class="navbar-nav">
                 <li class="nav-item menu-list">
                 
-                  <router-link to="/about" class="nav-link active menu-name" aria-current="page" href="#">Why BUPE</router-link>
+                  <router-link to="/why-bupe" class="nav-link active menu-name" aria-current="page" href="#">Why BUPE</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
@@ -33,7 +33,7 @@
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/about" class="nav-link menu-name" href="#">Pricing</router-link>
+                   <router-link to="/pricing" class="nav-link menu-name" href="#">Pricing</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">

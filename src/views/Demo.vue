@@ -1,12 +1,12 @@
 <template>
- <div class="watch-demo-action">
+<div class="watch-demo-action">
     <div class="container">
       <h1 class="main-title">See BUPE in action</h1>
       <div class="row">
         <div class="col-xl-6">
           <div class="watch-demo-action__content">
             <div class="demo-video">
-              <img class="video-thumbnail" src="../assets/images/kpi-overview.png" alt="">
+              <img class="demo-video__thumbnail" src="../assets/images/kpi-overview.png" alt="">
             </div>
             <h2 class="title">How to reach the true potential of your company</h2>
             <p>In this demo you can discover:</p>
@@ -41,6 +41,4 @@
       </div>
     </div>
   </div>
-
-
 </template>

@@ -1,0 +1,72 @@
+.why-bupe {
+  padding: 80px 0;
+  background-color: $lightWhite;
+
+  &__content {
+    .tag {
+      font-size: 1.125rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-size: 2.25rem;
+      font-weight: 700;
+    }
+  }
+
+  .strategy {
+    margin-top: 2.5rem;
+  }
+
+  .watch-demo {
+    margin: auto;
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  &__charm {
+    padding-top: 2.5rem;
+    .term-block__title {
+      font-size: 1.25rem;
+    }
+
+    .term-block {
+      min-height: 17.625rem;
+    }
+
+    .term-block__icon {
+      margin-bottom: 1.875rem;
+    }
+
+    .title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1.875rem;
+    }
+
+    .subscription {
+      font-size: 1.125rem;
+      color: $darkGreen;
+      text-align: center;
+    }
+
+    .train-main-block {
+      margin-top: 40px;
+    }
+
+    .lets-give-title {
+      font-size: 1.875rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .talk-us {
+      margin: auto;
+      display: block;
+      margin-top: 40px;
+    }
+  }
+}
