@@ -58,9 +58,9 @@ export default {
   props: {
    // tag: String,
    // title: String,
-    imagename:String,
-   // button1:String,
-   // button2:String
+      imagename: String,
+   // button1: String,
+   // button2: String
 
   }
 }

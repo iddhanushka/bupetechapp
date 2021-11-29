@@ -1,0 +1,10 @@
+.demo-video {
+  background-color: $white;
+  padding: 2.5rem;
+
+  &__thumbnail {
+    max-width: 85%;
+    margin: auto;
+    display: block;
+  }
+}

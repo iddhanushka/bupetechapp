@@ -1,5 +1,5 @@
 <template>
-  <div class="apply-developer">
+ <div class="apply-developer">
       <div class="row">
         <div class="col-xl-6 col-same-height">
           <div class="apply-developer__form">
@@ -7,23 +7,23 @@
             <div class="form-block">
               <form class="row g-4">
                 <div class="col-xl-6 ">
-                  <label for="fName" class="form-label">*First Name</label>
+                  <label for="fName" class="form-label"><span class="asterisk">*</span>First Name</label>
                   <input type="text" class="form-control input-field" id="fName">
                 </div>
                 <div class="col-xl-6">
-                  <label for="sName" class="form-label">*Second Name</label>
+                  <label for="sName" class="form-label"><span class="asterisk">*</span>Second Name</label>
                   <input type="text" class="form-control input-field" id="sName">
                 </div>
                 <div class="col-xl-6">
-                  <label for="email" class="form-label">*Email</label>
+                  <label for="email" class="form-label"><span class="asterisk">*</span>Email</label>
                   <input type="email" class="form-control input-field" id="email">
                 </div>
                 <div class="col-xl-6">
-                  <label for="pNbr" class="form-label">*Phone Number</label>
+                  <label for="pNbr" class="form-label"><span class="asterisk">*</span>Phone Number</label>
                   <input type="text" class="form-control input-field" id="pNbr">
                 </div>
                 <div class="col-xl-12">
-                  <label for="msg" class="form-label">*Tell us more about you</label>
+                  <label for="msg" class="form-label"><span class="asterisk">*</span>Tell us more about you</label>
                   <textarea class="form-control" id="msg"></textarea>
                 </div>
                 <div class="resume">
