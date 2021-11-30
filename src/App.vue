@@ -21,7 +21,7 @@
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/about" class="nav-link menu-name" href="#">Product</router-link>
+                   <router-link to="/product" class="nav-link menu-name" href="#">Product</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
