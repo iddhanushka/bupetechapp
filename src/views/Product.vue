@@ -5,7 +5,7 @@
         company, people and business perspective with BUPE.</h1>
       <div class="row">
         <div class="col-xl-7">
-          <img class="product__business-img" src="./assets/images/impact-three-humans.png" alt="">
+          <img class="product__business-img" src="../assets/images/impact-three-humans.png" alt="">
         </div>
         <div class="col-xl-5">
           <h4 class="product__tag">Features to plan your business</h4>
@@ -17,28 +17,28 @@
           <div class="row">
             <div class="col-xl-6">
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/innovation-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/innovation-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">Design & Transform Buisiness Model</h5>
                   <p>Design & transform your current business model into a well structured multi-dimentional model with a clear visibility on performance.This includes forecasting & budgeting, continuous monitoring and controlling of the achievement of desired results through the system based on multiple parameters with the ability to cascade down.</p>
                 </li>
               </ul>
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/hand-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">Balanced Scorecards</h5>
                   <p>Balanced scorecard signifies the performance at overall company level, business units level and employees level based on multiple perspectives. It further provides you with insights as to how balanced your approach is in achieving KPIs.</p>
                 </li>
               </ul>
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/hand-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">KPI Management</h5>
                   <p>In BUPE, KPIs can be defined considering buisness wide key performance areas. This allows managing different KPI types with their buisness impact, contribution to different scorecard perspectives and how critical they are for the success of the business. Real-time monitoring of KPI performance whcih can be cascaded down from overall company level to business units and down-to the employees.</p>
                 </li>
               </ul>
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/innovation-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/innovation-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">Task Management</h5>
                   <p>Plan your work day with tasks and set goals that need to be attended in-order to achieve KPIs assigned with a clear visibility to superiors on the progress.</p>
@@ -48,39 +48,39 @@
           <h3 class="product__description">Measure, Monitor and Manage Performance & Potential, connect work tasks and goals to strategic objectives, let hold the accountability and rewards to maintain the momentum.</h3>
             </div>
             <div class="col-xl-6">
-              <img class="business-design__img" src="./assets/images/transform-model.png" alt="">
+              <img class="business-design__img" src="../assets/images/transform-model.png" alt="">
             </div>
           </div>
         </div>
         <div class="business-design">
           <div class="row">
             <div class="col-xl-6">
-              <img class="business-design__img" src="./assets/images/stakeholders.png" alt="">
+              <img class="business-design__img" src="../assets/images/stakeholders.png" alt="">
             </div>
             <div class="col-xl-6">
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/hand-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">Design & Transform Buisiness Model</h5>
                   <p>Design & transform your current business model into a well structured multi-dimentional model with a clear visibility on performance.This includes forecasting & budgeting, continuous monitoring and controlling of the achievement of desired results through the system based on multiple parameters with the ability to cascade down.</p>
                 </li>
               </ul>
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/hand-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">Balanced Scorecards</h5>
                   <p>Balanced scorecard signifies the performance at overall company level, business units level and employees level based on multiple perspectives. It further provides you with insights as to how balanced your approach is in achieving KPIs.</p>
                 </li>
               </ul>
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/hand-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">KPI Management</h5>
                   <p>In BUPE, KPIs can be defined considering buisness wide key performance areas. This allows managing different KPI types with their buisness impact, contribution to different scorecard perspectives and how critical they are for the success of the business. Real-time monitoring of KPI performance whcih can be cascaded down from overall company level to business units and down-to the employees.</p>
                 </li>
               </ul>
               <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="./assets/images/hand-icon.png" alt=""></li>
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
                   <h5 class="business-design__title">Task Management</h5>
                   <p>Plan your work day with tasks and set goals that need to be attended in-order to achieve KPIs assigned with a clear visibility to superiors on the progress.</p>
@@ -118,7 +118,7 @@
             </div>
             <div class="col-xl-6">
               <div class="management-strategy__img">
-                <img src="./assets/images/revolutionalry-benifits.png" alt="">
+                <img src="../assets/images/revolutionalry-benifits.png" alt="">
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
           <div class="row">
             <div class="col-xl-6">
               <div class="management-strategy__img">
-                <img src="./assets/images/monitor-progress.png" alt="">
+                <img src="../assets/images/monitor-progress.png" alt="">
               </div>
             </div>
             <div class="col-xl-6">
@@ -183,7 +183,7 @@
             </div>
             <div class="col-xl-6">
               <div class="management-strategy__img">
-                <img src="./assets/images/rewards.png" alt="">
+                <img src="../assets/images/rewards.png" alt="">
               </div>
             </div>
           </div>
@@ -192,7 +192,7 @@
       <div class="product__partners">
         <div class="row">
           <div class="col-xl-6">
-            <img class="partner-logos" src="./assets/images/partners.png" alt="">
+            <img class="partner-logos" src="../assets/images/partners.png" alt="">
           </div>
           <div class="col-xl-6">
             <div class="details">
