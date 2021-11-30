@@ -1,0 +1,26 @@
+.business-design {
+  padding-top: 1.875rem;
+  .list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  .left-list-item {
+    margin-right: 0.938rem;
+  }
+
+  &__icon {
+    max-width: 90px;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $darkGreen;
+  }
+}
