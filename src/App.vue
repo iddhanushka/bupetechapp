@@ -16,28 +16,27 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item menu-list">
-                
-                  <router-link to="/why-bupe" class="nav-link active menu-name" aria-current="page" href="#">Why BUPE</router-link>
+                  <router-link to="/why-bupe" class="nav-link menu-name" active-class="active"  aria-current="page" href="#">Why BUPE</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/product" class="nav-link menu-name" href="#">Product</router-link>
+                   <router-link to="/product" class="nav-link menu-name" active-class="active" href="#">Product</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/about" class="nav-link menu-name" href="#">Modules</router-link>
+                   <router-link to="/about" class="nav-link menu-name" active-class="active"  href="#">Modules</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/about" class="nav-link menu-name" href="#">About</router-link>
+                   <router-link to="/about" class="nav-link menu-name" active-class="active"  href="#">About</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/pricing" class="nav-link menu-name" href="#">Pricing</router-link>
+                   <router-link to="/pricing" class="nav-link menu-name" active-class="active"  href="#">Pricing</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/contact" class="nav-link menu-name" href="#">Contact</router-link>
+                   <router-link to="/contact" class="nav-link menu-name" active-class="active"  href="#">Contact</router-link>
                   <div class="underline"></div>
                 </li>
               </ul>
@@ -55,7 +54,9 @@
     </div>
   </header>
 
-  <router-view/>
+  <router-view>
+  </router-view>
+
     <footer class="site-footer">
     <div class="container">
       <div class="row">
@@ -101,4 +102,11 @@
   </footer>
 </template>
 
+<script>
 
+
+export default{
+
+}
+
+</script>
