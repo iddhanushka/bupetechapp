@@ -24,7 +24,7 @@
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/about" class="nav-link menu-name" active-class="active"  href="#">Modules</router-link>
+                   <router-link to="/modules" class="nav-link menu-name" active-class="active"  href="#">Modules</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
