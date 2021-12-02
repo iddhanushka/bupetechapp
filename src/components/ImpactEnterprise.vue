@@ -106,7 +106,7 @@
           </div>
         </div>
 
-        <router-link class="get-quote button" to="/contact">Get a Quote</router-link>
+        <router-link class="get-quote button" to="/contact-form">Get a Quote</router-link>
       </div>
 
       <div class="impact-enterprise__services">
