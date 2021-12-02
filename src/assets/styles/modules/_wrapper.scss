@@ -6,3 +6,10 @@
     max-width: 1290px;
   }
 }
+
+.container {
+  &--custom-height {
+    min-height: 53.125rem;
+    position: relative;
+  }
+}

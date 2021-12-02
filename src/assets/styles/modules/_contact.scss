@@ -1,0 +1,18 @@
+.contact {
+  background-image: url("/app/assets/images/call-center.jpg");
+  padding: 4.375rem 0 2.5rem;
+  min-height: 57.5rem;
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+  }
+
+  .row {
+    &--a-bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
