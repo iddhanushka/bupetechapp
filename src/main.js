@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css';
 import "normalize.css"
 import i18n from './i18n'
+import 'vue-toast-notification/dist/theme-default.css';
+
 
 const app = createApp(App).use(i18n);
 app.use(router);
