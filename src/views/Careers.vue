@@ -72,70 +72,16 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="jobs">
-                  <div class="job-role">
-                    <h1 class="job-role__title">Senior Backend Developer</h1>
-                    <h4 class="job-role__location">Location: Singapore</h4>
-                    <div class="description">
-                      <p>Description: Development & Maintenace of PHP/MySQL based backend system.</p>
-                      <p>Experience: Minimum 3 years with PHP/MySQL in a similar role.</p>
-                      <p>Qualifications: A degree in Computer Science</p>
-                    </div>
-                   <router-link to="/career-form" class="button button--blue job-role__apply-btn">Apply</router-link>
-                  </div>
-                  <div class="job-role">
-                    <h1 class="job-role__title">Business Development Manager</h1>
-                    <h4 class="job-role__location">Location: Singapore</h4>
-                    <div class="description">
-                      <p>Description: You will be handling customer requests and develop new markets.</p>
-                      <p>Experience: Minimum 4 years in a similar role with a Saas product is preferable.</p>
-                      <p>Qualifications: A Degree/Diploma in Business Mangement.</p>
-                    </div>
-                    <router-link to="/career-form" class="button button--blue job-role__apply-btn">Apply</router-link>
-                  </div>
-                  <div class="job-role">
-                    <h1 class="job-role__title">Mobile App Developer - iOS</h1>
-                    <h4 class="job-role__location">Location: Singapore</h4>
-                    <div class="description">
-                      <p>Description: Development & Maintenace of iOS Mobile Applications.</p>
-                      <p>Experience: Minimum 2 years with SwiftUI/ObjectiveC.</p>
-                      <p>Qualifications: A degree in Computer Science</p>
-                    </div>
-                    <router-link to="/career-form" class="button button--blue job-role__apply-btn">Apply</router-link>
-                  </div>
+                  
+                   <vacancies/>
+
                 </div>
                </div>
               <div class="carousel-item">
-                <div class="jobs">
-                  <div class="job-role">
-                    <h1 class="job-role__title">Senior Backend Developer</h1>
-                    <h4 class="job-role__location">Location: Singapore</h4>
-                    <div class="description">
-                      <p>Description: Development & Maintenace of PHP/MySQL based backend system.</p>
-                      <p>Experience: Minimum 3 years with PHP/MySQL in a similar role.</p>
-                      <p>Qualifications: A degree in Computer Science</p>
-                    </div>
-                  <router-link to="/career-form" class="button button--blue job-role__apply-btn">Apply</router-link>
-                  </div>
-                  <div class="job-role">
-                    <h1 class="job-role__title">Business Development Manager</h1>
-                    <h4 class="job-role__location">Location: Singapore</h4>
-                    <div class="description">
-                      <p>Description: You will be handling customer requests and develop new markets.</p>
-                      <p>Experience: Minimum 4 years in a similar role with a Saas product is preferable.</p>
-                      <p>Qualifications: A Degree/Diploma in Business Mangement.</p>
-                    </div>
-                 <router-link to="/career-form" class="button button--blue job-role__apply-btn">Apply</router-link>
-                  </div>
-                  <div class="job-role">
-                    <h1 class="job-role__title">Mobile App Developer - iOS</h1>
-                    <h4 class="job-role__location">Location: Singapore</h4>
-                    <div class="description">
-                      <p>Description: Development & Maintenace of iOS Mobile Applications.</p>
-                      <p>Experience: Minimum 2 years with SwiftUI/ObjectiveC.</p>
-                      <p>Qualifications: A degree in Computer Science</p>
-                    </div>
-                   <router-link to="/career-form" class="button button--blue job-role__apply-btn">Apply</router-link>
-                  </div>
+                <div class="jobs">    
+
+                  <vacancies/>
+                  
                 </div>
               </div>
             </div>
@@ -148,3 +94,12 @@
 
 
 </template>
+
+<script>
+import vacancies from "../components/Vacancies";
+
+export default ({
+  name:'CareersPage',
+  components: { vacancies }
+})
+</script>
