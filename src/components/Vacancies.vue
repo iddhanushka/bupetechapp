@@ -4,10 +4,9 @@
     </section>
     <section v-else>
         <div 
-            v-for="vacancy in axiosResult" 
+            v-for="vacancy in axiosResult.data" 
             :key="vacancy.id"
         >
-        {{vacancy}}
             <div class="job-role">
                 <h1 class="job-role__title">{{vacancy.name}}</h1>
                 <h4 class="job-role__location">{{vacancy.location}}</h4>
@@ -31,12 +30,12 @@ export default ({
       errored: false
       }
   },
-     created() {  
-        axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/index`)
+   async created() {  
+        await axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/index`)
             .then((response) => {
                 this.debugger;
                     //console.warn(response.data);
-                    this.axiosResult = response.data;
+                    this.axiosResult = response;
                 })
             .catch((error)=>{     
                 this.errored = true            
