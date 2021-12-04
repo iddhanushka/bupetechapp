@@ -5,12 +5,9 @@
         <div class="container-fluid">
           <div class="site-header__menubar">
             <div class="site-logo">
-              <router-link class="navbar-brand" to="/"
-                ><img
-                  class="logo"
-                  src="./assets/images/bupetech-logo.png"
-                  alt=""
-              /></router-link>
+                
+              
+               <router-link class="navbar-brand" to="/"><img class="logo" src="./assets/images/bupetech-logo.png" alt=""></router-link>
             </div>
 
             <button
@@ -28,75 +25,32 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item menu-list">
-                  <router-link
-                    to="/why-bupe"
-                    class="nav-link menu-name"
-                    active-class="active"
-                    aria-current="page"
-                    href="#"
-                    >Why BUPE</router-link
-                  >
-
+                  <router-link to="/why-bupe" class="nav-link menu-name" active-class="active"  aria-current="page" href="#">Why BUPE</router-link>
                   <div class="underline"></div>
                 </li>
 
                 <li class="nav-item menu-list">
-                  <router-link
-                    to="/product"
-                    class="nav-link menu-name"
-                    active-class="active"
-                    href="#"
-                    >Product</router-link
-                  >
-
+                   <router-link to="/product" class="nav-link menu-name" active-class="active" href="#">Product</router-link>
                   <div class="underline"></div>
                 </li>
 
                 <li class="nav-item menu-list">
-                  <router-link
-                    to="/modules"
-                    class="nav-link menu-name"
-                    active-class="active"
-                    href="#"
-                    >Modules</router-link
-                  >
-
+                   <router-link to="/modules" class="nav-link menu-name" active-class="active"  href="#">Modules</router-link>
                   <div class="underline"></div>
                 </li>
 
                 <li class="nav-item menu-list">
-                  <router-link
-                    to="/about"
-                    class="nav-link menu-name"
-                    active-class="active"
-                    href="#"
-                    >About</router-link
-                  >
-
+                   <router-link to="/about" class="nav-link menu-name" active-class="active"  href="#">About</router-link>
                   <div class="underline"></div>
                 </li>
 
                 <li class="nav-item menu-list">
-                  <router-link
-                    to="/pricing"
-                    class="nav-link menu-name"
-                    active-class="active"
-                    href="#"
-                    >Pricing</router-link
-                  >
-
+                   <router-link to="/pricing" class="nav-link menu-name" active-class="active"  href="#">Pricing</router-link>
                   <div class="underline"></div>
                 </li>
 
                 <li class="nav-item menu-list">
-                  <router-link
-                    to="/contact"
-                    class="nav-link menu-name"
-                    active-class="active"
-                    href="#"
-                    >Contact</router-link
-                  >
-
+                   <router-link to="/contact" class="nav-link menu-name" active-class="active"  href="#">Contact</router-link>
                   <div class="underline"></div>
                 </li>
               </ul>
@@ -128,9 +82,10 @@
     </div>
   </header>
 
-  <router-view> </router-view>
+  <router-view>
+  </router-view>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="container">
       <div class="row">
         <div class="col-xl-12">
@@ -249,5 +204,10 @@
 </template>
 
 <script>
-export default {};
+
+
+export default{
+
+}
+
 </script>
