@@ -103,7 +103,7 @@
                     <router-link to="/career-form" class="button button--blue job-role__apply-btn">Apply</router-link>
                   </div>
                 </div>
-              </div>
+               </div>
               <div class="carousel-item">
                 <div class="jobs">
                   <div class="job-role">
