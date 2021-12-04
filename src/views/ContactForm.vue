@@ -119,11 +119,14 @@
         axios.post(`${process.env.VUE_APP_BASE_URL}/api/contact/add`, this.posts)
               .then((response)=>{                            
                 if(response.status === 200){
+                    e.target.reset();
                     this.$toast.show('Successfully submit your query, Our customer service contact you soon. ', {
                         type: 'success',
                         position: 'top-left',
+                        pauseOnHover: true,
                     });
                 } else {
+                   e.target.reset();
                    this.$toast.show('Unable to procceed, Please contact Sytem Administrator. ', {
                         type: 'success',
                         position: 'top-left',
@@ -135,6 +138,7 @@
                     this.$toast.show(error.response.data.errors[key], {
                       type: 'error',
                       position: 'top-left',
+                      pauseOnHover: true,
                     });
                 }
               })
