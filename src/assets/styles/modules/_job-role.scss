@@ -1,0 +1,32 @@
+.job-role {
+  background-color: $darkWhite;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    min-height: 3.125rem;
+  }
+
+  &__location {
+    font-size: 1rem;
+    color: $darkGreen;
+    margin-bottom: 1.875rem;
+  }
+
+  .description {
+    min-height: 15.625rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $darkGreen;
+  }
+
+  &__apply-btn {
+    float: right;
+    width: 6.5rem;
+  }
+}

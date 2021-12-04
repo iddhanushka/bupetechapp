@@ -1,0 +1,89 @@
+.careers {
+  padding: 4.375rem 0;
+  background: linear-gradient(109.98deg, rgba(248, 248, 248, 0.4) 8.99%, rgba(223, 223, 223, 0.4) 51.88%, rgba(239, 239, 239, 0.4) 94.78%);
+  opacity: 0.9;
+
+  &__main-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 2.188rem;
+  }
+
+  &__img {
+    max-width: 80%;
+    margin: auto;
+    display: block;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.4375rem;
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 2.313rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    color: $darkGreen;
+  }
+
+  &__ap-btn {
+    margin-top: 0.938rem;
+  }
+
+  &__bottom-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 3.75rem;
+  }
+}
+
+.job-listing {
+  background-color: $lightWhite;
+  padding: 1.25rem 0 4.375rem;
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__location {
+    .location {
+      font-size: 1rem;
+      color: $darkGreen;
+    }
+
+    .selector-field {
+      color: $darkGreen;
+    }
+  }
+
+  &__roles {
+    .jobs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 2.5rem;
+      padding: 0.625rem 0.313rem;
+    }
+
+    .title {
+      font-size: 18px;
+      color: $darkGreen;
+      margin-top: 1.563rem;
+      margin-bottom: 1.25rem;
+      margin-left: 3.125rem;
+    }
+
+    .carousel-indicators {
+      bottom: -60px;
+    }
+  }
+}
