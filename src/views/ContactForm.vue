@@ -121,13 +121,23 @@
                 if(response.status === 200){
                     this.$toast.show('Successfully submit your query, Our customer service contact you soon. ', {
                         type: 'success',
+                        position: 'top-left',
                     });
-                } else{
-                    this.$toast.show('Sorry, we unable to proceed your request, Please try again later. ', {
-                        type: 'error',
+                } else {
+                   this.$toast.show('Unable to procceed, Please contact Sytem Administrator. ', {
+                        type: 'success',
+                        position: 'top-left',
                     });
                 }
-              });
+              })
+              .catch((error)=>{                 
+                  for (var key in error.response.data.errors) {                    
+                    this.$toast.show(error.response.data.errors[key], {
+                      type: 'error',
+                      position: 'top-left',
+                    });
+                }
+              })
        
       }
 
