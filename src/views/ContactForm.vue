@@ -91,7 +91,6 @@
   <script>
  import Captcha from "../components/Captcha";
  import axios from 'axios';
- //const baseUrl = process.env.VUE_BASE_URL;
 
   export default {
     name:'PostFormContact',
