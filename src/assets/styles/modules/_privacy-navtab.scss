@@ -1,0 +1,62 @@
+.privacy-navtab {
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__links {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .nav-link.active {
+    background-color: $silver;
+    color: $purple;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+    color: $purple;
+    font-weight: 700;
+    text-align: left;
+    border-radius: unset;
+    padding: 0rem 1rem;
+  }
+
+  .privacy-navtab-container {
+    grid-template-columns: 30% 70%;
+    column-gap: 1.25rem;
+  }
+
+  &__content {
+    p {
+      font-size: 0.938rem;
+      color: $darkGreen;
+    }
+
+    .list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 2.5rem;
+    }
+
+    .list-item {
+      font-size: 0.938rem;
+      margin-bottom: 0.938rem;
+    }
+
+    .list-link {
+      text-decoration: none;
+      color: $blue;
+    }
+
+    .privacy-notice-box {
+      margin-top: 3.125rem;
+      .title {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
