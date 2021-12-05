@@ -80,12 +80,14 @@ export default {
                         type: 'success',
                         position: 'top-left',
                         pauseOnHover: true,
+                        className:'toast-success',
                     });
                 } else {
                    e.target.reset();
                    this.$toast.show('Unable to procceed your request, Please contact Sytem Administrator. ', {
                         type: 'success',
                         position: 'top-left',
+                        className:'toast-failed',
                     });
                 }
               })
@@ -95,6 +97,7 @@ export default {
                       type: 'error',
                       position: 'top-left',
                       pauseOnHover: true,
+                      className:'toast-failed',
                     });
                 }
               })
