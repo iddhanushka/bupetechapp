@@ -1,0 +1,30 @@
+.help-content {
+  padding: 5rem 0;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  &__accordion {
+    .accordion-button {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $purple;
+      box-shadow: none;
+      background-color: unset;
+      border-bottom: 1px solid $lightWhite;
+      max-width: 30%;
+
+      &::after {
+        background-image: url("/app/assets/images/down-arrow.png");
+      }
+    }
+
+    .accordion-item {
+      border: none;
+    }
+  }
+}
