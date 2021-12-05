@@ -26,73 +26,9 @@
      </div> 
    </div>
   </section>
-
-  <section class="job-listing">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="row justify-content-center">
-            <div class="col-xl-11">
-              <h1 class="job-listing__title">Job Listings</h1>
-              <div class="job-listing__location">
-                <div class="form-block">
-                  <form action="">
-                    <div class="col-xl-2">
-                      <label for="comSize" class="form-label location">Location</label>
-                      <select id="inputState" class="form-select selector-field">
-                        <option selected>Any</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
-    
-      <div class="job-listing__roles">
-        <h3 class="title">We have 6 openings</h3>
-        <div class="job-role-carousel">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><span class="number-indicator">1</span></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"><span class="number-indicator">2</span></button>
-              <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">3</button> -->
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="jobs">
-                  
-                   <vacancies/>
-
-                </div>
-               </div>
-              <div class="carousel-item">
-                <div class="jobs">    
-
-                  <vacancies/>
-                  
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
+<section class="job-listing">
+  <vacancies></vacancies>
+</section>
 </template>
 
 <script>
