@@ -24,3 +24,6 @@ pnpm-debug.log*
 *.sw?
 dist_20211205.zip
 dist.zip
+dist_20211205_latest.zip
+.env
+.env
