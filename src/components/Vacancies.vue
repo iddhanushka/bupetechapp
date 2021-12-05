@@ -39,11 +39,9 @@
 							</button>
 						</div>
 						<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="jobs">
-								<div v-for="job in this.axiosResult" :key="job.id">   
-									{{pageCount}}          
-									<div class="job-role">
+						<div class="carousel-item active">							
+								<div class="jobs">  								
+									<div class="job-role"  v-for="job in this.axiosResult" :key="job.id">
 										<h1 class="job-role__title">{{job.name}}</h1>
 										<h4 class="job-role__location">{{job.location}}</h4>
 										<div class="description">
@@ -51,8 +49,19 @@
 										</div>
 										<router-link :to="`/career-form/${job.id}`" class="button button--blue job-role__apply-btn">Apply</router-link>
 									</div>
-								</div>
-							</div>
+								</div>                                						
+						</div>
+                        <div class="carousel-item">							
+								<div class="jobs">  								
+									<div class="job-role"  v-for="job in this.axiosResult" :key="job.id">
+										<h1 class="job-role__title">{{job.name}}</h1>
+										<h4 class="job-role__location">{{job.location}}</h4>
+										<div class="description">
+											<p>{{job.description}}</p>
+										</div>
+										<router-link :to="`/career-form/${job.id}`" class="button button--blue job-role__apply-btn">Apply</router-link>
+									</div>
+								</div>                                						
 						</div>
 					</div>
 					</div>
