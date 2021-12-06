@@ -8,11 +8,11 @@
               <form class="row g-4"  @submit="SubmitApplication" method="post">
                 <div class="col-xl-6 ">
                   <label for="fName" class="form-label"><span class="asterisk">*</span>First Name</label>
-                  <input type="text" class="form-control input-field" required v-model="posts.fName" id="fName">
+                  <input type="text" class="form-control input-field" required v-model="posts.fname" id="fName">
                 </div>
                 <div class="col-xl-6">
                   <label for="sName" class="form-label"><span class="asterisk">*</span>Second Name</label>
-                  <input type="text" class="form-control input-field" required v-model="posts.sName" id="sName">
+                  <input type="text" class="form-control input-field" required v-model="posts.sname" id="sName">
                 </div>
                 <div class="col-xl-6">
                   <label for="email" class="form-label"><span class="asterisk">*</span>Email</label>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-xl-12">
                   <label for="msg" class="form-label"><span class="asterisk">*</span>Tell us more about you</label>
-                  <textarea class="form-control" required v-model="posts.message" id="msg"></textarea>
+                  <textarea class="form-control" required v-model="posts.comment" id="msg"></textarea>
                 </div>
                 <div class="resume">
                   <label class="resume-title">Resume</label>
@@ -32,23 +32,20 @@
                     <div class="col-xl-5">
                       <label class="upload-btn-title">Please upload a resume</label>
                       <div class="input-group">
-                        <input type="file" class="form-control upload-input" id="inputGroupFile02" ref="file" v-on:change="handleFileUpload()">
+                        <input type="file" class="form-control upload-input" id="inputGroupFile02" ref="file">
                         <label class="input-group-text upload-cv-btn" for="inputGroupFile02">Upload CV</label>
                       </div>
                       <span class="file-format-text" >.PDF, .DOC, .DOCX Max 5MB</span>
                     </div>
-                    <div class="col-xl-7">
+                    <div class="col-xl-6">
                       <div class="capture">
-                        
+                        <Captcha/>    
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">                     
-                             <Captcha/>                     
-                </div>
-                <div class="col-xl-6"> 
-                  <button type="submit" class="button button--submit form-submit-btn">Apply</button>
+                <div class="col-xl-6">                
+                  <button type="submit" class="button button--submit form-submit-btn" v-on:Click="onFileChange()">Apply</button>
                 </div>
               </form>
             </div>
@@ -57,7 +54,7 @@
  
         <div class="col-xl-6 col-same-height">
           <div class="apply-developer__details">
-            <h1 class="title">{{jobDescription.description}}</h1>
+            <h1 class="title">{{jobDescription.name}}</h1>
             <div class="description">
               <p>Location: {{jobDescription.location}}</p>
               <p>Description: {{jobDescription.description}}</p>
@@ -84,12 +81,14 @@ export default({
   data(){
     return{
       posts:{
-        fName:null,
-        sName:null,
+        fname:null,
+        sname:null,
         email:null,
         phone:null,
-        message:null,
-        file:null,
+        comment:null,
+        upload:null,
+        job_name:null,
+        job_id:null,
       },
         jobDescription:null,
         loading: true,
@@ -122,7 +121,7 @@ export default({
     },
     SubmitApplication(e){
        e.preventDefault();   
-        axios.post(`${process.env.VUE_APP_BASE_URL}/api/contact/add`, this.posts)
+        axios.post(`${process.env.VUE_APP_BASE_URL}/api/career/add`, this.posts)
               .then((response)=>{                            
                 if(response.status === 200){
                     e.target.reset();
@@ -153,8 +152,10 @@ export default({
               })
 
     },
-    handleFileUpload(){
-      this.file = this.$refs.file.files[0];
+    onFileChange(){
+      this.debugger;
+      var uploadFileDetails = document.getElementById("inputGroupFile02").files[0];
+      console.warn(uploadFileDetails);
     }
   }
 })
