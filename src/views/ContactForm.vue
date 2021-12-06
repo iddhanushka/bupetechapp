@@ -124,12 +124,14 @@
                         type: 'success',
                         position: 'top-left',
                         pauseOnHover: true,
+                        className:'toast-success',
                     });
                 } else {
                    e.target.reset();
                    this.$toast.show('Unable to procceed, Please contact Sytem Administrator. ', {
                         type: 'success',
                         position: 'top-left',
+                        className:'toast-success',
                     });
                 }
               })
@@ -139,6 +141,7 @@
                       type: 'error',
                       position: 'top-left',
                       pauseOnHover: true,
+                      className:'toast-failed',
                     });
                 }
               })
