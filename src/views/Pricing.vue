@@ -12,17 +12,14 @@
                 <div class="pricing-cal">
                   <h2 class="title">Price Calculator</h2>
                   <div class="form-block">
-                    <form class="row g-4">
+                    <form class="row g-4" @submit="loadCalculation" method="post">
                       <div class="col-xl-6 ">
                         <label for="bUsers" class="form-label form-label--dark-green">No of BUPE Users</label>
-                        <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold">
-                          <option selected>40</option>
-                          <option>...</option>
-                        </select>
+                        <input type="text" id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold" required v-model="user_count">                         
                       </div>
                       <div class="col-xl-6">
                         <label for="bill" class="form-label form-label--dark-green">Select Annual or Monthly billing</label>
-                        <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold">
+                        <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="user_count">
                           <option selected>Monthly</option>
                           <option>...</option>
                         </select>
@@ -47,94 +44,54 @@
     </div>
   </section>
 
- <section class="contact-info">
-        <div class="container">
-        <h1 class="main-title">Contact Information</h1>
-        <div class="row">
-            <div class="col-xl-12">
-            <div class="row justify-content-center">
-                <div class="col-xl-10">
-                <div class="asian">
-                    <h2 class="region-name">Asian Region</h2>
-                    <div class="row">
-                    <div class="col-xl-6">
-                        <div class="country">
-                        <h3 class="country-name">Singapore</h3>
-                        <h4 class="address">
-                            <strong>Bupe Tech - Singapore</strong><br/>
-                            Level 8, 805/220, Collins Street, <br/>
-                            Melbourne <br/>
-                            NSW 3000
-                        </h4>
-                        <a href="tel:+" class="tel-nbr">+61 (2) 90558255</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="country country--align-right">
-                        <h3 class="country-name">Sri Lanka</h3>
-                        <h4 class="address">
-                            <strong>Bupe Tech - Sri Lanka</strong><br/>
-                            Level 8, 805/220, Collins Street, <br/>
-                            Melbourne <br/>
-                            NSW 3000
-                        </h4>
-                        <a href="tel:+" class="tel-nbr">+61 (2) 90558255</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="asian">
-                    <h2 class="region-name">Oceania Region</h2>
-                    <div class="row">
-                    <div class="col-xl-6">
-                        <div class="country">
-                        <h3 class="country-name">Austrailia</h3>
-                        <h4 class="address">
-                            <strong> Bupe Tech - Austrailia</strong><br/>
-                            Level 8, 805/220, Collins Street,<br/>
-                            Melbourne <br/>
-                            NSW 3000
-                        </h4>
-                        <a href="tel:+" class="tel-nbr">+61 (2) 90558255</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section> 
+  <contactDetails/>
 </template>
-<script lang="ts">
+
+<script>
+import contactDetails from "../components/ContactDetails";
 import axios from 'axios';
 
 export default ({
   name:'ContactInf',
-  components:{},
+  components:{contactDetails},
   data(){
-
+    return{
+      posts:{
+        user_count:null,
+        plan:null,
+      },
+      Pricing:null,
+      loading: true,
+      errored: false,
+    }
   },
   methods:{
-    loadCalculation() {
-      this.loading = true, 
-      axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/view/${this.$route.params.id}`)
-            .then((response) => {
-                  this.jobDescription = response.data.job;           
-            })
-            .catch((error)=>{     
-              this.errored = true            
-              for (var key in error.response.data.errors) {                    
-                  this.$toast.show(error.response.data.errors[key], {
+    loadCalculation(e) {
+        e.preventDefault();   
+        axios.post(`${process.env.VUE_APP_BASE_URL}/api/price/view`, this.posts)
+              .then((response)=>{                            
+                if(response.status === 200){
+                   this.Pricing == response;
+                } else {
+                   e.target.reset();
+                   this.$toast.show('Unable to procceed, Please check your Given details. ', {
+                        type: 'success',
+                        position: 'top-left',
+                        className:'toast-success',
+                    });
+                }
+              })
+              .catch((error)=>{                 
+                  for (var key in error.response.data.errors) {                    
+                    this.$toast.show(error.response.data.errors[key], {
                       type: 'error',
                       position: 'top-left',
                       pauseOnHover: true,
                       className:'toast-failed',
-              });
-              }
-            })
-          .finally(() => this.loading = false);
+                    });
+                }
+              })
+
     }
   }
   
