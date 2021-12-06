@@ -8,9 +8,13 @@
   font-size: 1rem;
   border-radius: 0.1875rem;
   height: 2.875rem;
-  width: 13.6875rem;
+  width: 100%;
   line-height: normal;
   text-align: center;
+
+  @include atSmall {
+    width: 13.6875rem;
+  }
 
   &:hover {
     color: $white;
@@ -18,7 +22,11 @@
 
   &--blue {
     background-color: $blue;
-    width: 12.4375rem;
+    width: 100%;
+
+    @include atSmall {
+      width: 12.4375rem;
+    }
   }
 
   &--no-background {
@@ -26,7 +34,11 @@
     border: 0.125rem solid $blue;
     color: $blue;
     font-weight: 700;
-    width: 9.25rem;
+    width: 100%;
+
+    @include atSmall {
+      width: 9.25rem;
+    }
 
     &:hover {
       color: $blue;

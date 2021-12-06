@@ -8,10 +8,14 @@
   &__content {
     .logo {
       width: 100%;
-      max-width: 15%;
+      max-width: 30%;
       margin: auto;
       display: block;
       margin-bottom: 2.5rem;
+
+      @include atSmall {
+        max-width: 15%;
+      }
     }
 
     .first-list,
@@ -43,7 +47,7 @@
       color: $darkBlue;
       font-weight: 500;
       text-align: center;
-      margin-top: 2.5rem;
+      margin-top: 1.25rem;
     }
 
     .social-media {

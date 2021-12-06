@@ -19,6 +19,7 @@
         font-size: 1.125rem;
         text-transform: uppercase;
         font-weight: 500;
+        margin-bottom: 0.438rem;
       }
 
       .title {
@@ -36,7 +37,11 @@
 
   &__services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-template-columns: 1fr;
+
+    @include atSmall {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+    }
   }
 }

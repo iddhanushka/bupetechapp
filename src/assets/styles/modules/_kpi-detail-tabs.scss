@@ -1,6 +1,8 @@
 .kpi-detail-tabs {
-  position: relative;
-  top: -2.875rem;
+  @include atSmall {
+    position: relative;
+    top: -2.875rem;
+  }
 
   &__menu {
     .nav-link {

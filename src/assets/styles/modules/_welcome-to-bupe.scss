@@ -1,20 +1,34 @@
 .welcome-to-bupe {
   background-color: $lightBlue;
-  padding: 3.75rem 0;
+  padding: 1.25rem 0;
+
+  @include atSmall {
+    padding: 3.75rem 0;
+  }
 
   &__partners {
     padding: 2.5rem 0;
     .list {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
       padding-left: 0;
       list-style: none;
+
+      @include atSmall {
+        display: flex;
+      }
 
       .logo {
         margin: auto;
       }
 
       .partner-img {
-        max-width: 90%;
+        max-width: 100%;
+
+        @include atSmall {
+          max-width: 90%;
+        }
       }
     }
   }
@@ -23,15 +37,23 @@
     text-align: center;
 
     .tag {
-      font-size: 1.125rem;
+      font-size: 0.938rem;
       font-weight: 500;
       text-transform: uppercase;
+
+      @include atSmall {
+        font-size: 1.125rem;
+      }
     }
 
     .title {
-      font-size: 2.625rem;
+      font-size: 1.25rem;
       font-weight: 700;
-      margin-bottom: 5.625rem;
+
+      @include atSmall {
+        font-size: 2.625rem;
+        margin-bottom: 5.625rem;
+      }
     }
   }
 }
