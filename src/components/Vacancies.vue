@@ -38,31 +38,19 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">							
-                                <div class="jobs">  								
-                                    <div class="job-role"  v-for="job in this.axiosResult" :key="job.id">
-                                        <h1 class="job-role__title">{{job.name}}</h1>
-                                        <h4 class="job-role__location">{{job.location}}</h4>
-                                        <div class="description">
-                                            <p>{{job.description}}</p>
-                                        </div>
-                                        <router-link :to="`/career-form/${job.id}`" class="button button--blue job-role__apply-btn">Apply</router-link>
+                    <div class="carousel-inner">                        
+                        <div class="carousel-item active" v-for="job in this.axiosResult" :key="job.id">                      					
+                            <div class="jobs">  							
+                                <div class="job-role"  v-for="items in job" :key="items.id">
+                                    <h1 class="job-role__title">{{items.name}}</h1>
+                                    <h4 class="job-role__location">{{items.location}}</h4>
+                                    <div class="description">
+                                        <p>{{items.description}}</p>
                                     </div>
-                                </div>                                						
-                        </div>
-                        <div class="carousel-item">							
-                                <div class="jobs">  								
-                                    <div class="job-role"  v-for="job in this.axiosResult" :key="job.id">
-                                        <h1 class="job-role__title">{{job.name}}</h1>
-                                        <h4 class="job-role__location">{{job.location}}</h4>
-                                        <div class="description">
-                                            <p>{{job.description}}</p>
-                                        </div>
-                                        <router-link :to="`/career-form/${job.id}`" class="button button--blue job-role__apply-btn">Apply</router-link>
-                                    </div>
-                                </div>                                						
-                        </div>
+                                    <router-link :to="`/career-form/${items.id}`" class="button button--blue job-role__apply-btn">Apply</router-link>
+                                </div>
+                            </div>                                						
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -87,10 +75,19 @@ export default ({
         this.loading = true, 
         axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/index`)
             .then((response) => {
-                // this.debugger;
+                    // this.debugger;
                     //console.warn(response.data);
-                    this.axiosResult = response.data.data;                    
-                })
+                    
+                   // this.axiosResult = response.data.data;     
+                    
+                    const chunk = (arr, size) =>
+                    Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+                        arr.slice(i * size, i * size + size)
+                    );
+                    this.axiosResult = chunk(response.data.data, 3);                    
+                    console.log(chunk(response.data.data, 3));
+
+            })
             .catch((error)=>{     
                 this.errored = true            
                 for (var key in error.response.data.errors) {                    
@@ -108,6 +105,6 @@ export default ({
       pageCount() {
          return Object.keys(this.axiosResult).length / 3;
      }
-    },
+    }
 })
 </script>
