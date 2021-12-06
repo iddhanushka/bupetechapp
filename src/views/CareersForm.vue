@@ -59,7 +59,11 @@
           <div class="apply-developer__details">
             <h1 class="title">{{jobDescription.description}}</h1>
             <div class="description">
-             
+              <p>Location: {{jobDescription.location}}</p>
+              <p>Description: {{jobDescription.description}}</p>
+              <p>Experience: {{jobDescription.experience}}</p>
+              <p>Experience: {{jobDescription.experience}}</p>
+              <p>Qualifications: {{jobDescription.qualifications}}</p>
             </div>
           </div>
         </div>
@@ -89,31 +93,35 @@ export default({
       },
         jobDescription:null,
         loading: true,
-        errored: false,        
+        errored: false,
     }
   },
-  created() {
-        this.loading = true, 
-        axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/view/1`)
-            .then((response) => {
-                    //console.warn(response.data.job);
-                    this.jobDescription = response.data.job;         
-                    console.warn(this.jobDescription);           
-            })
-            .catch((error)=>{     
-                this.errored = true            
-                for (var key in error.response.data.errors) {                    
-                    this.$toast.show(error.response.data.errors[key], {
-                        type: 'error',
-                        position: 'top-left',
-                        pauseOnHover: true,
-                        className:'toast-failed',
-                });
-                }
-            })
-            .finally(() => this.loading = false);
+  created(){
+    this.loadDescription();
   },
   methods:{ 
+    loadDescription() {
+      console.warn(this.$route.params.id);
+          this.loading = true, 
+          axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/view/${this.$route.params.id}`)
+              .then((response) => {
+                      //console.warn(response.data.job);
+                      this.jobDescription = response.data.job;         
+                      //console.warn(this.jobDescription);           
+              })
+              .catch((error)=>{     
+                  this.errored = true            
+                  for (var key in error.response.data.errors) {                    
+                      this.$toast.show(error.response.data.errors[key], {
+                          type: 'error',
+                          position: 'top-left',
+                          pauseOnHover: true,
+                          className:'toast-failed',
+                  });
+                  }
+              })
+              .finally(() => this.loading = false);
+    },
     SubmitApplication(e){
        e.preventDefault();   
         axios.post(`${process.env.VUE_APP_BASE_URL}/api/contact/add`, this.posts)
