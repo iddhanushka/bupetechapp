@@ -105,9 +105,7 @@ export default({
           this.loading = true, 
           axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/view/${this.$route.params.id}`)
               .then((response) => {
-                      //console.warn(response.data.job);
-                      this.jobDescription = response.data.job;         
-                      //console.warn(this.jobDescription);           
+                      this.jobDescription = response.data.job;           
               })
               .catch((error)=>{     
                   this.errored = true            
