@@ -100,7 +100,6 @@ export default({
   },
   methods:{ 
     loadDescription() {
-      console.warn(this.$route.params.id);
           this.loading = true, 
           axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/view/${this.$route.params.id}`)
               .then((response) => {
