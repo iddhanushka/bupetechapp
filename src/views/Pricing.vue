@@ -15,19 +15,19 @@
                     <form class="row g-4" @submit="loadCalculation" method="post">
                       <div class="col-xl-6 ">
                         <label for="bUsers" class="form-label form-label--dark-green">No of BUPE Users</label>
-                        <input type="text" id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold" required v-model="user_count">                         
+                        <input type="text" id="user_counr" class="form-select selector-field selector-field--dark-green selector-field--bold" required v-model="posts.user_count" v-on:change="changedUserCount()">                         
                       </div>
                       <div class="col-xl-6">
                         <label for="bill" class="form-label form-label--dark-green">Select Annual or Monthly billing</label>
-                        <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="user_count">
-                          <option selected>Monthly</option>
-                          <option>...</option>
+                        <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="posts.plan" v-on:change="onChangePlan($event)">
+                          <option value="monthly">Monthly</option>
+                          <option value="annually">Annually</option>
                         </select>
                         <span class="save-percentage">Save 15% with annual commitment</span>
                       </div>
                       <div class="col-xl-12">
                         <h5 class="total-cost">Total Estimated Cost</h5>
-                        <h3 class="amount">$159.6 <span class="month">/month</span></h3>
+                        <h3 class="amount">{{this.Pricing}} <span class="month">/month</span></h3>
                       </div>
                       
                       <div class="col-xl-12">
@@ -66,31 +66,35 @@ export default ({
     }
   },
   methods:{
-    loadCalculation(e) {
-        e.preventDefault();   
-        axios.post(`${process.env.VUE_APP_BASE_URL}/api/price/view`, this.posts)
-              .then((response)=>{                            
-                if(response.status === 200){
-                   this.Pricing == response;
-                } else {
-                   e.target.reset();
-                   this.$toast.show('Unable to procceed, Please check your Given details. ', {
-                        type: 'success',
-                        position: 'top-left',
-                        className:'toast-success',
-                    });
-                }
-              })
-              .catch((error)=>{                 
-                  for (var key in error.response.data.errors) {                    
-                    this.$toast.show(error.response.data.errors[key], {
-                      type: 'error',
+    onChangePlan(){
+      this.calculateRates();
+    },
+    changedUserCount(){
+      this.calculateRates();
+    },
+    calculateRates(){
+      axios.post(`${process.env.VUE_APP_BASE_URL}/api/price/view`, this.posts)
+            .then((response)=>{                            
+              if(response.status === 200){
+                  this.Pricing = response.data.price;
+              } else {
+                  this.$toast.show('Unable to procceed, Please check your Given details. ', {
+                      type: 'success',
                       position: 'top-left',
-                      pauseOnHover: true,
                       className:'toast-failed',
-                    });
-                }
-              })
+                  });
+              }
+            })
+            .catch((error)=>{                 
+                for (var key in error.response.data.errors) {                    
+                  this.$toast.show(error.response.data.errors[key], {
+                    type: 'error',
+                    position: 'top-left',
+                    pauseOnHover: true,
+                    className:'toast-failed',
+                  });
+              }
+            })
     }
   }
   
