@@ -15,12 +15,12 @@
                     <form class="row g-4" @submit="loadCalculation" method="post">
                       <div class="col-xl-6 ">
                         <label for="bUsers" class="form-label form-label--dark-green">No of BUPE Users</label>
-                        <input type="text" id="user_counr" class="form-select selector-field selector-field--dark-green selector-field--bold" required v-model="posts.user_count" v-on:change="changedUserCount()">                         
+                        <input type="number"  id="user_count"  class="form-control input-field" required v-model="posts.user_count" v-on:change="changedUserCount()">                         
                       </div>
                       <div class="col-xl-6">
                         <label for="bill" class="form-label form-label--dark-green">Select Annual or Monthly billing</label>
                         <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="posts.plan" v-on:change="onChangePlan($event)">
-                          <option value="monthly">Monthly</option>
+                          <option value="monthly" selected>Monthly</option>
                           <option value="annually">Annually</option>
                         </select>
                         <span class="save-percentage">Save 15% with annual commitment</span>
@@ -65,7 +65,7 @@ export default ({
       errored: false,
     }
   },
-  methods:{
+  methods:{ 
     onChangePlan(){
       this.calculateRates();
     },
@@ -73,6 +73,9 @@ export default ({
       this.calculateRates();
     },
     calculateRates(){
+      if(!this.posts.user_count){
+        this.posts.user_count = 1;
+      }
       axios.post(`${process.env.VUE_APP_BASE_URL}/api/price/view`, this.posts)
             .then((response)=>{                            
               if(response.status === 200){
@@ -96,6 +99,11 @@ export default ({
               }
             })
     }
+  },
+  mounted: function(){
+      this.posts.plan = "monthly";
+      console.warn(this.user_count);
+      this.calculateRates();
   }
   
 })
