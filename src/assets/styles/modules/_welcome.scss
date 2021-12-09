@@ -11,6 +11,12 @@
     position: absolute;
     width: 92%;
 
+    video {
+      height: auto;
+      width: 100%;
+      object-fit: fill;
+    }
+
     @include atSmall {
       width: 90%;
     }

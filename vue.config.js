@@ -3,6 +3,7 @@ module.exports = {
     loaderOptions: {
       sass: {
         additionalData: `
+          @import "normalize.css";
           @import "@/assets/styles/styles.scss";
         `
       }
