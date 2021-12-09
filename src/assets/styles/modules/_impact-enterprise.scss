@@ -1,13 +1,29 @@
 .impact-enterprise {
   background-color: $lightBlue;
-  padding: 5.625rem 0;
+  padding: 2.5rem 0;
+
+  @include atLarge {
+    padding: 5.625rem 0;
+  }
 
   &__together {
-    padding: 6.875rem 0;
+    padding: 40px 0;
+
+    @include atExtraLarge {
+      padding: 6.875rem 0;
+    }
 
     .partners {
       .partner-logos {
-        max-width: 85%;
+        max-width: 70%;
+        margin: auto;
+        display: block;
+
+        @include atLarge {
+          max-width: 85%;
+          margin: unset;
+          display: unset;
+        }
       }
     }
 
@@ -16,15 +32,33 @@
       top: 1.875rem;
 
       .tag {
-        font-size: 1.125rem;
+        font-size: 0.9375rem;
+        text-align: center;
         text-transform: uppercase;
         font-weight: 500;
         margin-bottom: 0.438rem;
+
+        @include atSmall {
+          font-size: 18px;
+        }
+
+        @include atLarge {
+          text-align: left;
+        }
       }
 
       .title {
-        font-size: 2.625rem;
+        font-size: 1.25rem;
         font-weight: 700;
+        text-align: center;
+
+        @include atMedium {
+          font-size: 2.625rem;
+        }
+
+        @include atLarge {
+          text-align: left;
+        }
       }
     }
   }
@@ -32,16 +66,30 @@
   .get-quote {
     margin: auto;
     display: block;
-    margin-top: 6.25rem;
+    margin-top: 40px;
+
+    @include atLarge {
+      margin-top: 6.25rem;
+    }
   }
 
   &__services {
     display: grid;
     grid-template-columns: 1fr;
 
-    @include atSmall {
-      grid-template-columns: 1fr 1fr;
+    @include atMedium {
+      grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 20px;
+    }
+
+    .service-block {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+
+        @include atMedium {
+          margin-bottom: unset;
+        }
+      }
     }
   }
 }

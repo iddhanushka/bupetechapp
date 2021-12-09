@@ -3,31 +3,75 @@
   padding-top: 1.875rem;
 
   .main-list {
-    display: flex;
     list-style: none;
     margin-bottom: 0;
+    padding-left: 0;
+
+    @include atMedium {
+      display: flex;
+    }
   }
 
   .sub-list {
     list-style: none;
-    padding-left: 2.5rem;
+    padding-left: 0;
+
+    @include atMedium {
+      padding-left: 2.5rem;
+    }
   }
 
   &__count {
-    font-size: 4rem;
+    font-size: 1.5625rem;
+    text-align: center;
     font-weight: 700;
     color: $blue;
-    width: 13.125rem;
+
+    @include atSmall {
+      font-size: 2.5rem;
+    }
+
+    @include atMedium {
+      font-size: 50px;
+      width: 13.125rem;
+      text-align: left;
+    }
+
+    @include atLarge {
+      font-size: 4rem;
+    }
   }
 
   &__logo {
     margin-bottom: 1.25rem;
+
+    img {
+      max-width: 20%;
+      margin: auto;
+      display: block;
+
+      @include atMedium {
+        max-width: 15%;
+        margin: unset;
+        display: unset;
+      }
+
+      @include atLarge {
+        max-width: 100%;
+      }
+    }
   }
 
   &__content {
     p {
-      font-size: 1.25rem;
+      font-size: 1rem;
+      text-align: center;
       font-weight: 600;
+
+      @include atMedium {
+        font-size: 1.25rem;
+        text-align: left;
+      }
     }
   }
 }

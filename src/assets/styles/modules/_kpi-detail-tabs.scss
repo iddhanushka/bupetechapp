@@ -8,24 +8,37 @@
     .nav-link {
       font-size: 1rem;
       font-weight: 700;
-      height: 46px;
-      width: 110px;
+      width: 100%;
       color: $darkBlue;
+
+      @include atSmall {
+        width: 6.875rem;
+        height: 2.875rem;
+      }
 
       &:hover {
         border: unset;
       }
 
-      .active {
-        border-top: 2px solid $blue;
+      &.active {
+        border: none;
+        border-bottom: 1px solid $lightBlue;
+
+        @include atSmall {
+          border-top: 2px solid $blue;
+        }
       }
     }
 
     .nav-tabs {
-      display: inline-flex;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
+      display: block;
+
+      @include atSmall {
+        display: inline-flex;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 

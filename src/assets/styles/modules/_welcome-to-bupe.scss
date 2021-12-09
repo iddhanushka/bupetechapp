@@ -1,8 +1,22 @@
+video {
+  height: auto;
+  width: 100%;
+  object-fit: fill;
+}
+
 .welcome-to-bupe {
   background-color: $lightBlue;
   padding: 1.25rem 0;
 
   @include atSmall {
+    padding: 1.875rem 0 5rem;
+  }
+
+  @include atMedium {
+    padding: 1.875rem 0 0.9375rem;
+  }
+
+  @include atLarge {
     padding: 3.75rem 0;
   }
 
@@ -11,7 +25,7 @@
     .list {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 10px;
+      column-gap: 0.625rem;
       padding-left: 0;
       list-style: none;
 
@@ -24,7 +38,9 @@
       }
 
       .partner-img {
-        max-width: 100%;
+        max-width: 70%;
+        margin: auto;
+        display: block;
 
         @include atSmall {
           max-width: 90%;
@@ -50,7 +66,7 @@
       font-size: 1.25rem;
       font-weight: 700;
 
-      @include atSmall {
+      @include atMedium {
         font-size: 2.625rem;
         margin-bottom: 5.625rem;
       }

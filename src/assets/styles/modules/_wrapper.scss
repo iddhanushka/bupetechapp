@@ -1,9 +1,26 @@
 .wrapper {
   max-width: 1200px;
   margin: auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+
+  @include atDoubleExtraLarge {
+    max-width: 1370px;
+  }
 
   &--header {
     max-width: 1290px;
+    padding-left: unset;
+    padding-right: unset;
+
+    @include atExtraLarge {
+      max-width: 1380px;
+    }
+
+    @include atLarge {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
   }
 }
 

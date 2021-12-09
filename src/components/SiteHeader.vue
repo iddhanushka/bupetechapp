@@ -5,7 +5,7 @@
         <div class="container-fluid">
           <div class="site-header__menubar">
             <div class="site-logo">
-              <a class="navbar-brand" href="#"><img class="logo" :src="require(`@/assets/images/${imagename}`)" alt=""></a>
+              <a class="navbar-brand" href="#"><img class="logo" src="../assets/images/bupetech-logo.png" alt=""></a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -20,10 +20,19 @@
                   <a class="nav-link menu-name" href="#">Product</a>
                   <div class="underline"></div>
                 </li>
-                <li class="nav-item menu-list">
+                <li class="nav-item dropdown menu-list">
+                  <a class="nav-link menu-name dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Modules
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item menu-name" href="#">Action</a></li>
+                    <li><a class="dropdown-item menu-name" href="#">Another action</a></li>
+                  </ul>
+                </li>
+                <!-- <li class="nav-item menu-list">
                   <a class="nav-link menu-name" href="#">Modules</a>
                   <div class="underline"></div>
-                </li>
+                </li> -->
                 <li class="nav-item menu-list">
                   <a class="nav-link menu-name" href="#">About</a>
                   <div class="underline"></div>
@@ -40,10 +49,10 @@
             </div>
           </div>
           <div class="site-header__options">
-            <router-link class="get-quote button button--header" to="/contact-form">Get a Quote</router-link>
-            <a href="" class="search"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <a class="get-quote button button--header" href="">Get a Quote</a>
+            <!-- <a href="" class="search"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg></a>
+            </svg></a> -->
             <a href="" class="login">Login</a>
           </div>
         </div>

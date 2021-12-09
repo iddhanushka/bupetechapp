@@ -1,24 +1,74 @@
 .impact {
   &__learnmore {
     .tag {
-      font-size: 1.125rem;
+      font-size: 0.9375rem;
+      text-align: center;
       font-weight: 500;
       text-transform: uppercase;
       margin-bottom: 0.438rem;
+
+      @include atSmall {
+        font-size: 18px;
+      }
+
+      @include atMedium {
+        font-size: 1.125rem;
+        text-align: center;
+      }
+
+      @include atLarge {
+        text-align: left;
+      }
     }
 
     .title {
-      font-size: 2.625rem;
+      font-size: 1.25rem;
+      text-align: center;
       font-weight: 700;
+
+      @include atSmall {
+        font-size: 20px;
+      }
+
+      @include atMedium {
+        font-size: 2.625rem;
+      }
+
+      @include atLarge {
+        text-align: left;
+      }
     }
 
     .button {
       margin-top: 1rem;
+
+      @include atSmall {
+        margin: auto;
+        margin-top: 1rem;
+        display: block;
+      }
+
+      @include atLarge {
+        margin: unset;
+        margin-top: 1rem;
+      }
     }
 
     .impact-threehuman {
       max-width: 85%;
+      margin: auto;
+      display: block;
       margin-top: 2.813rem;
+
+      @include atSmall {
+        max-width: 70%;
+      }
+
+      @include atLarge {
+        margin: unset;
+        max-width: 80%;
+        margin-top: 40px;
+      }
     }
   }
 }

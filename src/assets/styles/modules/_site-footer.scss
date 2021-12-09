@@ -1,5 +1,9 @@
 .site-footer {
-  padding: 5rem 0;
+  padding: 1.875rem 0;
+
+  @include atLarge {
+    padding: 5rem 0;
+  }
 
   &--bg-lightWhite {
     background-color: $lightWhite;
@@ -20,25 +24,40 @@
 
     .first-list,
     .second-list {
-      display: inline-flex;
       list-style: none;
       padding-left: 0;
       position: relative;
       left: 50%;
       transform: translateX(-50%);
+
+      @include atSmall {
+        display: inline-flex;
+      }
     }
 
     .list-line {
       &:not(:last-child) {
         margin-right: 2.5rem;
+
+        @include atSmall {
+          margin-right: 1.25rem;
+        }
+
+        @include atLarge {
+          margin-right: 2.5rem;
+        }
       }
 
       a {
         text-decoration: none;
-        font-size: 1.125rem;
+        font-size: 0.9375rem;
         text-transform: uppercase;
         color: $darkBlue;
         font-weight: 600;
+
+        @include atMedium {
+          font-size: 1.125rem;
+        }
       }
     }
 
@@ -47,7 +66,11 @@
       color: $darkBlue;
       font-weight: 500;
       text-align: center;
-      margin-top: 1.25rem;
+      margin-top: 1.875rem;
+
+      @include atSmall {
+        margin-top: 1.25rem;
+      }
     }
 
     .social-media {
@@ -60,18 +83,30 @@
     }
 
     .sm-icon {
-      width: 1.875rem;
-      height: 1.875rem;
+      width: 1.5625rem;
+      height: 1.5625rem;
       border-radius: 50%;
       margin: 0 0.4375rem;
-      margin-top: 1.875rem;
+      margin-top: 0.625rem;
+
+      @include atMedium {
+        width: 1.875rem;
+        height: 1.875rem;
+        margin-top: 1.875rem;
+      }
 
       svg {
         color: $white;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        top: 0.189rem;
+        top: 0;
+        width: 0.8125rem;
+
+        @include atMedium {
+          top: 0.189rem;
+          width: unset;
+        }
       }
 
       &--twitter {

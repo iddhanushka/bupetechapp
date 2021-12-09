@@ -1,29 +1,83 @@
 .site-header {
-  padding: 0.75rem 0;
+  padding: 0 0;
+
+  @include atMedium {
+    padding: 0.3125rem 0;
+  }
+
+  @include atLarge {
+    padding: 0.4375rem 0;
+  }
+
+  @include atExtraLarge {
+    padding: 0.75rem 0;
+  }
 
   &__menubar {
     display: flex;
+    width: 100%;
+
+    @include atLarge {
+      width: auto;
+    }
 
     .menu-name {
-      font-size: 1.125rem;
-      color: $darkBlue !important;
+      font-size: 1rem;
+      color: $white !important;
       font-family: "Inter", sans-serif;
+      padding: 0.3125rem 0;
+
+      @include atLarge {
+        font-size: 1rem;
+        color: $darkBlue !important;
+      }
+
+      @include atExtraLarge {
+        color: $darkBlue !important;
+        font-size: 1.125rem;
+        padding: 0.5rem 1rem;
+      }
     }
 
     .active + .underline {
-      border-bottom: 2px solid $blue;
-      position: relative;
-      top: 1.313rem;
+      @include atLarge {
+        border-bottom: 2px solid $blue;
+        position: relative;
+        top: 1.313rem;
+      }
     }
 
     .logo {
-      max-width: 80%;
+      max-width: 35%;
+
+      @include atSmall {
+        max-width: 18%;
+      }
+
+      @include atMedium {
+        max-width: 12%;
+      }
+
+      @include atLarge {
+        max-width: 80%;
+      }
     }
 
     .site-logo {
-      border-right: 1px solid $lightBlack;
-      padding-right: 0.625rem;
       margin-right: 1.875rem;
+      width: 100%;
+
+      @include atLarge {
+        padding-right: 0;
+        margin-right: 1.875rem;
+        border-right: 1px solid $lightBlack;
+        width: unset;
+      }
+
+      @include atExtraLarge {
+        width: auto;
+        padding-right: 0.625rem;
+      }
     }
 
     .menu-list {
@@ -31,9 +85,56 @@
         margin-right: 0.938rem;
       }
     }
+
+    .navbar-toggler {
+      padding: 0.4375rem 0.9375rem;
+      height: max-content;
+      line-height: 0;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .navbar-toggler-icon {
+      width: 1rem;
+      height: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .navbar-collapse {
+      position: absolute;
+      width: 100%;
+      top: 3.25rem;
+      margin-left: -0.75rem;
+      padding: 0.3125rem 0.625rem;
+      background-color: $purple;
+      z-index: 1;
+      opacity: 0.9;
+      border-bottom-left-radius: 0.3125rem;
+      border-bottom-right-radius: 0.3125rem;
+
+      @include atSmall {
+        top: 3.5625rem;
+      }
+
+      @include atLarge {
+        position: unset;
+        width: unset;
+        top: unset;
+        margin-left: unset;
+        padding: unset;
+        background-color: unset;
+      }
+    }
   }
 
   &__options {
+    width: 100%;
+
+    @include atMedium {
+      width: unset;
+    }
     .search {
       margin-right: 1.25rem;
       svg {
@@ -42,14 +143,28 @@
     }
 
     .get-quote {
+      display: none;
       margin-right: 1.25rem;
+
+      @include atExtraLarge {
+        display: inline-block;
+      }
     }
 
     .login {
-      font-size: 1.125rem;
+      font-size: 1rem;
       font-weight: 400;
       color: $darkBlue;
       text-decoration: none;
+      position: absolute;
+      top: 13px;
+      right: 80px;
+
+      @include atLarge {
+        float: unset;
+        font-size: 1.125rem;
+        position: unset;
+      }
     }
   }
 }

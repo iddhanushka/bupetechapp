@@ -37,6 +37,10 @@
     width: 100%;
 
     @include atSmall {
+      width: 12.4375rem;
+    }
+
+    @include atMedium {
       width: 9.25rem;
     }
 
