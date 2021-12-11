@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <template>
  <div class="apply-developer">
       <div class="row">
@@ -169,6 +170,8 @@ export default({
 })
 </script>
 =======
+=======
+>>>>>>> 89d5b9cfaa8b03147258274ad4f3d8bb84146ec0
 <template>
  <div class="apply-developer">
       <div class="row">
@@ -330,4 +333,7 @@ export default({
   }
 })
 </script>
+<<<<<<< HEAD
+>>>>>>> 89d5b9cfaa8b03147258274ad4f3d8bb84146ec0
+=======
 >>>>>>> 89d5b9cfaa8b03147258274ad4f3d8bb84146ec0
