@@ -9,28 +9,17 @@ body {
 }
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
-.toast-success{
-  background-color: $purple; 
-  max-width: max-content;
-  padding: 15px;
-  color: $white;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 500;
-  border: 1px solid black;
-}
+.content-col {
+  @include atMedium {
+    display: block !important;
+  }
 
-.toast-failed{
-  background-color: $red; 
-  max-width: max-content;
-  padding: 15px;
-  color: $white;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 500;
-  border: 1px solid black;
+  @include atLarge {
+    display: unset;
+  }
 }

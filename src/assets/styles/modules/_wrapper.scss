@@ -21,6 +21,10 @@
       padding-left: 0.75rem;
       padding-right: 0.75rem;
     }
+
+    @include atCustomSize {
+      max-width: 1870px;
+    }
   }
 }
 

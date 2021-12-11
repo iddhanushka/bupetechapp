@@ -2,13 +2,13 @@
   <section class="why-bupe">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6">
           <div class="why-bupe__content">
             <h5 class="tag">Why Bupe?</h5>
             <h1 class="title">To reach the true potential of your company in an ever challenging and dynamic world.</h1>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6">
           <div class="why-bupe__video">
             <div class="demo-video">
               <img class="demo-video__thumbnail" src="../assets/images/kpi-overview.png" alt="">
@@ -19,12 +19,12 @@
       <div class="strategy">
         <div class="management-strategy ">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__img">
                 <img src="../assets/images/management-strategy.png" alt="">
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__details">
                 <h1 class="title">Do you have the overall visibility across  your business performance indicators to manage your strategy?</h1>
                 <div class="business-indicators business-indicators--mb">
@@ -41,7 +41,7 @@
         </div>
         <div class="management-strategy">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
               <div class="management-strategy__details management-strategy__details--no-pt">
                 <h1 class="title">Do you manage your business on multi-dimensional perspectives? How balanced is your approach?</h1>
                 <div class="business-indicators business-indicators--mb">
@@ -54,7 +54,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-1 order-lg-2">
               <div class="management-strategy__img">
                 <img src="../assets/images/approach-strategy.png" alt="">
               </div>
@@ -63,12 +63,12 @@
         </div>
         <div class="management-strategy">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__img">
                 <img src="../assets/images/skill-strategy.png" alt="">
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__details">
                 <h1 class="title">Does your employees have required set of Skills and Competencies?</h1>
                 <div class="business-indicators business-indicators--mb">
@@ -85,7 +85,7 @@
         </div>
         <div class="management-strategy management-strategy--no-pb">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
               <div class="management-strategy__details management-strategy__details--no-pt">
                 <h1 class="title">Performance appraisals, Rewards and bonus distribution, promotions all in one. Like a magic.</h1>
                 <div class="business-indicators business-indicators--mb">
@@ -98,7 +98,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-1 order-lg-2">
               <div class="management-strategy__img">
                 <img src="../assets/images/distribution-strategy.png" alt="">
               </div>
@@ -121,7 +121,7 @@
               <div class="row justify-content-center">
                 <div class="col-xl-10">
                   <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="train-mothod">
                         <div class="term-block">
                           <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
@@ -130,7 +130,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="train-mothod">
                         <div class="term-block">
                           <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
@@ -139,7 +139,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
                       <div class="train-mothod">
                         <div class="term-block">
                           <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">

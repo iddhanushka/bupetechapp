@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item menu-list">
-                   <router-link to="/why-bupe" class="nav-link active menu-name" aria-current="page" >Why BUPE</router-link>
+                   <router-link to="/why-bupe" class="nav-link menu-name" aria-current="page" >Why BUPE</router-link>
                     <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
@@ -24,7 +24,7 @@
                     <router-link class="nav-link menu-name dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Modules
                   </router-link>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <ul class="dropdown-menu modules-submenu" aria-labelledby="navbarDropdownMenuLink">
                     <li><router-link class="dropdown-item menu-name" to="#">Action</router-link></li>
                     <li><router-link class="dropdown-item menu-name" to="#">Another action</router-link></li>
                   </ul>
@@ -71,18 +71,20 @@
             <div class="col-xl-8">
               <div class="site-footer__content">
                 <img class="logo" src="./assets/images/bupetech-logo.png" alt="">
-                <ul class="first-list">
-                  <li class="list-line"><a href="">About us</a></li>
-                  <li class="list-line"><a href="">Leadership</a></li>
-                  <li class="list-line"><a href="">News rooms</a></li>
-                  <li class="list-line"><a href="">Careers</a></li>
-                </ul>
-                <ul class="second-list">
-                  <li class="list-line"><a href="">Contact us</a></li>
-                  <li class="list-line"><a href="">Pricing</a></li>
-                  <li class="list-line"><a href="">Modules</a></li>
-                  <li class="list-line"><a href="">Leagal & Privacy</a></li>
-                </ul>
+                <div class="links">
+                  <ul class="first-list">
+                    <li class="list-line"><a href="">About us</a></li>
+                    <li class="list-line"><a href="">Leadership</a></li>
+                    <li class="list-line"><a href="">News rooms</a></li>
+                    <li class="list-line"><a href="">Careers</a></li>
+                  </ul>
+                  <ul class="second-list">
+                    <li class="list-line"><a href="">Contact us</a></li>
+                    <li class="list-line"><a href="">Pricing</a></li>
+                    <li class="list-line"><a href="">Modules</a></li>
+                    <li class="list-line"><a href="">Leagal & Privacy</a></li>
+                  </ul>
+                </div>
                 <h6 class="copyright-tag">©2021. All Rights Reserved Bupe Tech.</h6>
                 <ul class="social-media">
                   <li class="sm-icon sm-icon--twitter"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -110,10 +112,12 @@
 </template>
 
 <script>
-
+import "normalize.css";
 
 export default{
 
 }
 
 </script>
+
+
