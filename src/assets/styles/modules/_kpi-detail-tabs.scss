@@ -1,4 +1,10 @@
 .kpi-detail-tabs {
+  padding: 30px 0;
+
+  @include atSmall {
+    padding: unset;
+  }
+
   @include atSmall {
     position: relative;
     top: -2.875rem;
