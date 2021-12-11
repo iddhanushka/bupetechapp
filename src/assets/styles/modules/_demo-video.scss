@@ -1,10 +1,18 @@
 .demo-video {
   background-color: $white;
-  padding: 2.5rem;
+  padding: 0.3125rem;
+
+  @include atLarge {
+    padding: 2.5rem;
+  }
 
   &__thumbnail {
-    max-width: 85%;
+    max-width: 100%;
     margin: auto;
     display: block;
+
+    @include atLarge {
+      max-width: 85%;
+    }
   }
 }

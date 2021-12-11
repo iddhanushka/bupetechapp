@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin atCustomSize {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}

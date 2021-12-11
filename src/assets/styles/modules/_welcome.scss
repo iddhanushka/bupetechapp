@@ -11,12 +11,21 @@
     position: absolute;
     width: 92%;
 
+    video {
+      width: 100%;
+      height: auto;
+    }
+
     @include atSmall {
       width: 90%;
     }
 
     @include atLarge {
       width: 37%;
+    }
+
+    @include atCustomSize {
+      width: 31%;
     }
   }
 
@@ -74,7 +83,7 @@
     font-size: 1.25rem;
     line-height: normal;
     text-align: center;
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
     font-weight: 700;
 
@@ -91,6 +100,10 @@
     @include atLarge {
       text-align: left;
       margin: unset;
+    }
+
+    @include atDoubleExtraLarge {
+      max-width: 35rem;
     }
   }
 

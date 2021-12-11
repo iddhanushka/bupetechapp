@@ -12,13 +12,23 @@
   &__content {
     .logo {
       width: 100%;
-      max-width: 30%;
+      max-width: 25%;
       margin: auto;
       display: block;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.5rem;
 
       @include atSmall {
         max-width: 15%;
+      }
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @include atSmall {
+        display: unset;
+        grid-template-columns: unset;
       }
     }
 
@@ -36,9 +46,9 @@
     }
 
     .list-line {
-      &:not(:last-child) {
-        margin-right: 2.5rem;
+      text-align: center;
 
+      &:not(:last-child) {
         @include atSmall {
           margin-right: 1.25rem;
         }
@@ -50,10 +60,14 @@
 
       a {
         text-decoration: none;
-        font-size: 0.9375rem;
+        font-size: 0.8125rem;
         text-transform: uppercase;
         color: $darkBlue;
         font-weight: 600;
+
+        @include atSmall {
+          font-size: 0.9375rem;
+        }
 
         @include atMedium {
           font-size: 1.125rem;
@@ -83,8 +97,8 @@
     }
 
     .sm-icon {
-      width: 1.5625rem;
-      height: 1.5625rem;
+      width: 1.6875rem;
+      height: 1.6875rem;
       border-radius: 50%;
       margin: 0 0.4375rem;
       margin-top: 0.625rem;
@@ -100,7 +114,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        top: 0;
+        top: 1px;
         width: 0.8125rem;
 
         @include atMedium {

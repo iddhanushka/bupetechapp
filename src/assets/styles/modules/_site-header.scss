@@ -86,6 +86,20 @@
       }
     }
 
+    .modules-submenu {
+      background-color: unset;
+      padding-left: 0.625rem;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      @include atLarge {
+        background-color: $white;
+        padding-left: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+      }
+    }
+
     .navbar-toggler {
       padding: 0.4375rem 0.9375rem;
       height: max-content;
