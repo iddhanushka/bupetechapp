@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item menu-list">
-                  <a class="nav-link active menu-name" aria-current="page" href="#">Why BUPE</a>
+                  <a class="nav-link active menu-name" aria-current="page" href="#" active-class="active">Why BUPE</a>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">

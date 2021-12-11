@@ -13,15 +13,15 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item menu-list">
-                   <router-link to="/why-bupe" class="nav-link menu-name" aria-current="page" >Why BUPE</router-link>
+                   <router-link to="/why-bupe" class="nav-link menu-name" aria-current="page" active-class="active">Why BUPE</router-link>
                     <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                   <router-link to="/product" class="nav-link menu-name">Product</router-link>
+                   <router-link to="/product" class="nav-link menu-name"  active-class="active">Product</router-link>
                          <div class="underline"></div>
                 </li>
                 <li class="nav-item dropdown menu-list">
-                    <router-link class="nav-link menu-name dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <router-link class="nav-link menu-name dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  active-class="active">
                     Modules
                   </router-link>
                   <ul class="dropdown-menu modules-submenu" aria-labelledby="navbarDropdownMenuLink">
@@ -34,22 +34,22 @@
                   <div class="underline"></div>
                 </li> -->
                 <li class="nav-item menu-list">
-                  <router-link class="nav-link menu-name" to="/about">About</router-link>
+                  <router-link class="nav-link menu-name" to="/about"  active-class="active">About</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                  <router-link class="nav-link menu-name" to="/pricing">Pricing</router-link>
+                  <router-link class="nav-link menu-name" to="/pricing"  active-class="active">Pricing</router-link>
                   <div class="underline"></div>
                 </li>
                 <li class="nav-item menu-list">
-                  <router-link class="nav-link menu-name" to="/contact">Contact</router-link>
+                  <router-link class="nav-link menu-name" to="/contact"  active-class="active">Contact</router-link>
                   <div class="underline"></div>
                 </li>
               </ul>
             </div>
           </div>
           <div class="site-header__options">
-            <a class="get-quote button button--header" href="">Get a Quote</a>
+            <a class="get-quote button button--header" href="" >Get a Quote</a>
             <!-- <a href="" class="search"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg></a> -->
