@@ -32,9 +32,10 @@
                     <div class="col-xl-5">
                       <label class="upload-btn-title">Please upload a resume</label>
                       <div class="input-group">
-                        <input type="file" class="form-control upload-input" id="inputGroupFile02" ref="file">
+                        <input type="file" class="form-control upload-input" id="inputGroupFile02" ref="file" required @change="onSelect" >
                         <label class="input-group-text upload-cv-btn" for="inputGroupFile02">Upload CV</label>
                       </div>
+
                       <span class="file-format-text" >.PDF, .DOC, .DOCX Max 5MB</span>
                     </div>
                     <div class="col-xl-6">
@@ -44,8 +45,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">                
-                  <button type="submit" class="button button--submit form-submit-btn" v-on:Click="onFileChange()">Apply</button>
+                <div class="col-xl-6"> 
+                  <input type="hidden" v-model="job_name" id="job_name"/>  
+                   <input type="hidden" v-model="job_id" id="job_id"/>            
+                  <button type="submit" class="button button--submit form-submit-btn">Apply</button>
                 </div>
               </form>
             </div>
@@ -97,13 +100,20 @@ export default({
   },
   created(){
     this.loadDescription();
+   
   },
-  methods:{ 
+  methods:{
+    onSelect(){
+      this.posts.upload = this.$refs.file.files[0];
+      //console.warn(this.posts.upload );
+    },
     loadDescription() {
           this.loading = true, 
           axios.get(`${process.env.VUE_APP_BASE_URL}/api/job/view/${this.$route.params.id}`)
               .then((response) => {
-                      this.jobDescription = response.data.job;           
+                      this.jobDescription = response.data.job; 
+                      this.posts.job_name = response.data.job.name;
+                      this.posts.job_id = response.data.job.id; 
               })
               .catch((error)=>{     
                   this.errored = true            
@@ -119,7 +129,10 @@ export default({
               .finally(() => this.loading = false);
     },
     SubmitApplication(e){
-       e.preventDefault();   
+       e.preventDefault();  
+       this.onSelect();
+       console.warn(this.posts.upload);
+       
         axios.post(`${process.env.VUE_APP_BASE_URL}/api/career/add`, this.posts)
               .then((response)=>{                            
                 if(response.status === 200){
@@ -150,11 +163,6 @@ export default({
                 }
               })
 
-    },
-    onFileChange(){
-      this.debugger;
-      var uploadFileDetails = document.getElementById("inputGroupFile02").files[0];
-      console.warn(uploadFileDetails);
     }
   }
 })
