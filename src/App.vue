@@ -73,16 +73,16 @@
                 <img class="logo" src="./assets/images/bupetech-logo.png" alt="">
                 <div class="links">
                   <ul class="first-list">
-                    <li class="list-line"><a href="">About us</a></li>
-                    <li class="list-line"><a href="">Leadership</a></li>
-                    <li class="list-line"><a href="">News rooms</a></li>
-                    <li class="list-line"><a href="">Careers</a></li>
+                    <li class="list-line"> <router-link to="/about" >About us</router-link></li>
+                    <li class="list-line"> <router-link to="/why-bupe" >Leadership</router-link></li>
+                    <li class="list-line"> <router-link to="/why-bupe" >News rooms</router-link></li>
+                    <li class="list-line"><router-link to="/careers" >Careers</router-link></li>
                   </ul>
                   <ul class="second-list">
-                    <li class="list-line"><a href="">Contact us</a></li>
-                    <li class="list-line"><a href="">Pricing</a></li>
-                    <li class="list-line"><a href="">Modules</a></li>
-                    <li class="list-line"><a href="">Leagal & Privacy</a></li>
+                    <li class="list-line"> <router-link to="/contact" >Contact us</router-link></li>
+                    <li class="list-line"> <router-link to="/pricing" >Pricing</router-link></li>
+                    <li class="list-line"> <router-link to="/why-bupe" >Modules</router-link></li>
+                    <li class="list-line"> <router-link to="/privacy" >Leagal & Privacy</router-link></li>
                   </ul>
                 </div>
                 <h6 class="copyright-tag">©2021. All Rights Reserved Bupe Tech.</h6>
