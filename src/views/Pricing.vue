@@ -20,14 +20,14 @@
                       <div class="col-xl-6">
                         <label for="bill" class="form-label form-label--dark-green">Select Annual or Monthly billing</label>
                         <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="posts.plan" v-on:change="onChangePlan($event)">
-                          <option value="monthly" selected>Monthly</option>
-                          <option value="annually">Annually</option>
+                          <option value="Monthly" selected>Monthly</option>
+                          <option value="Annually" >Annually</option>
                         </select>
                         <span class="save-percentage">Save 15% with annual commitment</span>
                       </div>
                       <div class="col-xl-12">
                         <h5 class="total-cost">Total Estimated Cost</h5>
-                        <h3 class="amount">{{this.Pricing}} <span class="month">/month</span></h3>
+                        <h3 class="amount">{{this.Pricing}} <span class="month">/{{posts.plan}}</span></h3>
                       </div>
                       
                       <div class="col-xl-12">
@@ -74,7 +74,7 @@ export default ({
     },
     calculateRates(){
       if(!this.posts.user_count){
-        this.posts.user_count = 1;
+        this.posts.user_count = 40;
       }
       axios.post(`${process.env.VUE_APP_BASE_URL}/api/price/view`, this.posts)
             .then((response)=>{                            
@@ -101,7 +101,7 @@ export default ({
     }
   },
   mounted: function(){
-      this.posts.plan = "monthly";
+      this.posts.plan = "Monthly";
       console.warn(this.user_count);
       this.calculateRates();
   }
