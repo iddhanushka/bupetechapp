@@ -13,17 +13,23 @@
     padding-left: unset;
     padding-right: unset;
 
-    @include atExtraLarge {
-      max-width: 1380px;
-    }
-
     @include atLarge {
       padding-left: 0.75rem;
       padding-right: 0.75rem;
     }
 
+    @include atExtraLarge {
+      max-width: 1380px;
+    }
+
+    @include atDoubleExtraLarge {
+      max-width: 1360px;
+      padding-left: unset;
+      padding-right: unset;
+    }
+
     @include atCustomSize {
-      max-width: 1870px;
+      max-width: 1885px;
     }
   }
 }

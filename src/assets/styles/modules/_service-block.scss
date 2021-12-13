@@ -4,12 +4,17 @@
     margin: auto;
     display: block;
     margin-bottom: 0.625rem;
+  
+    @include atSmall {
+      max-width: 15%;
+    }
 
     @include atMedium {
       max-width: 30%;
       margin: unset;
       display: unset;
       margin-bottom: 0.625rem;
+      width: auto;
     }
 
     @include atLarge {

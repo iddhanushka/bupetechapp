@@ -23,6 +23,7 @@ export default {
   components: {
     vueRecaptcha,
   },
+  props: ['isVerifie'],
   data: function () {
     return {
       show: 1,
@@ -32,11 +33,15 @@ export default {
   },
   methods: {
     recaptchaVerified(response) {
-    console.log(response);
+   // console.log(response);
+      this.$emit('verified', true);
+      this.$emit('capture', response);
+      
       this.isCaptchaVerifie = true;
     },
     recaptchaExpired() {
       this.$refs.vueRecaptcha.reset();
+      this.$emit('verified',false);
       this.isCaptchaVerifie = false;
     },
     recaptchaFailed() {
