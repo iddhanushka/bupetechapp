@@ -22,11 +22,11 @@
                 </li>
                 <li class="nav-item dropdown menu-list">
                     <router-link class="nav-link menu-name dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  active-class="active">
-                    Modules
+                    Resources
                   </router-link>
                   <ul class="dropdown-menu modules-submenu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><router-link class="dropdown-item menu-name" to="#">Action</router-link></li>
-                    <li><router-link class="dropdown-item menu-name" to="#">Another action</router-link></li>
+                    <li><router-link class="dropdown-item menu-name" to="/legal">Leagal &amp; Privacy</router-link></li>
+                    <li><router-link class="dropdown-item menu-name" to="/training">Help &amp; Training Center</router-link></li>
                   </ul>
                 </li>
                 <!-- <li class="nav-item menu-list">
@@ -49,10 +49,8 @@
             </div>
           </div>
           <div class="site-header__options">
-            <a class="get-quote button button--header" href="" >Get a Quote</a>
-            <!-- <a href="" class="search"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg></a> -->
+            <router-link class="get-quote button button--header" :to="{name:'ContactForm',params:{target:1} }" >Get a Quote</router-link>
+       
             <router-link to="" class="login">Login</router-link>
           </div>
         </div>
@@ -70,19 +68,19 @@
           <div class="row justify-content-center">
             <div class="col-xl-8">
               <div class="site-footer__content">
-                <img class="logo" src="./assets/images/bupetech-logo.png" alt="">
+                <router-link to="/" ><img class="logo" src="./assets/images/bupetech-logo.png" alt=""></router-link>
                 <div class="links">
                   <ul class="first-list">
                     <li class="list-line"> <router-link to="/about" >About us</router-link></li>
-                    <li class="list-line"> <router-link to="/why-bupe" >Leadership</router-link></li>
+                    <li class="list-line"> <router-link to="/about#leadership" >Leadership</router-link></li>
                     <li class="list-line"> <router-link to="/why-bupe" >News rooms</router-link></li>
                     <li class="list-line"><router-link to="/careers" >Careers</router-link></li>
                   </ul>
                   <ul class="second-list">
                     <li class="list-line"> <router-link to="/contact" >Contact us</router-link></li>
                     <li class="list-line"> <router-link to="/pricing" >Pricing</router-link></li>
-                    <li class="list-line"> <router-link to="/why-bupe" >Modules</router-link></li>
-                    <li class="list-line"> <router-link to="/privacy" >Leagal & Privacy</router-link></li>
+                    <li class="list-line"> <router-link to="/product" >Modules</router-link></li>
+                    <li class="list-line"> <router-link to="/legal" >Leagal &amp; Privacy</router-link></li>
                   </ul>
                 </div>
                 <h6 class="copyright-tag">©2021. All Rights Reserved Bupe Tech.</h6>
@@ -106,7 +104,12 @@
           </div>
         </div>
       </div>
-    
+      
+      <div class="leaf">
+       <div class="leaf__left">
+         <img class="leaf__left-img" src="./assets/images/leaf-footer.png" alt="">
+       </div>
+     </div> 
   </footer>
   
 </template>

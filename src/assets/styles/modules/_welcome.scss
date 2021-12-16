@@ -24,8 +24,12 @@
       width: 37%;
     }
 
+    @include atDoubleExtraLarge {
+      width: 42%;
+    }
+
     @include atCustomSize {
-      width: 31%;
+      width: 40%;
     }
   }
 
@@ -37,25 +41,18 @@
       margin: auto;
       display: block;
 
-      @include atMedium {
-        max-width: 50%;
-      }
-
       @include atLarge {
-        max-width: 40%;
+        margin-right: 4.6875rem;
       }
     }
 
     .man {
-      max-width: 90%;
+      max-width: 60%;
       margin: auto;
       display: block;
 
-      @include atSmall {
-        max-width: 70%;
-      }
-
       @include atLarge {
+        max-width: 80%;
         margin: unset;
         display: unset;
       }
@@ -138,15 +135,15 @@
   .details {
     margin-top: 2.5rem;
 
-    @include atSmall {
-      margin-top: 0;
-    }
-
     @include atLarge {
       margin-top: 4.375rem;
     }
 
     &--organization {
+      @include atLarge {
+        padding-left: 4.375rem;
+      }
+
       @include atExtraLarge {
         position: relative;
         top: -1.875rem;

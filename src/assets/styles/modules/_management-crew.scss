@@ -2,7 +2,9 @@
   margin-bottom: 1.5625rem;
 
   &--no-mb {
-    margin-bottom: unset;
+    @include atMedium {
+      margin-bottom: unset;
+    }
   }
 
   &__card {
@@ -13,14 +15,22 @@
 
   &__title {
     color: $purple;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 700;
+
+    @include atMedium {
+      font-size: 1.5rem;
+    }
   }
 
   &__subtitle {
     color: $purple;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 700;
+
+    @include atMedium {
+      font-size: 1.25rem;
+    }
   }
 
   &__read-bio {

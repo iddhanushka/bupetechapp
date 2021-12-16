@@ -1,0 +1,18 @@
+.leaf {
+  display: none;
+
+  @include atExtraLarge {
+    display: block;
+  }
+
+  &__left-img {
+    max-width: 12%;
+    position: absolute;
+  }
+
+  &__right-img {
+    max-width: 12%;
+    position: absolute;
+    right: 0;
+  }
+}

@@ -140,4 +140,13 @@
       }
     }
   }
+
+  .leaf__left-img {
+    display: none;
+
+    @include atLarge {
+      max-width: 8%;
+      display: block;
+    }
+  }
 }

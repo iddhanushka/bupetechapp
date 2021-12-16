@@ -28,13 +28,13 @@
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <video style="width:100%" class="elementor-video" src="https://www.bupetech.com/wp-content/uploads/2021/01/BUPE-1080p-210127.mp4" controls="" controlslist="nodownload" poster="https://www.bupetech.com/wp-content/uploads/2021/02/Introduction_to_bupe.jpg"></video>
+                    <video style="width:100%" class="elementor-video" :src="overview_video_url" controls="" controlslist="nodownload" poster="https://www.bupetech.com/wp-content/uploads/2021/02/Introduction_to_bupe.jpg"></video>
                   </div>
                 </div>
     
                 <div class="col-xl-7">
                   <div class="kpi-solution__content">
-                    <h1 class="title">Brings buisness & people together, connecting every individual with strategic objectives.</h1>
+                    <h1 class="title">Brings buisness &amp; people together, connecting every individual with strategic objectives.</h1>
                     <p>A single solution to Plan, Measure and Manage business performance.</p>
                     <p>At top level, organization layout the buisness strategy. Our solution will make sure aligning and empowering every individual within oraganization to achieve desired goals.</p>
                   </div>
@@ -123,6 +123,12 @@
 <script>
 export default {
   name: 'KpiDetailTabs',
+  data() {
+    return {
+     overview_video_url: process.env.VUE_APP_OVERVIEW_VIDEO_URL,
+
+    };
+  },
  /* props: {
     msg: String
   }*/

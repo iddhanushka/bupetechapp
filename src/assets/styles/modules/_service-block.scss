@@ -4,7 +4,7 @@
     margin: auto;
     display: block;
     margin-bottom: 0.625rem;
-  
+
     @include atSmall {
       max-width: 15%;
     }
@@ -18,7 +18,7 @@
     }
 
     @include atLarge {
-      //max-width: 100%;
+      max-width: 100%;
     }
   }
 

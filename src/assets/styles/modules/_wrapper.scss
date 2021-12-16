@@ -23,7 +23,7 @@
     }
 
     @include atDoubleExtraLarge {
-      max-width: 1360px;
+      max-width: 1410px;
       padding-left: unset;
       padding-right: unset;
     }
@@ -36,7 +36,9 @@
 
 .container {
   &--custom-height {
-    min-height: 53.125rem;
-    position: relative;
+    @include atLarge {
+      min-height: 53.125rem;
+      position: relative;
+    }
   }
 }

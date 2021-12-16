@@ -7,7 +7,7 @@
             <div class="impact__learnmore">
               <h4 class="tag">The imapct to the enterprise</h4>
               <h1 class="title">Unlock the full potential of your enterprise with increased work dynamics.</h1>
-              <a class="button button--no-background" href="">Learn More</a>
+              <router-link class="button button--no-background" to="product#learn_more">Learn More</router-link>
               <img class="impact-threehuman" :src="require(`@/assets/images/impact-three-humans.png`)" alt="" />
             </div>
           </div>
@@ -106,7 +106,8 @@
           </div>
         </div>
 
-        <a class="get-quote button" href="">Get a Quote</a>
+  
+          <router-link class="get-quote button" to="/contact-form" >Get a Quote</router-link>
       </div>
 
       <div class="impact-enterprise__services">
@@ -117,36 +118,38 @@
             <p>Give it a boost with expert support, 
               leveraging years and years of our 
               exposure in impact creation.</p>
-            <a class="visit-more" href="">Services by our distributors ></a>
+            <router-link class="visit-more" to="/pricing#contact-info">Services by our distributors ></router-link>
           </div>
           <div class="service-block">
             <img class="service-block__logo"  :src="require(`@/assets/images/training-logo.png`)" alt="" />
-            <h4 class="service-block__title">Professional Services</h4>
-            <p>Give it a boost with expert support, 
-              leveraging years and years of our 
-              exposure in impact creation.</p>
-            <a class="visit-more" href="">Explore our training catalogue ></a>
+            <h4 class="service-block__title">Training &amp; Certification</h4>
+            <p>To get most out of the product, key is to aquire the right skill set from the expert team at Bupe tech.</p>
+            <router-link class="visit-more" to="/training">Explore our training catalogue ></router-link>
           </div>
           <div class="service-block">
             <img class="service-block__logo"  :src="require(`@/assets/images/help-logo.png`)" alt="" />
-            <h4 class="service-block__title">Professional Services</h4>
-            <p>Give it a boost with expert support, 
-              leveraging years and years of our 
-              exposure in impact creation.</p>
+            <h4 class="service-block__title">Help &amp; Documentation</h4>
+            <p>Start right here for operation of the solution and to deep dive with the philosophy behind.
+</p>
             <a class="visit-more" href="">How to guides ></a> <br/>
              <router-link class="visit-more" to="/help">Full documentation ></router-link>
           </div>
         
       </div>
     </div>
+   <FooterLeaf />
   </section>
 </template>
 
 <script>
+
+import FooterLeaf from '@/components/FooterLeaf.vue';
+
 export default {
   name: 'ImpactEnterprise',
- /* props: {
-    msg: String
-  }*/
+  components: {
+    FooterLeaf
+  }
+
 }
 </script>

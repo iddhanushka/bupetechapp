@@ -1,48 +1,116 @@
 .about-us {
-  padding: 80px 0;
+  padding: 30px 0;
   background-color: $lightBlue;
+
+  @include atSmall {
+    padding: 40px 0;
+  }
+
+  @include atLarge {
+    padding: 80px 0;
+  }
+
   .title {
-    font-size: 1.875rem;
+    font-size: 20px;
     font-weight: 700;
     color: $darkBlue;
     text-align: center;
-    margin-bottom: 1.875rem;
+    margin-bottom: 15px;
+
+    @include atSmall {
+      font-size: 22px;
+    }
+
+    @include atMedium {
+      font-size: 1.875rem;
+      margin-bottom: 1.875rem;
+    }
+  }
+  
+  li{
+    font-size: 1rem;
+    color: #464646;
+    font-weight: 400;
+    @include atLarge {
+      font-size: 1.375rem;
+      max-width: 80%;
+      margin-bottom: 1rem;
+    }
   }
 
-  p {
-    font-size: 1.375rem;
+  p{
+    font-size: 1rem;
     color: #464646;
     text-align: center;
     font-weight: 400;
-    max-width: 80%;
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 20px;
+
+    @include atLarge {
+      font-size: 1.375rem;
+      max-width: 80%;
+      margin-bottom: 5rem;
+    }
   }
 
   .vision {
-    margin-bottom: 4.375rem;
+    @include atLarge {
+      margin-bottom: 4.375rem;
+    }
+
     .title {
-      font-size: 1.875rem;
+      font-size: 20px;
       font-weight: 700;
       color: $darkBlue;
       margin-bottom: 0.625rem;
-      text-align: left;
+      text-align: center;
+
+      @include atSmall {
+        font-size: 22px;
+      }
+
+      @include atMedium {
+        font-size: 1.875rem;
+      }
+
+      @include atLarge {
+        text-align: unset;
+      }
     }
 
     p {
-      text-align: left;
+      text-align: center;
       max-width: unset;
+
+      @include atLarge {
+        text-align: unset;
+      }
     }
   }
 
   &__apex {
-    margin-top: 6.25rem;
+    margin-top: 15px;
+
+    @include atLarge {
+      margin-top: 6.25rem;
+    }
+
     .title {
-      font-size: 1.875rem;
+      font-size: 20px;
       font-weight: 700;
-      text-align: left;
-      padding-left: 3.75rem;
-      margin-bottom: 3.125rem;
+      text-align: center;
+      margin-bottom: 20px;
+
+      @include atSmall {
+        font-size: 22px;
+      }
+
+      @include atLarge {
+        font-size: 1.875rem;
+        padding-left: 3.75rem;
+        text-align: unset;
+        margin-bottom: 3.125rem;
+      }
     }
   }
 }

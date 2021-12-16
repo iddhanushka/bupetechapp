@@ -1,5 +1,6 @@
 <template>
   <section class="why-bupe">
+  
     <div class="container">
       <div class="row">
         <div class="col-xl-6 col-lg-6">
@@ -8,14 +9,24 @@
             <h1 class="title">To reach the true potential of your company in an ever challenging and dynamic world.</h1>
           </div>
         </div>
+
         <div class="col-xl-6 col-lg-6">
           <div class="why-bupe__video">
             <div class="demo-video">
-              <img class="demo-video__thumbnail" src="../assets/images/kpi-overview.png" alt="">
+                <video
+                style="width: 100%"
+                class="elementor-video"
+                :src="bupe_video_url"
+                controls=""
+                controlslist="nodownload"
+              ></video>
+
             </div>
           </div>
         </div>
+        
       </div>
+     
       <div class="strategy">
         <div class="management-strategy ">
           <div class="row">
@@ -106,7 +117,7 @@
           </div>
         </div>
       </div>
-      <a href="" class="button button--blue watch-demo">Watch a Demo</a>
+      <router-link to="/demo" class="button button--blue watch-demo">Watch a Demo</router-link>
 
       <div class="why-bupe__charm">
         <div class="row">
@@ -153,10 +164,27 @@
               </div>
             </div>
             <h1 class="lets-give-title">Let’s give it a try?</h1>
-            <a href="" class="button button--blue talk-us">Talk to us</a>
+            <router-link to="/contact" class="button button--blue talk-us">Talk to us</router-link>
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+<script>
+
+//import TopLeaf from '@/components/TopLeaf.vue';
+//import FooterLeaf from '@/components/FooterLeaf.vue';
+
+export default {
+  name: "why_bupe",
+
+  data() {
+    return {
+
+      bupe_video_url: process.env.VUE_APP_WHY_BUPE_VIDEO_URL
+
+    };
+  }
+};
+</script>

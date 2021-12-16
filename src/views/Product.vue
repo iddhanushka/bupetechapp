@@ -1,13 +1,13 @@
 <template>
-<div class="product">
+ <div class="product">
     <div class="container">
       <h1 class="title">Design how business should run and monitor right through it from 
         company, people and business perspective with BUPE.</h1>
       <div class="row">
-        <div class="col-xl-7">
+        <div class="col-xl-7 col-lg-7">
           <img class="product__business-img" src="../assets/images/impact-three-humans.png" alt="">
         </div>
-        <div class="col-xl-5">
+        <div class="col-xl-5 col-lg-5">
           <h4 class="product__tag">Features to plan your business</h4>
           <h3 class="product__description">Transform your vision right in to strategies with planning, budgeting and cascading down peformance metrics for implementation.</h3>
         </div>
@@ -15,12 +15,12 @@
       <div class="business-design-block">
         <div class="business-design">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <ul class="list">
                 <li class="left-list-item"><img class="business-design__icon" src="../assets/images/innovation-icon.png" alt=""></li>
                 <li class="right-list-item">
-                  <h5 class="business-design__title">Design & Transform Buisiness Model</h5>
-                  <p>Design & transform your current business model into a well structured multi-dimentional model with a clear visibility on performance.This includes forecasting & budgeting, continuous monitoring and controlling of the achievement of desired results through the system based on multiple parameters with the ability to cascade down.</p>
+                  <h5 class="business-design__title">Design &amp; Transform Buisiness Model</h5>
+                  <p>Design &amp; transform your current business model into a well structured multi-dimentional model with a clear visibility on performance.This includes forecasting &amp; budgeting, continuous monitoring and controlling of the achievement of desired results through the system based on multiple parameters with the ability to cascade down.</p>
                 </li>
               </ul>
               <ul class="list">
@@ -44,59 +44,63 @@
                   <p>Plan your work day with tasks and set goals that need to be attended in-order to achieve KPIs assigned with a clear visibility to superiors on the progress.</p>
                 </li>
               </ul>
-              <h4 class="product__tag">Features to measure performance & manage</h4>
-          <h3 class="product__description">Measure, Monitor and Manage Performance & Potential, connect work tasks and goals to strategic objectives, let hold the accountability and rewards to maintain the momentum.</h3>
+              <h4 class="product__tag">Features to measure performance &amp; manage</h4>
+          <h3 class="product__description">Measure, Monitor and Manage Performance &amp; Potential, connect work tasks and goals to strategic objectives, let hold the accountability and rewards to maintain the momentum.</h3>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <img class="business-design__img" src="../assets/images/transform-model.png" alt="">
             </div>
           </div>
         </div>
         <div class="business-design">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
               <img class="business-design__img" src="../assets/images/stakeholders.png" alt="">
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-1 order-lg-2">
               <ul class="list">
                 <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
-                  <h5 class="business-design__title">Design & Transform Buisiness Model</h5>
-                  <p>Design & transform your current business model into a well structured multi-dimentional model with a clear visibility on performance.This includes forecasting & budgeting, continuous monitoring and controlling of the achievement of desired results through the system based on multiple parameters with the ability to cascade down.</p>
+                  <h5 class="business-design__title">External Stakeholers</h5>
+                  <p>Getting customers, business partners, vendors and other external stakeholders participated in obtaining feedback on appraisals.</p>
+                </li>
+              </ul>
+             
+              <ul class="list">
+                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
+                <li class="right-list-item">
+                  <h5 class="business-design__title">Managing Employees Performance</h5>
+                  <p>Our Dashboard provides four dimentional approach to visualize their performance on KPIs, progress of tasks and goals, level of skills and competencies demonstrated and how well they have performed on each scorecard perpective. All employees and their respective superiors are provided with a clear visibility on these dimentions in real-time.
+</p>
                 </li>
               </ul>
               <ul class="list">
                 <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
-                  <h5 class="business-design__title">Balanced Scorecards</h5>
-                  <p>Balanced scorecard signifies the performance at overall company level, business units level and employees level based on multiple perspectives. It further provides you with insights as to how balanced your approach is in achieving KPIs.</p>
+                  <h5 class="business-design__title">Competency Management</h5>
+                  <p>Our pre-built competancy library is a great starting point to build upon. Skills and competencies of employees measured using 720 degree periodic appraisals help mapping and categorizing them in a 9-box grid making an informed judgement based on their performance and potential.
+</p>
                 </li>
               </ul>
-              <ul class="list">
+               <ul class="list">
                 <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
                 <li class="right-list-item">
-                  <h5 class="business-design__title">KPI Management</h5>
-                  <p>In BUPE, KPIs can be defined considering buisness wide key performance areas. This allows managing different KPI types with their buisness impact, contribution to different scorecard perspectives and how critical they are for the success of the business. Real-time monitoring of KPI performance whcih can be cascaded down from overall company level to business units and down-to the employees.</p>
-                </li>
-              </ul>
-              <ul class="list">
-                <li class="left-list-item"><img class="business-design__icon" src="../assets/images/hand-icon.png" alt=""></li>
-                <li class="right-list-item">
-                  <h5 class="business-design__title">Task Management</h5>
-                  <p>Plan your work day with tasks and set goals that need to be attended in-order to achieve KPIs assigned with a clear visibility to superiors on the progress.</p>
+                  <h5 class="business-design__title">Rewards Distributions</h5>
+                  <p>Distributing rewards based on multiple criteria, performing simulations through the system and handling the administrative affairs with regard to reward distribution through the system.</p>
                 </li>
               </ul>
             </div>
           </div>
-          <a href="" class="button button--blue bd-watch-demo">Watch a Demo</a>
+          <router-link  to="/demo" class="button button--blue bd-watch-demo">Watch a Demo</router-link>
         </div>
-        <div class="management-strategy">
+        <div class="management-strategy" id="learn_more">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__details management-strategy__details--no-pt">
-                <h4 class="product__tag">Features to measure performance & manage</h4>
-                <h3 class="product__description product__description--m-bottom">Measure, Monitor and Manage Performance & Potential, connect work tasks and goals to strategic objectives, let hold the accountability and rewards to maintain the momentum.</h3>
-                <div class="business-indicators business-indicators--mb">
+                     <h4 class="product__tag">Imagine the benefits with right features</h4>
+          <h3 class="product__description product__description--m-bottom">Revolutionaly benefits gained through years of experience across diverse oraganizations.</h3>
+   
+                    <div class="business-indicators business-indicators--mb">
                   <h3 class="subtitle">Integrated BUPE Dashboard, Monitor and manage what you need to be in control of.</h3>
                   <p>BUPE dashboard is where everything is revolved around, performance related information is presented seemlessly on different portfolios, business units and employees along the structure of the organization allowing you to be in control of monitoring and managing the business all the time.</p>
                 </div>
@@ -116,7 +120,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__img">
                 <img src="../assets/images/revolutionalry-benifits.png" alt="">
               </div>
@@ -125,12 +129,12 @@
         </div>
         <div class="management-strategy">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
               <div class="management-strategy__img">
                 <img src="../assets/images/monitor-progress.png" alt="">
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6 order-1 order-lg-2">
               <div class="management-strategy__details management-strategy__details--no-pt">
                 <div class="business-indicators business-indicators--mb">
                   <h3 class="subtitle">Monitor progress of tasks and goals bound to KPIs, real time. </h3>
@@ -145,11 +149,7 @@
                   <p>Even if your organzation is a diversified conglomerate with multiple sister companies where employees are having multiple roles across the group, or existing in multiple units within the same company, BUPE accomodates such complex organizational structure at ease.</p>
                   <p>Employees can have KPIs assigned with respect to different business units they are placed on and view performance at respective unit level and company level. </p>
                 </div>
-                <div class="business-indicators">
-                  <h3 class="subtitle">Balanced scorecard at each level linking everyone to the business strategy.</h3>
-                  <p>You can drilldown a KPI along the hierarchical structure down to the individual employee level with the visibility of performance along with set targets vs actuals.</p>
-                  <p>BUPE provides you with balanced scorecards at company level, business unit level and individual employee levels, providing you the visibility on how your business strategy has been implemented across your organizational hierarchy.</p>
-                </div>
+             
               </div>
             </div>
 
@@ -157,7 +157,7 @@
         </div>
         <div class="management-strategy">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__details management-strategy__details--no-pt">
                 <div class="business-indicators business-indicators--mb">
                   <h3 class="subtitle">You have got the budget for rewards, with BUPE you can assure the right distributions.</h3>
@@ -191,23 +191,25 @@
       </div>
       <div class="product__partners">
         <div class="row">
-          <div class="col-xl-6">
+          <div class="col-xl-6 col-lg-6">
             <img class="partner-logos" src="../assets/images/partners.png" alt="">
           </div>
-          <div class="col-xl-6">
+          <div class="col-xl-6 col-lg-6">
             <div class="details">
-              <h3 class="title">No need of specialized & trained staff to operate in BUPE.</h3>
-              <p>BUPE is plug & play. With BUPE, you dont need IT savvy staff, skilled in emerging tech and other cutting-edge tech-tools and platforms, hence road to transforming your business into digital is not a challenge anymore. 
+              <h3 class="title">No need of specialized &amp; trained staff to operate in BUPE.</h3>
+              <p>BUPE is plug &amp; play. With BUPE, you dont need IT savvy staff, skilled in emerging tech and other cutting-edge tech-tools and platforms, hence road to transforming your business into digital is not a challenge anymore. 
               </p>
             </div>
             <div class="details">
-              <h3 class="title">No need of specialized & trained staff to operate in BUPE.</h3>
-              <p>BUPE is plug & play. With BUPE, you dont need IT savvy staff, skilled in emerging tech and other cutting-edge tech-tools and platforms, hence road to transforming your business into digital is not a challenge anymore. 
+              <h3 class="title">Fully Managed and Cloud based</h3>
+              <p>
+The BUPE is a fully fledged solution which can be accessed from any where any time. All the servers, databases and backups are managed by our team complying with your information security policies and data protection regulations and we work with the best of the breed in the industry. 
               </p>
             </div>
           </div>
         </div>
-        <a href="" class="button get-quote">Get a Quote</a>
+        <router-link to="/demo" class="button get-quote">Get a Quote</router-link>
+        
       </div>
     </div>
   </div>
