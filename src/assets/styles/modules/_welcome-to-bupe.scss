@@ -1,6 +1,6 @@
 .welcome-to-bupe {
   background-color: $lightBlue;
-  padding: 1.25rem 0;
+  padding: 1.875rem 0 5.625rem;
 
   @include atSmall {
     padding: 1.875rem 0 5rem;
@@ -44,7 +44,9 @@
   }
 
   &__kpi-solutions {
-    text-align: center;
+    @include atSmall {
+      text-align: center;
+    }
 
     .tag {
       font-size: 0.938rem;
@@ -61,7 +63,7 @@
       font-weight: 700;
 
       @include atMedium {
-        font-size: 2.625rem;
+        font-size: 2.75rem;
         margin-bottom: 5.625rem;
       }
     }

@@ -169,6 +169,29 @@
         </div>
       </div>
     </div>
+      <div class="leaf">
+       <div class="leaf__left">
+         <img class="leaf__left-img" src="../assets/images/leaf-down.png" alt="">
+       </div>
+     </div>
+ 
+     <div class="leaf">
+       <div class="leaf__right">
+         <img class="leaf__right-img" src="../assets/images/leaf-right.png" alt="">
+       </div>
+     </div>
+ 
+     <div class="leaf">
+       <div class="leaf__left">
+         <img class="leaf__left-img leaf__left-img--why-bupe-left-2nd" src="../assets/images/leaf-up.png" alt="">
+       </div>
+     </div>
+ 
+     <div class="leaf">
+       <div class="leaf__right">
+         <img class="leaf__right-img" src="../assets/images/leaf-down.png" alt="">
+       </div>
+     </div>
   </section>
 </template>
 <script>

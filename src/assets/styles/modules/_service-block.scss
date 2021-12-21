@@ -1,12 +1,16 @@
 .service-block {
   &__logo {
-    max-width: 20%;
-    margin: auto;
-    display: block;
+    max-width: 10%;
+    float: left;
     margin-bottom: 0.625rem;
+    margin-right: 10px;
 
     @include atSmall {
       max-width: 15%;
+      margin: auto;
+      display: block;
+      margin-bottom: 0.625rem;
+      float: unset;
     }
 
     @include atMedium {
@@ -26,10 +30,10 @@
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.625rem;
-    text-align: center;
 
     @include atSmall {
       font-size: 1.125rem;
+      text-align: center;
     }
 
     @include atMedium {
@@ -44,9 +48,13 @@
 
   p {
     font-size: 1rem;
-    text-align: center;
     color: $black;
     font-weight: 500;
+    display: flex;
+
+    @include atSmall {
+      text-align: center;
+    }
 
     @include atMedium {
       font-size: 1.063rem;
@@ -60,7 +68,15 @@
     font-size: 1rem;
     font-weight: 400;
     margin: auto;
-    display: table;
+    display: block;
+    margin-left: 10%;
+    padding-left: 10px;
+
+    @include atSmall {
+      margin-left: unset;
+      padding-left: unset;
+      text-align: center;
+    }
 
     @include atMedium {
       font-size: 1.125rem;
