@@ -1,5 +1,5 @@
 <template>
- <div class="about-us">
+ <div class="about-us" id="aboutus">
     <div class="container">
       <h1 class="title">Companies do better with BUPE. Reaching their full potential.</h1>
       <p>Continuous performance optimization across the organization, at all level with better visibility, measurability with enough transparency in the performance domain.

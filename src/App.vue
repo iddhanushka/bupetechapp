@@ -1,5 +1,8 @@
 <template>
- <SiteHeader />
+ <SiteHeader  
+ button1="header.about.button1"
+ button2="header.about.button2"
+/>
 
   <router-view>
   </router-view>

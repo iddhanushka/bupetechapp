@@ -1,6 +1,6 @@
 <template>
-<section class="kpi-detail-tabs">
-    <div class="wrapper">
+<section class="shadow-sm kpi-detail-tabs border-top border-bottom">
+   
       <div class="kpi-detail-tabs__menu">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
@@ -20,8 +20,9 @@
           </li>
         </ul>
       </div>
-      
-      <div class="kpi-detail-tabs__content">
+     <div class="wrapper-container" :style="{backgroundImage:'url(' + require(`@/assets/images/kpi-solution-bg.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">  
+       <div class="wrapper">
+      <div class="kpi-detail-tabs__content"  >
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
             <div class="kpi-solution">
@@ -116,6 +117,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 </template>

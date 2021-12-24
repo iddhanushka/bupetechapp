@@ -1,7 +1,7 @@
 <template>
   <div class="leaf">
     <div class="leaf__left">
-      <img class="leaf__left-img" src="../assets/images/leaf-down.png" alt="" />
+      <img  :style="{top:'35%'}" class="leaf__left-img" src="../assets/images/leaf-down.png" alt="" />
     </div>
   </div>
 
@@ -11,6 +11,7 @@
         class="leaf__right-img"
         src="../assets/images/leaf-right.png"
         alt=""
+        :style="{top:'121%'}"
       />
     </div>
   </div>

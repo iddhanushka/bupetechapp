@@ -1,10 +1,7 @@
 .management-strategy {
   padding-bottom: 0;
 
-  @include atLarge {
-    padding: 1.875rem 0;
-  }
-
+ 
   &--no-pb {
     padding-bottom: unset;
   }
@@ -13,7 +10,7 @@
     padding-top: 0.9375rem;
 
     @include atLarge {
-      padding-top: 2.5rem;
+      padding-top: 4.5rem;
     }
 
     &--no-pt {

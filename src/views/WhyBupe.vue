@@ -50,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div class="management-strategy">
+        <div class="management-strategy strategy-top">
           <div class="row">
             <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
               <div class="management-strategy__details management-strategy__details--no-pt">
@@ -72,7 +72,7 @@
             </div>
           </div>
         </div>
-        <div class="management-strategy">
+        <div class="management-strategy strategy-top">
           <div class="row">
             <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__img">
@@ -94,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="management-strategy management-strategy--no-pb">
+        <div class="management-strategy  strategy-top management-strategy--no-pb">
           <div class="row">
             <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
               <div class="management-strategy__details management-strategy__details--no-pt">

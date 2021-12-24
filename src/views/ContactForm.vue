@@ -79,9 +79,9 @@
             <div class="description">
               <p>Contact us to learn more about</p>
               <ul class="des-list">
-                <li class="list-line">-Plans & Pricing</li>
-                <li class="list-line">-Product Features & Benefits</li>
-                <li class="list-line">-Training & Support Services</li>
+                <li class="list-line">-Plans &amp; Pricing</li>
+                <li class="list-line">-Product Features &amp; Benefits</li>
+                <li class="list-line">-Training &amp; Support Services</li>
                 <li class="list-line">-Software Integrations</li>
                 <li class="list-line">-Add-on features</li>
               </ul>

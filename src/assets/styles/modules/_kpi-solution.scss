@@ -41,7 +41,7 @@
 
       @include atSmall {
         font-size: 1.125rem;
-        text-align: center;
+    
       }
 
       @include atMedium {
@@ -61,7 +61,7 @@
       margin-bottom: unset;
 
       @include atSmall {
-        text-align: center;
+        //text-align: center;
         max-width: unset;
       }
 

@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="business-design">
+        <div class="business-design" id="features">
           <div class="row">
             <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
               <img class="business-design__img" src="../assets/images/stakeholders.png" alt="">

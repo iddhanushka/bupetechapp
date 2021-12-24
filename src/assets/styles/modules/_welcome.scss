@@ -52,7 +52,7 @@
       display: none;
 
       @include atSmall {
-        display: block;
+        //display: block;
       }
 
       @include atLarge {

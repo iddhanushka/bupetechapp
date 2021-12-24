@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+p{
+  font-family: "Inter", Helvetica, sans-serif;
+
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -44,4 +49,8 @@ img {
   font-size: 20px;
   font-weight: 500;
   border: 1px solid black;
+}
+
+.vu-fixed{
+  position: fixed;
 }

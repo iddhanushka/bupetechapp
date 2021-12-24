@@ -70,30 +70,30 @@
   }
 
   .leaf__left-img {
-    top: 60%;
+    //top: 60%;
 
     @include atDoubleExtraLarge {
       max-width: 10%;
-      top: 77%;
+     // top: 77%;
     }
 
     @include atCustomSize {
       max-width: 12%;
-      top: 35%;
+    //  top: 35%;
     }
   }
 
   .leaf__right-img {
-    top: 121%;
+   // top: 121%;
 
     @include atDoubleExtraLarge {
       max-width: 10%;
-      top: 142%;
+      //top: 142%;
     }
 
     @include atCustomSize {
       max-width: 12%;
-      top: 105%;
+      //top: 105%;
     }
   }
 }
