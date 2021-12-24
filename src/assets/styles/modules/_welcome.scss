@@ -9,7 +9,7 @@
 
   &__bg-video {
     position: absolute;
-    width: 92%;
+    width: 85%;
 
     video {
       width: 100%;
@@ -22,6 +22,10 @@
 
     @include atLarge {
       width: 37%;
+    }
+
+    @include atDoubleExtraLarge {
+      width: 42%;
     }
 
     @include atCustomSize {
@@ -37,25 +41,22 @@
       margin: auto;
       display: block;
 
-      @include atMedium {
-        max-width: 50%;
-      }
-
       @include atLarge {
-        max-width: 40%;
+        margin-right: 4.6875rem;
       }
     }
 
     .man {
-      max-width: 90%;
+      max-width: 60%;
       margin: auto;
-      display: block;
+      display: none;
 
       @include atSmall {
-        max-width: 70%;
+        //display: block;
       }
 
       @include atLarge {
+        max-width: 80%;
         margin: unset;
         display: unset;
       }
@@ -67,10 +68,10 @@
     text-transform: uppercase;
     font-weight: 500;
     margin-bottom: 0.438rem;
-    text-align: center;
 
     @include atSmall {
       font-size: 1.125rem;
+      text-align: center;
     }
 
     @include atLarge {
@@ -82,17 +83,17 @@
   &__title {
     font-size: 1.25rem;
     line-height: normal;
-    text-align: center;
     max-width: 100%;
     margin: auto;
     font-weight: 700;
 
     @include atSmall {
       font-size: 1.375rem;
+      text-align: center;
     }
 
     @include atMedium {
-      font-size: 2.625rem;
+      font-size: 2.75rem;
       line-height: 3.2rem;
       max-width: 35.625rem;
     }
@@ -108,10 +109,11 @@
   }
 
   &__action-btn {
-    display: block;
+    display: flex;
     list-style: none;
     padding-left: 0;
     margin-top: 1.25rem;
+    column-gap: 10px;
 
     @include atSmall {
       display: inline-flex;
@@ -127,10 +129,21 @@
     }
 
     .get-quote {
+      width: 50%;
       margin-bottom: 0.938rem;
+
       @include atSmall {
         margin-right: 1.75rem;
         margin-bottom: unset;
+        width: unset;
+      }
+    }
+
+    .watch-demo {
+      width: 50%;
+
+      @include atSmall {
+        width: unset;
       }
     }
   }
@@ -138,15 +151,21 @@
   .details {
     margin-top: 2.5rem;
 
-    @include atSmall {
-      margin-top: 0;
-    }
-
     @include atLarge {
       margin-top: 4.375rem;
     }
 
     &--organization {
+      margin-top: unset;
+
+      @include atSmall {
+        margin-top: 2.5rem;
+      }
+
+      @include atLarge {
+        padding-left: 4.375rem;
+      }
+
       @include atExtraLarge {
         position: relative;
         top: -1.875rem;

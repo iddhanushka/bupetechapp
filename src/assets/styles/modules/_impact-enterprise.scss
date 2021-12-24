@@ -33,13 +33,13 @@
 
       .tag {
         font-size: 0.9375rem;
-        text-align: center;
         text-transform: uppercase;
         font-weight: 500;
         margin-bottom: 0.438rem;
 
         @include atSmall {
           font-size: 18px;
+          text-align: center;
         }
 
         @include atLarge {
@@ -50,10 +50,13 @@
       .title {
         font-size: 1.25rem;
         font-weight: 700;
-        text-align: center;
+
+        @include atSmall {
+          text-align: center;
+        }
 
         @include atMedium {
-          font-size: 2.625rem;
+          font-size: 2.75rem;
         }
 
         @include atLarge {
@@ -64,9 +67,15 @@
   }
 
   .get-quote {
-    margin: auto;
-    display: block;
     margin-top: 40px;
+    width: 50%;
+
+    @include atSmall {
+      margin: auto;
+      display: block;
+      margin-top: 40px;
+      width: unset;
+    }
 
     @include atLarge {
       margin-top: 6.25rem;
@@ -90,6 +99,37 @@
           margin-bottom: unset;
         }
       }
+    }
+  }
+
+  .leaf__left-img {
+   // top: 400%;
+    max-width: 7%;
+
+    @include atDoubleExtraLarge {
+      max-width: 5%;
+     // top: 450%;
+    }
+
+    @include atCustomSize {
+      max-width: 10%;
+     // top: 313%;
+    }
+  }
+
+  .leaf__right-img {
+    transform: rotate(180deg);
+   // top: 322%;
+    max-width: 8%;
+
+    @include atDoubleExtraLarge {
+      max-width: 5%;
+      //top: 370%;
+    }
+
+    @include atCustomSize {
+      max-width: 10%;
+     // top: 235%;
     }
   }
 }

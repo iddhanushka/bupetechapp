@@ -89,7 +89,7 @@
                       />
                       <label
                         class="input-group-text upload-cv-btn"
-                        for="inputGroupFile02"
+                        for="upload"
                         >Upload CV</label
                       >
                     </div>
@@ -114,6 +114,7 @@
                 >
                   Apply
                 </button>
+                  <scale-loader :loading="loading" :color="color" :size="size"></scale-loader>
               </div>
             </form>
           </div>
@@ -139,12 +140,13 @@
 <script>
 import Captcha from "../components/Captcha.vue";
 import axios from "axios";
-
+ import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
 export default {
   name: "jobDescription",
   components: {
-    Captcha,
+    Captcha,ScaleLoader
   },
+ 
   data() {
     return {
       posts: {
@@ -156,11 +158,11 @@ export default {
         upload: null,
         job_name: null,
         job_id: null,
-        g_ecaptcha_response:null,
+        g_recaptcha_response:null,
         captchaVeryfied:false
       },
       jobDescription: null,
-      loading: true,
+      loading: false,
       errored: false,
     };
   },
@@ -169,7 +171,7 @@ export default {
   },
   methods: {
     getCapture(value) {
-      this.posts.g_ecaptcha_response=value;
+      this.posts.g_recaptcha_response=value;
     },
     getVerified(value) {
       this.posts.captchaVeryfied=value;
@@ -227,8 +229,8 @@ export default {
       formData.append("comment", this.posts.comment);
       formData.append("job_name", this.posts.job_name);
       formData.append("job_id", this.posts.job_id);
-      formData.append("g-ecaptcha-response",this.posts.g_ecaptcha_response);
-
+      formData.append("g-recaptcha-response",this.posts.g_recaptcha_response);
+    
       axios
         .post(`${process.env.VUE_APP_BASE_URL}/api/career/add`, formData, {
           headers: {

@@ -1,19 +1,22 @@
 .button {
   background-color: $green;
-  padding: 0.75rem 0.625rem;
+  padding: 0.5rem 0.625rem;
   color: $white;
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   border-radius: 0.1875rem;
-  height: 2.875rem;
   width: 100%;
   line-height: normal;
   text-align: center;
+  border: 0.125rem solid $green;
 
   @include atSmall {
-    width: 13.6875rem;
+    padding: 0.75rem 0.625rem;
+    width: 13.6875rem !important;
+    font-size: 1rem;
+    height: 2.875rem;
   }
 
   &:hover {
@@ -23,6 +26,7 @@
   &--blue {
     background-color: $blue;
     width: 100%;
+    border: 0.125rem solid $blue;
 
     @include atSmall {
       width: 12.4375rem;
@@ -37,7 +41,7 @@
     width: 100%;
 
     @include atSmall {
-      width: 12.4375rem;
+      width: 12.4375rem !important;
     }
 
     @include atMedium {

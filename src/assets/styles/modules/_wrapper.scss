@@ -1,8 +1,8 @@
 .wrapper {
   max-width: 1200px;
   margin: auto;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 
   @include atDoubleExtraLarge {
     max-width: 1370px;
@@ -23,7 +23,7 @@
     }
 
     @include atDoubleExtraLarge {
-      max-width: 1360px;
+      max-width: 1410px;
       padding-left: unset;
       padding-right: unset;
     }
@@ -36,7 +36,19 @@
 
 .container {
   &--custom-height {
-    min-height: 53.125rem;
-    position: relative;
+    @include atLarge {
+      min-height: 53.125rem;
+      position: relative;
+    }
+  }
+
+  &--custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @include atSmall {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
   }
 }

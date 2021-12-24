@@ -12,7 +12,7 @@
                 <div class="pricing-cal">
                   <h2 class="title">Price Calculator</h2>
                   <div class="form-block">
-                    <form class="row g-4" @submit="loadCalculation" method="post">
+                    <form class="row g-4"  method="post">
                       <div class="col-xl-6 ">
                         <label for="bUsers" class="form-label form-label--dark-green">No of BUPE Users</label>
                         <input type="number"  id="user_count"  class="form-control input-field" required v-model="posts.user_count" v-on:change="changedUserCount()">                         
@@ -21,7 +21,11 @@
                         <label for="bill" class="form-label form-label--dark-green">Select Annual or Monthly billing</label>
                         <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="posts.plan" v-on:change="onChangePlan($event)">
                           <option value="Monthly" selected>Monthly</option>
+<<<<<<< HEAD
                           <option value="Annually" >Annually</option>
+=======
+                          <option value="Annually">Annually</option>
+>>>>>>> c96a45724772f2002dfc6fc32d705eaf00e06d1e
                         </select>
                         <span class="save-percentage">Save 15% with annual commitment</span>
                       </div>
@@ -31,7 +35,7 @@
                       </div>
                       
                       <div class="col-xl-12">
-                        <button type="submit" class="button button--submit form-submit-btn">Get a Quote</button>
+                        <button @click="getQuote" class="button button--submit form-submit-btn">Get a Quote</button>
                       </div>
                     </form>
                   </div>
@@ -50,22 +54,28 @@
 <script>
 import contactDetails from "../components/ContactDetails";
 import axios from 'axios';
-
+import router from "../router";
 export default ({
   name:'ContactInf',
   components:{contactDetails},
   data(){
     return{
       posts:{
-        user_count:null,
-        plan:null,
+        user_count:40,
+        plan:'Monthly',
       },
       Pricing:null,
       loading: true,
       errored: false,
     }
   },
-  methods:{ 
+  methods:{
+    getQuote() {
+      router.push({
+        name: "ContactForm",
+       
+      });
+    }, 
     onChangePlan(){
       this.calculateRates();
     },
@@ -102,7 +112,10 @@ export default ({
   },
   mounted: function(){
       this.posts.plan = "Monthly";
+<<<<<<< HEAD
       console.warn(this.user_count);
+=======
+>>>>>>> c96a45724772f2002dfc6fc32d705eaf00e06d1e
       this.calculateRates();
   }
   

@@ -11,11 +11,13 @@
   }
 
   &__content {
+    margin-left:4.5rem;
     .tag {
       font-size: 0.9375rem;
       font-weight: 500;
       text-transform: uppercase;
       text-align: center;
+      
 
       @include atSmall {
         font-size: 1.125rem;
@@ -27,7 +29,7 @@
     }
 
     .title {
-      font-size: 1.25rem;
+      font-size: 2.5rem;
       font-weight: 700;
       text-align: center;
 
@@ -36,7 +38,7 @@
       }
 
       @include atMedium {
-        font-size: 2.25rem;
+        font-size: 2.5rem;
       }
 
       @include atLarge {
@@ -47,15 +49,16 @@
 
   &__video {
     margin-top: 0.9375rem;
+    margin-left:2rem;
 
     @include atLarge {
       margin-top: unset;
     }
   }
 
-  .strategy {
+  .strategy-top {
     @include atLarge {
-      margin-top: 2.5rem;
+      margin-top: 3.5rem;
     }
   }
 
@@ -75,7 +78,7 @@
     }
 
     .term-block {
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem;
 
       @include atMedium {
         margin-bottom: unset;
@@ -87,13 +90,13 @@
     }
 
     .title {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 700;
       text-align: center;
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem;
 
       @include atSmall {
-        font-size: 22px;
+        font-size: 1.375rem;
       }
 
       @include atLarge {
@@ -113,36 +116,45 @@
     }
 
     .train-main-block {
-      margin-top: 20px;
+      margin-top: 1.25rem;
 
       @include atLarge {
-        margin-top: 40px;
+        margin-top: 2.5rem;
       }
     }
 
     .lets-give-title {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 700;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 1.25rem;
 
       @include atMedium {
         font-size: 1.875rem;
       }
 
       @include atMedium {
-        margin-top: 50px;
+        margin-top: 3.125rem;
       }
     }
 
     .talk-us {
       margin: auto;
       display: block;
-      margin-top: 20px;
+      margin-top: 1.25rem;
 
       @include atLarge {
-        margin-top: 40px;
+        margin-top: 2.5rem;
       }
     }
+  }
+
+  .leaf__left-img {
+    left: 0;
+    top: 75%;
+  }
+
+  .leaf__right-img {
+    top: 133%;
   }
 }

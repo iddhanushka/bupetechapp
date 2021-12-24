@@ -52,6 +52,7 @@ export default {
     button1: String,
     button2: String,
   },
+
 };
 </script>
 

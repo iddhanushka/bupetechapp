@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+p{
+  font-family: "Inter", Helvetica, sans-serif;
+
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -22,4 +27,30 @@ img {
   @include atLarge {
     display: unset;
   }
+}
+
+.toast-success{
+  background-color: $purple; 
+  max-width: max-content;
+  padding: 15px;
+  color: $white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+.toast-failed{
+  background-color: $red; 
+  max-width: max-content;
+  padding: 15px;
+  color: $white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+.vu-fixed{
+  position: fixed;
 }

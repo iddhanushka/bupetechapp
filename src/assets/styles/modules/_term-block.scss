@@ -1,6 +1,6 @@
 .term-block {
   background-color: $darkWhite;
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
   height: 100%;
@@ -23,7 +23,7 @@
   }
 
   &__title {
-    font-size: 18px !important;
+    font-size: 1.125rem !important;
     font-weight: 700;
     color: $darkBlue;
     margin-bottom: 1.25rem;

@@ -59,48 +59,104 @@
 }
 
 .contact-info {
-  padding: 4.375rem 0;
+  padding: 30px 0;
   background-color: $lightWhite;
 
+  @include atMedium {
+    padding: 40px 0;
+  }
+
+  @include atLarge {
+    padding: 4.375rem 0;
+  }
+
   .main-title {
-    font-size: 1.875rem;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 2.5rem;
+
+    @include atSmall {
+      font-size: 22px;
+    }
+
+    @include atMedium {
+      font-size: 1.875rem;
+    }
   }
 
   .region-name {
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 700;
-    margin-bottom: 3.125rem;
+    margin-bottom: 20px;
+
+    @include atSmall {
+      font-size: 22px;
+    }
+
+    @include atLarge {
+      font-size: 1.5rem;
+      margin-bottom: 3.125rem;
+    }
   }
 
   .address {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: $darkGreen;
+
+    @include atMedium {
+      font-size: 1.25rem;
+    }
   }
 
   .tel-nbr {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: $darkGreen;
     text-decoration: none;
+
+    @include atMedium {
+      font-size: 1.25rem;
+    }
   }
 
   .asian {
     &:not(:last-child) {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+
+      @include atMedium {
+        margin-bottom: 50px;
+      }
     }
   }
 
   .country-name {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+
+    @include atSmall {
+      margin-bottom: 30px;
+    }
+
+    @include atLarge {
+      font-size: 20px;
+    }
   }
 
   .country {
-    padding-left: 2.5rem;
+    margin-bottom: 20px;
+
+    &--no-mb {
+      margin-bottom: unset;
+    }
+
+    @include atLarge {
+      padding-left: 2.5rem;
+    }
 
     &--align-right {
-      float: right;
+      @include atMedium {
+        float: right;
+      }
     }
   }
 }
