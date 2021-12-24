@@ -112,10 +112,6 @@ export default ({
   },
   mounted: function(){
       this.posts.plan = "Monthly";
-<<<<<<< HEAD
-      console.warn(this.user_count);
-=======
->>>>>>> c96a45724772f2002dfc6fc32d705eaf00e06d1e
       this.calculateRates();
   }
   
