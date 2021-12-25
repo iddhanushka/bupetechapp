@@ -1,21 +1,62 @@
 {
+  "header": {
+    "product":{
+    "title":"PHILOSOPHY",
+    "sub_title":"BUPE Solution",
+    "desc":"Several studies confirm that practitioners are generally dissatisfied with the performance measurement systems and performance measures in use today. Learn more about our philosophy behind BUPE Solution",
+    "teaser1_title":"Benefits",
+    "teaser2_title":"Features",
+    "teaser1_desc":"From Planning to measuring and management. See all the benefits.",
+    "teaser2_desc":"Learn more about ever expanding set of features we offer while learning from customers about their requirements",
+    "button1":"Watch a Demo",
+    "button2":"Talk to us"
+    },
+    "about":{
+      "title":"OVERVIEW",
+      "sub_title":"Business Problems We Solve",
+      "desc":"It is our approach to the problem enabled us to deliver a better product in most aspects. Learn why organizations love our solution by knowing more in to the approach we perfected over time.",
+      "teaser1_title":"How we deliver",
+      "teaser2_title":"Our core values",
+      "teaser1_desc":"When it comes to BUPE solution, It is a journey for us to go together. Learn how this happens.",
+      "teaser2_desc":"Grow together innovatively with right partnerships. Your satisfaction is our goal.",
+      "button1":"Watch a Demo",
+      "button2":"Talk to us"
+      },
+      "resources":{
+        "title":"OVERVIEW",
+        "sub_title":"Modularization",
+        "desc":"BUPE solution designed around multiple modules. There are core modules and some optional modules which are made available according to your requirement. Learn more about how all of them fit together.",
+        "teaser1_title":"Core Modules",
+        "teaser2_title":"Optional Modules",
+        "teaser1_desc":"These modules must have to modules which delivers the main functionality of our offering.",
+        "teaser2_desc":"Optional modules are mainly for extended functionality and integrations with your existing business platforms.",
+        "button1":"Watch a Demo",
+        "button2":"Talk to us"
+        }
+  },
   "home": {
     "welcome_bupe": {
       "tag": "Welcome to bupe",
       "title": "Performance measured right, continuosly exactly.",
-      "button1":"Get a Quote",
-      "button2":"Watch a Demo"
+      "button1": "Get a Quote",
+      "button2": "Watch a Demo"
     },
-    "get_a_quote":{
-      "tag":"Organization to thrive, people to perfor",
-      "title":"To launch with a strategy is to set goals to people, is BUPE.",
-      "button1":"Learn more",
-      "button2":"Get a Quote"
+    "get_a_quote": {
+      "tag": "Organization to thrive, people to perform",
+      "title": "To launch with a strategy is to set goals to people, is BUPE.",
+      "button1": "Learn more",
+      "button2": "Get a Quote"
     },
-    "kpi-solutions":{
-      "tag":"Kpi solution perspectives",
-      "title":"For your work at any level any scale"
+    "kpi-solutions": {
+      "tag": "Kpi solution perspectives",
+      "title": "For your work at any level any scale"
     }
-
+  },
+  "about": {
+    "bio1": "Professional career spans over 20 years, with 17 years in Life Insurance Operations including 7 years at AIA Sri Lanka and three years of Marketing and Sales exposure in London. Currently functioning as the Deputy COO of HNB Assurance PLC. Before joining HNBA was working as the General Manager, Life Operations and the Specified Officer of Softlogic Life Insurance . Has a vast spectrum of expertise in Life and Health Insurance Underwriting, Servicing, Claims, Product Development, Reinsurance and Customer Service. 1",
+    "bio2": "Professional career spans over 20 years, with 17 years in Life Insurance Operations including 7 years at AIA Sri Lanka and three years of Marketing and Sales exposure in London. Currently functioning as the Deputy COO of HNB Assurance PLC. Before joining HNBA was working as the General Manager, Life Operations and the Specified Officer of Softlogic Life Insurance . Has a vast spectrum of expertise in Life and Health Insurance Underwriting, Servicing, Claims, Product Development, Reinsurance and Customer Service. 2",
+    "bio3": "Professional career spans over 20 years, with 17 years in Life Insurance Operations including 7 years at AIA Sri Lanka and three years of Marketing and Sales exposure in London. Currently functioning as the Deputy COO of HNB Assurance PLC. Before joining HNBA was working as the General Manager, Life Operations and the Specified Officer of Softlogic Life Insurance . Has a vast spectrum of expertise in Life and Health Insurance Underwriting, Servicing, Claims, Product Development, Reinsurance and Customer Service. 3",
+    "bio4": "Professional career spans over 20 years, with 17 years in Life Insurance Operations including 7 years at AIA Sri Lanka and three years of Marketing and Sales exposure in London. Currently functioning as the Deputy COO of HNB Assurance PLC. Before joining HNBA was working as the General Manager, Life Operations and the Specified Officer of Softlogic Life Insurance . Has a vast spectrum of expertise in Life and Health Insurance Underwriting, Servicing, Claims, Product Development, Reinsurance and Customer Service. 4",
+    "bio5": "Professional career spans over 20 years, with 17 years in Life Insurance Operations including 7 years at AIA Sri Lanka and three years of Marketing and Sales exposure in London. Currently functioning as the Deputy COO of HNB Assurance PLC. Before joining HNBA was working as the General Manager, Life Operations and the Specified Officer of Softlogic Life Insurance . Has a vast spectrum of expertise in Life and Health Insurance Underwriting, Servicing, Claims, Product Development, Reinsurance and Customer Service.  5"
   }
 }

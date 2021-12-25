@@ -55,7 +55,7 @@
                     <li class="list-item"><a href="" class="list-link">How to Contact Us</a></li>
                     <li class="list-item"><a href="" class="list-link">English Version Controls</a></li>
                   </ul>
-                  <div class="privacy-notice-box">
+                  <div class="privacy-notice-box" >
                     <h3 class="title">Who We Are</h3>
                     <p>Bupe Tech is headquartered in Washington state, with various other offices in the United States. You can learn about us and our Offerings here.</p>
                     <p>Bupe Tech may share personal data with our affiliated companies, including but not limited to Smartsheet UK Limited, Smartsheet Australia Pty Limited, and Brandfolder, Inc. (a full list is available here) for our or our affiliates’ internal business purposes (e.g., when you use or purchase an affiliate’s services, when you apply to one of our global offices, etc.), marketing similar products, or for other legal requirements. A reference to "Smartsheet," "we," or "us" is a reference to Smartsheet Inc. and the relevant affiliate involved in the processing activity.</p>
@@ -86,3 +86,54 @@
     </div>
   </div>
 </template>
+
+<script>
+
+import axios from 'axios';
+export default ({
+  name:'PrivarcyTerms',
+  data(){
+    return{
+      posts:{
+        type:'privacy'
+      },
+      Pricing:null,
+      loading: true,
+      errored: false,
+    }
+  },
+  methods:{
+  getDocument(type){
+      if(!this.posts.user_count){
+        this.posts.user_count = 1;
+      }
+      axios.post(`${process.env.VUE_APP_BASE_URL}/api/document/index`, {type})
+            .then((response)=>{                            
+              if(response.status === 200){
+                  this.contents = response.data.contents ;
+              } else {
+                  this.$toast.show('Unable to procceed, Please check your Given details. ', {
+                      type: 'success',
+                      position: 'top-left',
+                      className:'toast-failed',
+                  });
+              }
+            })
+            .catch((error)=>{                 
+                for (var key in error.response.data.errors) {                    
+                  this.$toast.show(error.response.data.errors[key], {
+                    type: 'error',
+                    position: 'top-left',
+                    pauseOnHover: true,
+                    className:'toast-failed',
+                  });
+              }
+            })
+    }},
+  mounted: function(){
+  
+      this.posts.plan = "Monthly";
+      this.getDocument('privacy');
+  }
+  })
+  </script>

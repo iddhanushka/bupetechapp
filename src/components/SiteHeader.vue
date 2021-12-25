@@ -1,82 +1,267 @@
 <template>
   <header class="site-header">
     <div class="wrapper wrapper--header">
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-light
+          bg-faded
+          navbar-toggleable-md
+        "
+      >
         <div class="container-fluid">
           <div class="site-header__menubar">
             <div class="site-logo">
-              <a class="navbar-brand" href="#"><img class="logo" src="../assets/images/bupetech-logo.png" alt=""></a>
+              <router-link class="navbar-brand" to="/"
+                ><img
+                  class="logo"
+                  :src="require(`@/assets/images/bupetech-logo.png`)"
+                  alt=""
+              /></router-link>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button
+              class="navbar-toggler navbar-toggler-right collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              ref="breadmenu"
+            >
+              <span @click="destroyed" class="close">x</span>
+              <span @click="mounted" class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <div class="collapse navbar-collapse"  ref="navbarNavDropdown" id="navbarNavDropdown">
               <ul class="navbar-nav">
-                <li class="nav-item menu-list">
-                  <a class="nav-link active menu-name" aria-current="page" href="#">Why BUPE</a>
+                <li  :class="[$route.name=='WhyBupe'?'nav-item menu-list active':'nav-item menu-list']">
+                  <a
+                     href="#"
+                    @click="go('/why-bupe')"
+                     class="nav-link menu-name"
+                    aria-current="page"
+                 
+                    >Why BUPE </a>
                   <div class="underline"></div>
                 </li>
-                <li class="nav-item menu-list">
-                  <a class="nav-link menu-name" href="#">Product</a>
-                  <div class="underline"></div>
-                </li>
-                <li class="nav-item dropdown menu-list">
-                  <a class="nav-link menu-name dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Modules
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item menu-name" href="#">Action</a></li>
-                    <li><a class="dropdown-item menu-name" href="#">Another action</a></li>
+                <li :class="[$route.name=='Product'?'nav-item dropdown active':'nav-item dropdown menu-list']" >
+                  <router-link
+                    class="nav-link menu-name dropdown-toggle"
+                    to="#"
+                    id="productMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    
+                   
+                  >
+                    Product
+                  </router-link>
+                   <div class="underline"></div>
+                  <ul
+                    class="dropdown-menu modules-submenu"
+                    aria-labelledby="productMenuLink"
+                  >
+                    <li>
+                      <MenuPopup
+                        button1="header.product.button1"
+                        button2="header.product.button2"
+                        teaser1_src="resources_2nd.png"
+                        teaser2_src="product_2nd.png"
+                        title="header.product.title"
+                        sub_title="header.product.sub_title"
+                        desc="header.product.desc"
+                        teaser2_title="header.product.teaser1_title"
+                        teaser1_title="header.product.teaser2_title"
+                        teaser2_desc="header.product.teaser1_desc"
+                        teaser1_desc="header.product.teaser2_desc"
+                        sub_link="/product"
+                        teaser1_link="/product"
+                        teaser2_link="/product"
+                        teaser1_target="#learn_more"
+                        teaser2_target="#features"
+                        @close="closeWindow"
+                      />
+                    </li>
                   </ul>
                 </li>
-                <!-- <li class="nav-item menu-list">
-                  <a class="nav-link menu-name" href="#">Modules</a>
-                  <div class="underline"></div>
-                </li> -->
-                <li class="nav-item menu-list">
-                  <a class="nav-link menu-name" href="#">About</a>
+                <li :class="[$route.name=='Training' || $route.name=='Privacy'?'nav-item dropdown active':'nav-item dropdown menu-list']">
+                  <router-link
+                    class="nav-link menu-name dropdown-toggle"
+                    to="#"
+                    id="resoursesMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                   
+                  >
+                    Resources
+                  </router-link>
+                   <div class="underline"></div>
+                  <ul
+                    class="dropdown-menu modules-submenu"
+                    aria-labelledby="resoursesMenuLink"
+                  >
+                    <li>
+                      <MenuPopup
+                        button1="header.resources.button1"
+                        button2="header.resources.button2"
+                        title="header.resources.title"
+                        sub_title="header.resources.sub_title"
+                        teaser1_src="product_1st.png"
+                        teaser2_src="product_2nd.png"
+                        desc="header.resources.desc"
+                        teaser1_title="header.resources.teaser1_title"
+                        teaser2_title="header.resources.teaser2_title"
+                        teaser1_desc="header.resources.teaser1_desc"
+                        teaser2_desc="header.resources.teaser2_desc"
+                        teaser1_link="/training"
+                        teaser2_link="/legal"
+                         @close="closeWindow"
+                      />
+                    </li>
+                  </ul>
+                </li>
+
+                <li :class="[$route.name=='About'?'nav-item dropdown active':'nav-item dropdown menu-list']">
+                  <router-link
+                    class="nav-link menu-name dropdown-toggle"
+                    to="#"
+                    id="aboutMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    
+                  >
+                    About
+                  </router-link>
+                   <div class="underline"></div>
+                  <ul
+                    class="dropdown-menu modules-submenu"
+                    aria-labelledby="aboutMenuLink"
+                  >
+                    <li>
+                      <MenuPopup
+                        button1="header.about.button1"
+                        button2="header.about.button2"
+                        title="header.about.title"
+                        sub_title="header.about.sub_title"
+                        desc="header.about.desc"
+                        teaser1_title="header.about.teaser1_title"
+                        teaser1_src="resources_1st.png"
+                        teaser2_src="resources_3rd.png"
+                        teaser2_title="header.about.teaser2_title"
+                        teaser1_desc="header.about.teaser1_desc"
+                        teaser2_desc="header.about.teaser2_desc"
+                        sub_link="/about"
+                        teaser1_link="/about"
+                        teaser2_link="/about"
+                        teaser1_target="#aboutus"
+                        teaser2_target="#leadership"
+                         @close="closeWindow"
+                      />
+                    </li>
+                  </ul>
+                </li>
+                <li  :class="[$route.name=='Pricing'?'nav-item menu-list active':'nav-item menu-list']">
+                  <a
+                    href="#"
+                    class="nav-link menu-name"
+                    @click="go('/pricing')"
+                    
+                    >Pricing</a>
                   <div class="underline"></div>
                 </li>
-                <li class="nav-item menu-list">
-                  <a class="nav-link menu-name" href="#">Pricing</a>
+                <li   :class="[$route.name=='Contact'?'nav-item menu-list bottom-border active':'nav-item menu-list bottom-border']" >
+                  <a
+                    href="#"
+                    class="nav-link menu-name"
+                    @click="go('/contact')"
+                    
+                    >Contact</a>
                   <div class="underline"></div>
                 </li>
-                <li class="nav-item menu-list">
-                  <a class="nav-link menu-name" href="#">Contact</a>
-                  <div class="underline"></div>
+                 <li class="nav-item menu-list nav-item__mobile-only">
+                   
+           <div class="column-m">
+           <button @click="go('/demo')" class="button button--blue">{{$t(button1)}}</button>{{" "}}
+
+           <button @click="go('/contact-form')" class="button button--no-background">{{$t(button2)}}</button>
+              
+  
+         </div>
                 </li>
               </ul>
             </div>
           </div>
           <div class="site-header__options">
-            <a class="get-quote button button--header" href="">Get a Quote</a>
-            <!-- <a href="" class="search"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg></a> -->
-            <a href="" class="login">Login</a>
+            <router-link
+              class="get-quote button button--header"
+              :to="{ name: 'ContactForm', params: { target: 1 } }"
+              >Get a Quote</router-link
+            >
+
+            <router-link to="" class="login">Login</router-link>
           </div>
         </div>
       </nav>
     </div>
+
   </header>
+  <TopLeaf  :topLeft="$route.meta.topLeft" :topRight="$route.meta.topRight"  />
+   <BottomLeaf  :bottomLeft="$route.meta.bottomLeft" :bottomRight="$route.meta.bottomRight" />
 </template>
 
 <script>
+import router from "../router";
+import MenuPopup from "@/components/MenuPopup.vue";
+import TopLeaf from '@/components/TopLeaf.vue';
+import BottomLeaf from '@/components/BottomLeaf.vue';
 export default {
-  name: 'SiteHeader',
+  name: "SiteHeader",
+  components: { MenuPopup,TopLeaf,BottomLeaf },
+  methods: {
+    toggleBodyClass(addRemoveClass, className) {
+      const el = document.body;
+
+      if (addRemoveClass === "addClass") {
+        el.classList.add(className);
+      } else {
+        el.classList.remove(className);
+      }
+    },
+    mounted() {
+      this.toggleBodyClass("addClass", "vu-fixed");
+    },
+    destroyed() {
+      this.toggleBodyClass("removeClass", "vu-fixed");
+    },
+    closeWindow() {
+      const el =this.$refs.navbarNavDropdown;
+      const fl =this.$refs.breadmenu;
+      el.classList.remove('show');
+      fl.classList.add('collapsed');
+      this. destroyed();
+
+    },
+    go(rname) {
+   
+     this.closeWindow();
+     this. destroyed();
+     if (rname)   
+      router.push({
+        path:rname,
+
+      });
+    },
+
+  },
+
   props: {
-   // tag: String,
-   // title: String,
-      imagename: String,
-   // button1: String,
-   // button2: String
 
-  }
-}
+    button1: String,
+    button2: String
+  },
+};
 </script>
-
-<style lang="scss">
- @import "../assets/styles/modules/_site-header.scss";
-
-</style>
 

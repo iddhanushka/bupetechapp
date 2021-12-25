@@ -1,33 +1,70 @@
 .corevalue-block {
   .list {
-    display: flex;
     list-style: none;
     padding-left: 0;
+
+    @include atSmall {
+      display: flex;
+    }
   }
 
   .left-list {
     width: 100%;
     margin-right: 15px;
+
+    @include atSmall {
+      width: 40%;
+    }
+
+    @include atMedium {
+      width: 20%;
+    }
+
+    @include atLarge {
+      width: 100%;
+    }
   }
 
   .right-list {
     p {
-      text-align: left;
+      text-align: center;
       max-width: unset;
       font-size: 1rem;
       color: $darkGreen;
       margin-bottom: unset;
+
+      @include atSmall {
+        text-align: unset;
+      }
     }
   }
 
   &__icon {
-    max-width: 90%;
-    width: 100%;
+    max-width: 15%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+
+    @include atSmall {
+      margin: unset;
+      display: unset;
+      max-width: 100%;
+    }
+
+    @include atLarge {
+      max-width: 90%;
+      margin-bottom: unset;
+    }
   }
 
   &__title {
     font-size: 1rem;
     font-weight: 700;
     color: darkblue;
+    text-align: center;
+
+    @include atSmall {
+      text-align: unset;
+    }
   }
 }

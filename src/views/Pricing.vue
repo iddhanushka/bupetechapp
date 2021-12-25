@@ -12,7 +12,7 @@
                 <div class="pricing-cal">
                   <h2 class="title">Price Calculator</h2>
                   <div class="form-block">
-                    <form class="row g-4" @submit="loadCalculation" method="post">
+                    <form class="row g-4"  method="post">
                       <div class="col-xl-6 ">
                         <label for="bUsers" class="form-label form-label--dark-green">No of BUPE Users</label>
                         <input type="number"  id="user_count"  class="form-control input-field" required v-model="posts.user_count" v-on:change="changedUserCount()">                         
@@ -20,18 +20,18 @@
                       <div class="col-xl-6">
                         <label for="bill" class="form-label form-label--dark-green">Select Annual or Monthly billing</label>
                         <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="posts.plan" v-on:change="onChangePlan($event)">
-                          <option value="monthly" selected>Monthly</option>
-                          <option value="annually">Annually</option>
+                          <option value="Monthly" selected>Monthly</option>
+                          <option value="Annually">Annually</option>
                         </select>
                         <span class="save-percentage">Save 15% with annual commitment</span>
                       </div>
                       <div class="col-xl-12">
                         <h5 class="total-cost">Total Estimated Cost</h5>
-                        <h3 class="amount">{{this.Pricing}} <span class="month">/month</span></h3>
+                        <h3 class="amount">{{this.Pricing}} <span class="month">/{{posts.plan}}</span></h3>
                       </div>
                       
                       <div class="col-xl-12">
-                        <button type="submit" class="button button--submit form-submit-btn">Get a Quote</button>
+                        <button @click="getQuote" class="button button--submit form-submit-btn">Get a Quote</button>
                       </div>
                     </form>
                   </div>
@@ -50,22 +50,28 @@
 <script>
 import contactDetails from "../components/ContactDetails";
 import axios from 'axios';
-
+import router from "../router";
 export default ({
   name:'ContactInf',
   components:{contactDetails},
   data(){
     return{
       posts:{
-        user_count:null,
-        plan:null,
+        user_count:40,
+        plan:'Monthly',
       },
       Pricing:null,
       loading: true,
       errored: false,
     }
   },
-  methods:{ 
+  methods:{
+    getQuote() {
+      router.push({
+        name: "ContactForm",
+       
+      });
+    }, 
     onChangePlan(){
       this.calculateRates();
     },
@@ -74,7 +80,7 @@ export default ({
     },
     calculateRates(){
       if(!this.posts.user_count){
-        this.posts.user_count = 1;
+        this.posts.user_count = 40;
       }
       axios.post(`${process.env.VUE_APP_BASE_URL}/api/price/view`, this.posts)
             .then((response)=>{                            
@@ -101,8 +107,7 @@ export default ({
     }
   },
   mounted: function(){
-      this.posts.plan = "monthly";
-      console.warn(this.user_count);
+      this.posts.plan = "Monthly";
       this.calculateRates();
   }
   

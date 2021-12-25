@@ -1,9 +1,24 @@
 .business-design {
-  padding-top: 1.875rem;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @include atLarge {
+      margin-bottom: unset;
+    }
+  }
+
+  @include atSmall {
+    padding-top: 1.875rem;
+  }
   .list {
     padding-left: 0;
     list-style: none;
-    display: flex;
+    text-align: center;
+
+    @include atSmall {
+      display: flex;
+      text-align: unset;
+    }
   }
 
   .left-list-item {
@@ -12,6 +27,12 @@
 
   &__icon {
     max-width: 90px;
+    width: auto;
+    margin-bottom: 15px;
+
+    @include atSmall {
+      margin-bottom: unset;
+    }
   }
 
   &__title {

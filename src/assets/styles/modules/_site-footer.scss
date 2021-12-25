@@ -97,8 +97,8 @@
     }
 
     .sm-icon {
-      width: 1.6875rem;
-      height: 1.6875rem;
+      width: 2.0625rem;
+      height: 2.0625rem;
       border-radius: 50%;
       margin: 0 0.4375rem;
       margin-top: 0.625rem;
@@ -114,8 +114,8 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        top: 1px;
-        width: 0.8125rem;
+        top: 4px;
+        width: 1.125rem;
 
         @include atMedium {
           top: 0.189rem;
@@ -140,4 +140,13 @@
       }
     }
   }
+
+  /*.leaf__left-img {
+    display: none;
+
+    @include atLarge {
+      max-width: 8%;
+      display: block;
+    }
+  }*/
 }

@@ -15,7 +15,7 @@
                   <h4 class="careers__subtitle">Careers at bupe tech</h4>
                   <h3 class="careers__title">Step in to explore the wealth of career opportunities and take your career to the next level</h3>
                   <p>We have job openings available in the Singapore and Australia, including remote options. Perhaps you're looking for a more flexible way of working, a company that cares about your well-being, or a chance to really progress your career. We value s inclusion and diversity across our oraganization and that makes our view broader and equip us better to deliver the best.</p>
-                  <router-link to="/career-form" class="button careers__ap-btn">See Available Positions</router-link>
+                  <router-link to="#careers" class="button careers__ap-btn">See Available Positions</router-link>
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 <template>
-<section class="kpi-detail-tabs">
-    <div class="wrapper">
+<section class="shadow-sm kpi-detail-tabs border-top border-bottom">
+   
       <div class="kpi-detail-tabs__menu">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
@@ -20,21 +20,22 @@
           </li>
         </ul>
       </div>
-      
-      <div class="kpi-detail-tabs__content">
+     <div class="wrapper-container" :style="{backgroundImage:'url(' + require(`@/assets/images/kpi-solution-bg.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">  
+       <div class="wrapper">
+      <div class="kpi-detail-tabs__content"  >
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
             <div class="kpi-solution">
               <div class="row">
                 <div class="col-xl-5 d-flex align-items-center">
                   <div class="kpi-solution__img">
-                    <video style="width:100%" class="elementor-video" src="https://www.bupetech.com/wp-content/uploads/2021/01/BUPE-1080p-210127.mp4" controls="" controlslist="nodownload" poster="https://www.bupetech.com/wp-content/uploads/2021/02/Introduction_to_bupe.jpg"></video>
+                    <video style="width:100%" class="elementor-video" :src="overview_video_url" controls="" controlslist="nodownload" poster="https://www.bupetech.com/wp-content/uploads/2021/02/Introduction_to_bupe.jpg"></video>
                   </div>
                 </div>
     
                 <div class="col-xl-7">
                   <div class="kpi-solution__content">
-                    <h1 class="title">Brings buisness & people together, connecting every individual with strategic objectives.</h1>
+                    <h1 class="title">Brings buisness &amp; people together, connecting every individual with strategic objectives.</h1>
                     <p>A single solution to Plan, Measure and Manage business performance.</p>
                     <p>At top level, organization layout the buisness strategy. Our solution will make sure aligning and empowering every individual within oraganization to achieve desired goals.</p>
                   </div>
@@ -117,12 +118,19 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 </template>
 
 <script>
 export default {
   name: 'KpiDetailTabs',
+  data() {
+    return {
+     overview_video_url: process.env.VUE_APP_OVERVIEW_VIDEO_URL,
+
+    };
+  },
  /* props: {
     msg: String
   }*/
