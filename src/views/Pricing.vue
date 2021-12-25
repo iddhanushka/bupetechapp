@@ -21,11 +21,7 @@
                         <label for="bill" class="form-label form-label--dark-green">Select Annual or Monthly billing</label>
                         <select id="inputState" class="form-select selector-field selector-field--dark-green selector-field--bold"  required v-model="posts.plan" v-on:change="onChangePlan($event)">
                           <option value="Monthly" selected>Monthly</option>
-<<<<<<< HEAD
-                          <option value="Annually" >Annually</option>
-=======
                           <option value="Annually">Annually</option>
->>>>>>> c96a45724772f2002dfc6fc32d705eaf00e06d1e
                         </select>
                         <span class="save-percentage">Save 15% with annual commitment</span>
                       </div>
