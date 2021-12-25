@@ -9,7 +9,7 @@
                 <div class="asian">
                     <h2 class="region-name">Asian Region</h2>
                     <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <div class="country">
                         <h3 class="country-name">Singapore</h3>
                         <h4 class="address">
@@ -21,7 +21,7 @@
                         <a href="tel:+" class="tel-nbr">+61 (2) 90558255</a>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <div class="country country--align-right">
                         <h3 class="country-name">Sri Lanka</h3>
                         <h4 class="address">
@@ -38,7 +38,7 @@
                 <div class="asian">
                     <h2 class="region-name">Oceania Region</h2>
                     <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <div class="country">
                         <h3 class="country-name">Austrailia</h3>
                         <h4 class="address">

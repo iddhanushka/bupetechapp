@@ -41,7 +41,10 @@
   .form-submit-btn {
     margin: auto;
     display: block;
-    margin-top: 1.25rem;
+
+    @include atLarge {
+      margin-top: 1.25rem;
+    }
 
     &--align-left {
       margin-left: 0;
@@ -51,7 +54,10 @@
   .selector-field {
     border: 1px solid $lightGray;
     border-radius: 0.5rem;
-    height: 2.848rem;
+
+    @include atLarge {
+      height: 2.848rem;
+    }
 
     &:focus {
       box-shadow: none;
