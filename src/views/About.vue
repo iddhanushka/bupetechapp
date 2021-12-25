@@ -28,7 +28,7 @@
 </ol>
       </div>
       <div class="row">
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4">
           <div class="corevalue-block">
             <ul class="list">
               <li class="left-list"><img class="corevalue-block__icon" src="../assets/images/innovation-icon.png" alt=""></li>
@@ -39,7 +39,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4">
           <div class="corevalue-block">
             <ul class="list">
               <li class="left-list"><img class="corevalue-block__icon" src="../assets/images/hand-icon.png" alt=""></li>
@@ -50,7 +50,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4">
           <div class="corevalue-block">
             <ul class="list">
               <li class="left-list"><img class="corevalue-block__icon" src="../assets/images/hand-icon.png" alt=""></li>

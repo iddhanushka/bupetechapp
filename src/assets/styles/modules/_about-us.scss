@@ -14,11 +14,11 @@
     font-size: 20px;
     font-weight: 700;
     color: $darkBlue;
-    text-align: center;
     margin-bottom: 15px;
 
     @include atSmall {
       font-size: 22px;
+      text-align: center;
     }
 
     @include atMedium {
@@ -26,25 +26,17 @@
       margin-bottom: 1.875rem;
     }
   }
-  
-  li{
-    font-size: 1rem;
-    color: #464646;
-    font-weight: 400;
-    @include atLarge {
-      font-size: 1.375rem;
-      max-width: 80%;
-      margin-bottom: 1rem;
-    }
-  }
 
-  p{
+  p {
     font-size: 1rem;
     color: #464646;
-    text-align: center;
     font-weight: 400;
     margin: auto;
     margin-bottom: 20px;
+
+    @include atSmall {
+      text-align: center;
+    }
 
     @include atLarge {
       font-size: 1.375rem;
@@ -63,10 +55,10 @@
       font-weight: 700;
       color: $darkBlue;
       margin-bottom: 0.625rem;
-      text-align: center;
 
       @include atSmall {
         font-size: 22px;
+        text-align: center;
       }
 
       @include atMedium {
@@ -79,7 +71,6 @@
     }
 
     p {
-      text-align: center;
       max-width: unset;
 
       @include atLarge {
@@ -98,11 +89,11 @@
     .title {
       font-size: 20px;
       font-weight: 700;
-      text-align: center;
       margin-bottom: 20px;
 
       @include atSmall {
         font-size: 22px;
+        text-align: center;
       }
 
       @include atLarge {

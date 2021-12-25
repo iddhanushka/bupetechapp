@@ -2,10 +2,7 @@
   .list {
     list-style: none;
     padding-left: 0;
-
-    @include atSmall {
-      display: flex;
-    }
+    display: flex;
   }
 
   .left-list {
@@ -27,28 +24,20 @@
 
   .right-list {
     p {
-      text-align: center;
-      max-width: unset;
       font-size: 1rem;
       color: $darkGreen;
       margin-bottom: unset;
-
-      @include atSmall {
-        text-align: unset;
-      }
+      text-align: left;
+      max-width: 100%;
     }
   }
 
   &__icon {
-    max-width: 15%;
-    margin: auto;
-    display: block;
     margin-bottom: 15px;
 
     @include atSmall {
-      margin: unset;
-      display: unset;
-      max-width: 100%;
+      margin: auto;
+      display: block;
     }
 
     @include atLarge {
@@ -61,10 +50,5 @@
     font-size: 1rem;
     font-weight: 700;
     color: darkblue;
-    text-align: center;
-
-    @include atSmall {
-      text-align: unset;
-    }
   }
 }
