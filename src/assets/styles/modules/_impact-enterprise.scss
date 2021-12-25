@@ -102,34 +102,4 @@
     }
   }
 
-  .leaf__left-img {
-   // top: 400%;
-    max-width: 7%;
-
-    @include atDoubleExtraLarge {
-      max-width: 5%;
-     // top: 450%;
-    }
-
-    @include atCustomSize {
-      max-width: 10%;
-     // top: 313%;
-    }
-  }
-
-  .leaf__right-img {
-    transform: rotate(180deg);
-   // top: 322%;
-    max-width: 8%;
-
-    @include atDoubleExtraLarge {
-      max-width: 5%;
-      //top: 370%;
-    }
-
-    @include atCustomSize {
-      max-width: 10%;
-     // top: 235%;
-    }
-  }
 }

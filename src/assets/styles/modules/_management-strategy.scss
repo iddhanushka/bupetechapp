@@ -21,15 +21,17 @@
 
     .title {
       font-size: 1.25rem;
-      text-align: center;
+      text-align: left;
       font-weight: 700;
       margin-bottom: 1.25rem;
 
       @include atSmall {
+        text-align: left;
         font-size: 1.375rem;
       }
 
       @include atMedium {
+        text-align: left;
         font-size: 1.875rem;
       }
 
@@ -41,15 +43,17 @@
 
     .subtitle {
       font-size: 1.125rem;
-      text-align: center;
+      text-align: left;
       font-weight: 700;
 
       @include atSmall {
         font-size: 1.25rem;
+        text-align: left;
       }
 
       @include atMedium {
         font-size: 1.375rem;
+        text-align: left;
       }
 
       @include atLarge {
@@ -60,7 +64,7 @@
     p {
       font-size: 1rem;
       color: $darkGreen;
-      text-align: center;
+      text-align: left;
 
       @include atLarge {
         font-size: 1.125rem;

@@ -9,7 +9,7 @@
   .title {
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
 
     @include atSmall {
@@ -22,6 +22,7 @@
 
     @include atLarge {
       margin-bottom: 3.75rem;
+      text-align: center;
     }
   }
 
@@ -39,7 +40,7 @@
 
   &__tag {
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     text-transform: uppercase;
 
@@ -49,13 +50,14 @@
 
     @include atLarge {
       text-align: unset;
+     
     }
   }
 
   &__description {
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
 
     @include atSmall {
       font-size: 22px;
@@ -76,9 +78,8 @@
   }
 
   .bd-watch-demo {
-    margin: auto;
     display: block;
-    margin-top: 1.875rem;
+    margin: 2.875rem auto;
   }
 
   .business-design-block {
@@ -112,25 +113,27 @@
       .title {
         font-size: 20px;
         font-weight: 700;
-        text-align: center;
+        text-align: left;
         margin-bottom: 0.625rem;
 
         @include atSmall {
           font-size: 1.375rem;
+          text-align: left;
         }
 
         @include atLarge {
-          text-align: unset;
+          text-align: left;
         }
       }
 
       p {
         color: $darkGreen;
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
 
         @include atLarge {
           text-align: unset;
+          text-align: left;
         }
       }
     }

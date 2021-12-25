@@ -6,13 +6,19 @@
   .title {
     font-size: 1.875rem;
     font-weight: 700;
+    
+   
     margin-bottom: 2.5rem;
+  
   }
 
   .description {
     font-size: 1.375rem;
     color: $darkGreen;
+    margin-bottom: 0rem;
+    @include atLarge {
     padding-left: 2.5rem;
+    }
   }
 
   .pricing-cal {

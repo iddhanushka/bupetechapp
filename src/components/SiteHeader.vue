@@ -34,17 +34,17 @@
 
             <div class="collapse navbar-collapse"  ref="navbarNavDropdown" id="navbarNavDropdown">
               <ul class="navbar-nav">
-                <li class="nav-item menu-list">
+                <li  :class="[$route.name=='WhyBupe'?'nav-item menu-list active':'nav-item menu-list']">
                   <a
                      href="#"
                     @click="go('/why-bupe')"
-                    class="nav-link menu-name"
+                     class="nav-link menu-name"
                     aria-current="page"
-                    active-class="active"
-                    >Why BUPE</a>
+                 
+                    >Why BUPE </a>
                   <div class="underline"></div>
                 </li>
-                <li class="nav-item dropdown menu-list">
+                <li :class="[$route.name=='Product'?'nav-item dropdown active':'nav-item dropdown menu-list']" >
                   <router-link
                     class="nav-link menu-name dropdown-toggle"
                     to="#"
@@ -52,10 +52,12 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    active-class="active"
+                    
+                   
                   >
                     Product
                   </router-link>
+                   <div class="underline"></div>
                   <ul
                     class="dropdown-menu modules-submenu"
                     aria-labelledby="productMenuLink"
@@ -83,7 +85,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item dropdown menu-list">
+                <li :class="[$route.name=='Training' || $route.name=='Privacy'?'nav-item dropdown active':'nav-item dropdown menu-list']">
                   <router-link
                     class="nav-link menu-name dropdown-toggle"
                     to="#"
@@ -91,10 +93,11 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    active-class="active"
+                   
                   >
                     Resources
                   </router-link>
+                   <div class="underline"></div>
                   <ul
                     class="dropdown-menu modules-submenu"
                     aria-labelledby="resoursesMenuLink"
@@ -120,7 +123,7 @@
                   </ul>
                 </li>
 
-                <li class="nav-item dropdown menu-list">
+                <li :class="[$route.name=='About'?'nav-item dropdown active':'nav-item dropdown menu-list']">
                   <router-link
                     class="nav-link menu-name dropdown-toggle"
                     to="#"
@@ -128,10 +131,11 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                    active-class="active"
+                    
                   >
                     About
                   </router-link>
+                   <div class="underline"></div>
                   <ul
                     class="dropdown-menu modules-submenu"
                     aria-labelledby="aboutMenuLink"
@@ -159,21 +163,21 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item menu-list">
+                <li  :class="[$route.name=='Pricing'?'nav-item menu-list active':'nav-item menu-list']">
                   <a
                     href="#"
                     class="nav-link menu-name"
                     @click="go('/pricing')"
-                    active-class="active"
+                    
                     >Pricing</a>
                   <div class="underline"></div>
                 </li>
-                <li class="nav-item menu-list bottom-border">
+                <li   :class="[$route.name=='Contact'?'nav-item menu-list bottom-border active':'nav-item menu-list bottom-border']" >
                   <a
                     href="#"
                     class="nav-link menu-name"
                     @click="go('/contact')"
-                    active-class="active"
+                    
                     >Contact</a>
                   <div class="underline"></div>
                 </li>
@@ -202,15 +206,20 @@
         </div>
       </nav>
     </div>
+
   </header>
+  <TopLeaf  :topLeft="$route.meta.topLeft" :topRight="$route.meta.topRight"  />
+   <BottomLeaf  :bottomLeft="$route.meta.bottomLeft" :bottomRight="$route.meta.bottomRight" />
 </template>
 
 <script>
 import router from "../router";
 import MenuPopup from "@/components/MenuPopup.vue";
+import TopLeaf from '@/components/TopLeaf.vue';
+import BottomLeaf from '@/components/BottomLeaf.vue';
 export default {
   name: "SiteHeader",
-  components: { MenuPopup },
+  components: { MenuPopup,TopLeaf,BottomLeaf },
   methods: {
     toggleBodyClass(addRemoveClass, className) {
       const el = document.body;
@@ -247,6 +256,7 @@ export default {
     },
 
   },
+
   props: {
 
     button1: String,

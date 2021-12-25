@@ -137,19 +137,17 @@
         
       </div>
     </div>
-   <FooterLeaf />
+
   </section>
 </template>
 
 <script>
 
-import FooterLeaf from '@/components/FooterLeaf.vue';
+
 
 export default {
   name: 'ImpactEnterprise',
-  components: {
-    FooterLeaf
-  }
+
 
 }
 </script>

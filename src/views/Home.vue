@@ -7,7 +7,7 @@
     <BupePartners v-bind:logos="['ceylinco.png','dcs.png','kti.png','watersedge.png','limara.png','eguardian.png']"/>
     <KpiSolutions tag="home.kpi-solutions.tag" title="home.kpi-solutions.title"/>
     </div>
-    <TopLeaf />
+   
    
     
 
@@ -23,13 +23,12 @@ import WelcomeBupe from '@/components/WelcomeBupe.vue';
 import GetaQuote from '@/components/GetaQuote.vue';
 import BupePartners from '@/components/BupePartners.vue';
 import KpiSolutions from '@/components/KpiSolutions.vue';
-import TopLeaf from '@/components/TopLeaf.vue';
 import KpiDetailTabs from '@/components/KpiDetailTabs.vue';
 import ImpactEnterprise from '@/components/ImpactEnterprise.vue';
 export default {
   name: 'Home',
   components: {
-     WelcomeBupe, GetaQuote,BupePartners,KpiSolutions,TopLeaf,KpiDetailTabs,ImpactEnterprise
+     WelcomeBupe, GetaQuote,BupePartners,KpiSolutions,KpiDetailTabs,ImpactEnterprise
   }
 }
 </script>

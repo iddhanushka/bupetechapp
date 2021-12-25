@@ -3,14 +3,14 @@
   
     <div class="container">
       <div class="row">
-        <div class="col-xl-6 col-lg-6">
+        <div class="col-xl-6 col-lg-6 ">
           <div class="why-bupe__content">
             <h5 class="tag">Why Bupe?</h5>
             <h1 class="title">To reach the true potential of your company in an ever challenging and dynamic world.</h1>
           </div>
         </div>
 
-        <div class="col-xl-6 col-lg-6">
+        <div class="col-xl-6 col-lg-6 order-first order-lg-last ">
           <div class="why-bupe__video">
             <div class="demo-video">
                 <video
@@ -169,35 +169,12 @@
         </div>
       </div>
     </div>
-      <div class="leaf">
-       <div class="leaf__left">
-         <img class="leaf__left-img" src="../assets/images/leaf-down.png" alt="">
-       </div>
-     </div>
- 
-     <div class="leaf">
-       <div class="leaf__right">
-         <img class="leaf__right-img" src="../assets/images/leaf-right.png" alt="">
-       </div>
-     </div>
- 
-     <div class="leaf">
-       <div class="leaf__left">
-         <img class="leaf__left-img leaf__left-img--why-bupe-left-2nd" src="../assets/images/leaf-up.png" alt="">
-       </div>
-     </div>
- 
-     <div class="leaf">
-       <div class="leaf__right">
-         <img class="leaf__right-img" src="../assets/images/leaf-down.png" alt="">
-       </div>
-     </div>
+    
   </section>
 </template>
 <script>
 
-//import TopLeaf from '@/components/TopLeaf.vue';
-//import FooterLeaf from '@/components/FooterLeaf.vue';
+
 
 export default {
   name: "why_bupe",

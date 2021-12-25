@@ -12,11 +12,12 @@
 
   &__content {
     margin-left:4.5rem;
+    margin:2em 0;
     .tag {
       font-size: 0.9375rem;
       font-weight: 500;
       text-transform: uppercase;
-      text-align: center;
+      //text-align: center;
       
 
       @include atSmall {
@@ -31,28 +32,38 @@
     .title {
       font-size: 2.5rem;
       font-weight: 700;
-      text-align: center;
+      text-align: left;
 
       @include atSmall {
         font-size: 1.375rem;
+       
       }
 
       @include atMedium {
         font-size: 2.5rem;
+        
       }
 
       @include atLarge {
         text-align: left;
+        
       }
     }
   }
 
   &__video {
-    margin-top: 0.9375rem;
-    margin-left:2rem;
 
+    margin-top: unset;
+    margin-left:unset;
+
+
+   @include atMedium {
+    margin-top: 0.9375rem;
+    //margin-left:2rem;
+   }
     @include atLarge {
       margin-top: unset;
+      margin-left:unset;
     }
   }
 
@@ -92,26 +103,29 @@
     .title {
       font-size: 1.25rem;
       font-weight: 700;
-      text-align: center;
+      text-align: left;
       margin-bottom: 0.9375rem;
 
       @include atSmall {
         font-size: 1.375rem;
+        text-align: center;
       }
 
       @include atLarge {
         font-size: 1.875rem;
         margin-bottom: 1.875rem;
+        text-align: center;
       }
     }
 
     .subscription {
       font-size: 1rem;
       color: $darkGreen;
-      text-align: center;
+      text-align: left;
 
       @include atLarge {
         font-size: 1.125rem;
+        text-align: center;
       }
     }
 
@@ -149,12 +163,4 @@
     }
   }
 
-  .leaf__left-img {
-    left: 0;
-    top: 75%;
-  }
-
-  .leaf__right-img {
-    top: 133%;
-  }
 }

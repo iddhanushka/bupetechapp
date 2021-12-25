@@ -6,10 +6,18 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+    meta:{topLeft:(window.innerWidth*0.25)+"px",
+    topRight:(window.innerWidth*0.25+500)+"px",
+    bottomLeft:(window.innerWidth*0.25+2450)+"px",
+    bottomRight:(window.innerWidth*0.25+1600)+"px"}
   },
   {
     path: "/about",
     name: "About",
+    meta:{topLeft:(window.innerWidth*0.25)+"px",
+    topRight:(window.innerWidth*0.25+500)+"px",
+    bottomLeft:(window.innerWidth*0.25+2450)+"px",
+    bottomRight:(window.innerWidth*0.25+1600)+"px"},
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -19,6 +27,7 @@ const routes = [
   {
     path: "/contact",
     name: "Contact",
+
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -28,6 +37,7 @@ const routes = [
   {
     path: "/contact-form",
     name: "ContactForm",
+   
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -37,6 +47,9 @@ const routes = [
   {
     path: "/careers",
     name: "Careers",
+    meta:{topLeft:(window.innerWidth*0.25)+"px",
+    topRight:(window.innerWidth*0.25+500)+"px",
+  },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -46,6 +59,7 @@ const routes = [
   {
     path: "/career-form/:id",
     name: "CareersForm",
+    meta:{topLeft:"50%",topRight:"50%",bottomLeft:"100%",bototmLeft:"100%"},
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -55,6 +69,9 @@ const routes = [
   {
     path: "/training",
     name: "Training",
+    meta:{topLeft:(window.innerWidth*0.25)+"px",
+    topRight:(window.innerWidth*0.25+500)+"px",
+  },
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -64,7 +81,9 @@ const routes = [
   {
     path: "/legal",
     name: "Privacy",
-    // route level code-splitting
+    meta:{topLeft:(window.innerWidth*0.25)+"px",
+    topRight:(window.innerWidth*0.25+500)+"px",
+   }, // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
@@ -73,6 +92,7 @@ const routes = [
   {
     path: "/demo",
     name: "Demo",
+   
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -82,6 +102,10 @@ const routes = [
   {
     path: "/why-bupe",
     name: "WhyBupe",
+    meta:{topLeft:(window.innerWidth*0.25)+"px",
+    topRight:(window.innerWidth*0.25+500)+"px",
+    bottomLeft:(window.innerWidth*0.25+2450)+"px",
+    bottomRight:(window.innerWidth*0.25+1600)+"px"},
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -91,6 +115,7 @@ const routes = [
   {
     path: "/pricing",
     name: "Pricing",
+    
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -100,6 +125,10 @@ const routes = [
   {
     path: "/product",
     name: "Product",
+    meta:{topLeft:(window.innerWidth*0.25)+"px",
+    topRight:(window.innerWidth*0.25+500)+"px",
+    bottomLeft:(window.innerWidth*0.25+2450)+"px",
+    bottomRight:(window.innerWidth*0.25+1600)+"px"},
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -109,6 +138,7 @@ const routes = [
   {
     path: "/Modules",
     name: "Modules",
+   
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -118,6 +148,7 @@ const routes = [
   {
     path: "/privarcy-terms",
     name: "PrivarcyTerms",
+   
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -127,6 +158,7 @@ const routes = [
   {
     path: "/help",
     name: "Help",
+   
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

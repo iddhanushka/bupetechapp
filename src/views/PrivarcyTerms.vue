@@ -86,3 +86,54 @@
     </div>
   </div>
 </template>
+
+<script>
+
+import axios from 'axios';
+export default ({
+  name:'PrivarcyTerms',
+  data(){
+    return{
+      posts:{
+        type:'privacy'
+      },
+      Pricing:null,
+      loading: true,
+      errored: false,
+    }
+  },
+  methods:{
+  getDocument(type){
+      if(!this.posts.user_count){
+        this.posts.user_count = 1;
+      }
+      axios.post(`${process.env.VUE_APP_BASE_URL}/api/document/index`, {type})
+            .then((response)=>{                            
+              if(response.status === 200){
+                  this.contents = response.data.contents ;
+              } else {
+                  this.$toast.show('Unable to procceed, Please check your Given details. ', {
+                      type: 'success',
+                      position: 'top-left',
+                      className:'toast-failed',
+                  });
+              }
+            })
+            .catch((error)=>{                 
+                for (var key in error.response.data.errors) {                    
+                  this.$toast.show(error.response.data.errors[key], {
+                    type: 'error',
+                    position: 'top-left',
+                    pauseOnHover: true,
+                    className:'toast-failed',
+                  });
+              }
+            })
+    }},
+  mounted: function(){
+  
+      this.posts.plan = "Monthly";
+      this.getDocument('privacy');
+  }
+  })
+  </script>
