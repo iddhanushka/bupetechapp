@@ -6,8 +6,8 @@
         <div class="privacy-navtab">
           <div class="d-grid align-items-start privacy-navtab-container">
             <div class="privacy-navtab__menu">
-              <div class="privacy-navtab__links">
-                <h3 class="privacy-navtab__title">Terms of Service</h3>
+              <div v-for="menuData in (item,index)"  :key="index" class="privacy-navtab__links">
+                <h3 class="privacy-navtab__title">{{item.name}}</h3>
                 <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <button class="nav-link active" id="v-pills-agreement-tab" data-bs-toggle="pill" data-bs-target="#v-pills-agreement" type="button" role="tab" aria-controls="v-pills-agreement" aria-selected="true">User Agreement</button>
                   <button class="nav-link" id="v-pills-slAgreement-tab" data-bs-toggle="pill" data-bs-target="#v-pills-slAgreement" type="button" role="tab" aria-controls="v-pills-slAgreement" aria-selected="false">Service Level Agreement</button>
@@ -94,9 +94,8 @@ export default ({
   name:'PrivarcyTerms',
   data(){
     return{
-      posts:{
-        type:'privacy'
-      },
+      menuData:[],
+      bodyData:[],
       Pricing:null,
       loading: true,
       errored: false,
@@ -110,7 +109,8 @@ export default ({
       axios.post(`${process.env.VUE_APP_BASE_URL}/api/document/index`, {type})
             .then((response)=>{                            
               if(response.status === 200){
-                  this.contents = response.data.contents ;
+                  this.menuData = response.data.contents.menu ;
+                  this.bodyData = response.data.contents.body ;
               } else {
                   this.$toast.show('Unable to procceed, Please check your Given details. ', {
                       type: 'success',
