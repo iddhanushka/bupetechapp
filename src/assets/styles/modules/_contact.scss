@@ -14,11 +14,11 @@
   &__title {
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
     margin-bottom: 20px;
 
     @include atSmall {
       font-size: 22px;
+      text-align: center;
     }
 
     @include atMedium {

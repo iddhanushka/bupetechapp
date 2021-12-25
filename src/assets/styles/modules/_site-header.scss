@@ -287,6 +287,10 @@
         a {
           margin: 0.5rem 1rem 0rem 1rem;
           color: $blue;
+
+          @include atSmall {
+            margin: unset;
+          }
         }
       }
 
@@ -351,7 +355,7 @@
       display: none;
       margin-right: 1.25rem;
 
-      @include atDoubleExtraLarge {
+      @include atExtraLarge {
         display: inline-block;
       }
     }
