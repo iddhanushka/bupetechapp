@@ -155,9 +155,18 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/PrivarcyTerms.vue"),
   },
+ 
   {
     path: "/help",
     name: "Help",
+    children: [
+       {
+         path:':slug',
+         component: () =>
+         import(/* webpackChunkName: "about" */ "../views/HelpContent.vue"),
+        }
+
+    ],
    
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -165,6 +174,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/HelpContent.vue"),
   },
+ 
 ];
 
 const router = createRouter({

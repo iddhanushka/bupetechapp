@@ -65,68 +65,21 @@
       <div class="about-us__apex" id="leadership">
         <h1 class="title">Our APEX</h1>
         <div class="row">
-          <div class="col-xl-4 col-md-4 col-sm-6">
+          <div v-for="item in members"  :key="item.id"   class="col-xl-4 col-md-4 col-sm-6">
             <div class="management-crew">
               <div class="card management-crew__card" style="width: 100%;">
-                <img src="../assets/images/someone.png" class="card-img-top" alt="...">
+                <img v-if="item.image_url.length>0"  v-bind:src="item.image_url" class="card-img-top" />
                 <div class="card-body">
-                  <h4 class="management-crew__title">Someone</h4>
-                  <h5 class="card-title management-crew__subtitle">CEO</h5>
-                  <b-button variant="outline-info" data-bs-toggle="modal" @click="readBio(1)" data-bs-target="#readModal">Read Bio ></b-button>
+                  <h4 class="management-crew__title">{{item.name}}</h4>
+                  <h5 class="card-title management-crew__subtitle">{{item.title}}</h5>
+                  <b-button variant="outline-info" data-bs-toggle="modal" @click="readBio(item.description)" data-bs-target="#readModal">Read Bio ></b-button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-md-4 col-sm-6">
-            <div class="management-crew">
-              <div class="card management-crew__card" style="width: 100%;">
-                <img src="../assets/images/someone.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h4 class="management-crew__title">Someone</h4>
-                  <h5 class="card-title management-crew__subtitle">CTO</h5>
-                 <b-button variant="outline-info" data-bs-toggle="modal" @click="readBio(2)" data-bs-target="#readModal">Read Bio ></b-button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-6">
-            <div class="management-crew">
-              <div class="card management-crew__card" style="width: 100%;">
-                <img src="../assets/images/someone.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h4 class="management-crew__title">Someone</h4>
-                  <h5 class="card-title management-crew__subtitle">CFO</h5>
-                 <b-button variant="outline-info" data-bs-toggle="modal" @click="readBio(3)" data-bs-target="#readModal">Read Bio ></b-button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-6">
-            <div class="management-crew management-crew--no-mb">
-              <div class="card management-crew__card" style="width: 100%;">
-                <img src="../assets/images/someone.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h4 class="management-crew__title">Someone</h4>
-                  <h5 class="card-title management-crew__subtitle">CIO</h5>
-                  <b-button variant="outline-info" data-bs-toggle="modal" @click="readBio(4)" data-bs-target="#readModal">Read Bio ></b-button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-md-4 col-sm-6">
-            <div class="management-crew management-crew--no-mb">
-              <div class="card management-crew__card" style="width: 100%;">
-                <img src="../assets/images/someone.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h4 class="management-crew__title">Someone</h4>
-                  <h5 class="card-title management-crew__subtitle">CPO</h5>
-   
-                    <b-button variant="outline-info" data-bs-toggle="modal" @click="readBio(5)" data-bs-target="#readModal">Read Bio ></b-button>
-
-                </div>
-              </div>
-            </div>
-          </div>
+          
+          
+         
         </div>
       </div> 
     </div>
@@ -139,8 +92,8 @@
       <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-       {{bio}}
+      <div class="modal-body" v-html="bio">
+   
      
       </div>
       <div class="modal-footer">
@@ -154,11 +107,14 @@
 
 </template>
 <script>
+import axios from 'axios';
+
 export default {
   name: "About",
    data(){
    return {
         bio:null,
+        members:[]
     }
    },
   methods: {
@@ -166,6 +122,39 @@ export default {
     
      this.bio=id;
     },
+    getMembers(){
+
+      axios.post(`${process.env.VUE_APP_BASE_URL}/api/members/index`)
+            .then((response)=>{                            
+              if(response.status === 200){
+                
+                  this.members = response.data.data ;
+
+              } else {
+                  this.$toast.show('Unable to procceed, Please check your Given details. ', {
+                      type: 'success',
+                      position: 'top-left',
+                      className:'toast-failed',
+                  });
+              }
+            })
+            .catch((error)=>{  
+                           
+                for (var key in error.response.data.errors) {                    
+                  this.$toast.show(error.response.data.errors[key], {
+                    type: 'error',
+                    position: 'top-left',
+                    pauseOnHover: true,
+                    className:'toast-failed',
+                  }
+                  );
+              }
+            })
+    }
+  },
+  mounted: function(){
+      
+      this.getMembers();
   }
 }
 </script>
