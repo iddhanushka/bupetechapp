@@ -28,7 +28,7 @@
               aria-label="Toggle navigation"
               ref="breadmenu"
             >
-              <span @click="destroyed" class="close">x</span>
+              <span @click="destroyed" class="btn-close close"></span>
               <span @click="mounted" class="navbar-toggler-icon"></span>
             </button>
 

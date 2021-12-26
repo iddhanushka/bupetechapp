@@ -11,6 +11,18 @@
     padding: 5rem 0;
   }
 
+  &__video{
+     cursor:pointer;
+
+  }
+
+  &__article{
+    cursor:pointer;
+
+ }
+
+  
+
   &--sec-policies-bg-img {
     background-image: url("/app/assets/images/sec-bg-img.jpg");
     background-size: cover;
@@ -20,6 +32,7 @@
     background-image: url("/app/assets/images/sec-clt-bg-img.jpg");
     background-size: cover;
   }
+
 
   .terms {
     display: grid;

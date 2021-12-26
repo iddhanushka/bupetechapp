@@ -24,7 +24,10 @@
   }
 
   .privacy-navtab-container {
+    grid-template-columns: 100%;
+    @include atLarge {
     grid-template-columns: 30% 70%;
+    }
     column-gap: 1.25rem;
   }
 
