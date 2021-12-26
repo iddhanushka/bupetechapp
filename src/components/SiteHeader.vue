@@ -44,7 +44,7 @@
                     >Why BUPE </a>
                   <div class="underline"></div>
                 </li>
-                <li :class="[$route.name=='Product'?'nav-item dropdown active':'nav-item dropdown menu-list']" >
+                <li :class="[$route.name=='Product'?'nav-item menu-list dropdown active':'nav-item dropdown menu-list']" >
                   <router-link
                     class="nav-link menu-name dropdown-toggle"
                     to="#"
@@ -85,7 +85,7 @@
                     </li>
                   </ul>
                 </li>
-                <li :class="[$route.name=='Training' || $route.name=='Privacy'?'nav-item dropdown active':'nav-item dropdown menu-list']">
+                <li :class="[$route.name=='Training' || $route.name=='Privacy'?'nav-item dropdown menu-list active':'nav-item dropdown menu-list']">
                   <router-link
                     class="nav-link menu-name dropdown-toggle"
                     to="#"
@@ -123,7 +123,7 @@
                   </ul>
                 </li>
 
-                <li :class="[$route.name=='About'?'nav-item dropdown active':'nav-item dropdown menu-list']">
+                <li :class="[$route.name=='About'?'nav-item dropdown menu-list active':'nav-item dropdown menu-list']">
                   <router-link
                     class="nav-link menu-name dropdown-toggle"
                     to="#"
