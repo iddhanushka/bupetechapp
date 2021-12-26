@@ -83,8 +83,16 @@
     }
 
     .menu-list {
+      padding: 0 12px;
+
+      @include atLarge {
+        padding: unset;
+      }
+
       &:not(:last-child) {
-        margin-right: 0.938rem;
+        @include atLarge {
+          margin-right: 0.938rem;
+        }
       }
     }
 
@@ -121,8 +129,7 @@
       line-height: 0;
 
       &:focus {
-        box-shadow: none;
-        border: unset;
+        box-shadow: unset;
       }
 
       .close {
@@ -285,7 +292,6 @@
         line-height: 2rem;
 
         a {
-          margin: 0.5rem 1rem 0rem 1rem;
           color: $blue;
 
           @include atSmall {
