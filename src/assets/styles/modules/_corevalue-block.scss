@@ -7,6 +7,7 @@
 
   .left-list {
     width: 100%;
+    max-width: 40px;
     margin-right: 15px;
 
     @include atSmall {
