@@ -1,7 +1,7 @@
 <template>
   <div class="apply-developer">
     <div class="row">
-      <div class="col-xl-6 col-lg-6 col-same-height">
+      <div class="col-xl-6 col-lg-6 order-2 order-lg-1 col-same-height">
         <div class="apply-developer__form">
           <h1 class="title">Apply for Senior Backend Developer</h1>
           <div class="form-block">
@@ -121,7 +121,7 @@
         </div>
       </div>
 
-      <div class="col-xl-6 col-lg-6 col-same-height">
+      <div class="col-xl-6 col-lg-6 order-1 order-lg-2 col-same-height">
         <div class="apply-developer__details">
           <h1 class="title">{{ jobDescription.name }}</h1>
           <div class="description">
