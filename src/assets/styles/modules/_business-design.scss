@@ -10,13 +10,14 @@
   @include atSmall {
     padding-top: 1.875rem;
   }
+
   .list {
     padding-left: 0;
     list-style: none;
     text-align: center;
+    display: flex;
 
     @include atSmall {
-      display: flex;
       text-align: unset;
     }
   }
@@ -26,22 +27,25 @@
   }
 
   &__icon {
-    max-width: 90px;
+    max-width: 40px;
     width: auto;
     margin-bottom: 15px;
 
     @include atSmall {
       margin-bottom: unset;
+      max-width: 90px;
     }
   }
 
   &__title {
     font-size: 1rem;
     font-weight: 700;
+    text-align: left;
   }
 
   p {
     font-size: 1rem;
     color: $darkGreen;
+    text-align: left;
   }
 }
