@@ -1,7 +1,7 @@
   <template>
   <div class="apply-developer">
       <div class="row">
-        <div class="col-xl-6 col-same-height">
+        <div class="col-xl-6 order-2 order-lg-1 col-same-height">
           <div class="apply-developer__form">
             <h1 class="title">Contact our solutions team </h1>
             <div class="form-block">
@@ -73,7 +73,7 @@
           </div>
         </div>
   
-        <div class="col-xl-6 col-same-height">
+        <div class="col-xl-6 order-1 order-lg-2 col-same-height">
           <div v-if="target==2" class="apply-developer__details">
             <h1 class="title">Let's talk about how we can help your business.</h1>
             <div class="description">
