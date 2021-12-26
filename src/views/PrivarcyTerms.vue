@@ -6,10 +6,10 @@
         <div class="privacy-navtab">
           <div class="d-grid align-items-start privacy-navtab-container">
             <div class="privacy-navtab__menu">
-              <div v-for="(items,pdx) in menuData"  :key="items.id" class="privacy-navtab__links">
+              <div v-for="items in menuData"  :key="items.id" class="privacy-navtab__links">
                 <h3 class="privacy-navtab__title">{{items.main_title}}</h3>
                 <div class="nav flex-column nav-pills me-3" :id="'v-pills-'+items.id+'-tab'" role="tablist" aria-orientation="vertical">
-                  <button  v-on:blur="handleBlur" v-for="(item,index) in items.sub_menu"  :key="item.id" :class="index==0 && pdx==0?'nav-link active':'nav-link'" :id="'v-pills-tab-'+item.id" data-bs-toggle="pill" :data-bs-target="'#v-pills-'+item.id" type="button" role="tab" :aria-controls="'#v-pills-'+item.id" :aria-selected="index==0">{{item.sub_title}}</button>
+                  <button  v-on:blur="handleBlur" v-for="(item,index) in items.sub_menu"  :key="item.id" :class="item.slug==slug?'nav-link active':'nav-link'" :id="'v-pills-tab-'+item.id" data-bs-toggle="pill" :data-bs-target="'#v-pills-'+item.id" type="button" role="tab" :aria-controls="'#v-pills-'+item.id" :aria-selected="index==0">{{item.sub_title}}</button>
                 </div>
               </div>
 
@@ -41,6 +41,7 @@ export default ({
       Pricing:null,
       loading: true,
       errored: false,
+      slug:''
     }
   },
   methods:{
@@ -80,7 +81,11 @@ export default ({
     }},
   mounted: function(){
   
-    
+      if (this.$route.params.slug){
+   
+        this.slug=this.$route.params.slug;
+      }else
+        this.slug='user-agreement';
       this.getDocument('privacy');
   }
   })

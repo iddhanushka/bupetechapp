@@ -148,6 +148,14 @@ const routes = [
   {
     path: "/privarcy-terms",
     name: "PrivarcyTerms",
+    children: [
+      {
+        path:':slug',
+        component: () =>
+        import(/* webpackChunkName: "about" */ "../views/PrivarcyTerms.vue"),
+       }
+
+   ],
    
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

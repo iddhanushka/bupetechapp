@@ -4,41 +4,20 @@
       <h1 class="main-title">Legal &amp; Privacy</h1>
       <h2 class="sec-title">Terms of Service</h2>
       <div class="terms">
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">User Agreement</h4>
-            <p>The User Agreement governs your use of BUPE Tech’s online work collaboration services. </p>
+       
+       <div  v-for="item in this.bodyData.service" :key="item.id" class="terms-col">
+          <div @click="go(item.slug)" class="term-block terms-service__video">
+            <img
+              class="term-block__icon"
+              v-if="item.image_url.length > 0"
+              v-bind:src="item.image_url"
+              :alt="item.title"
+            />
+            <h4 class="term-block__title">{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
           </div>
-        </div>
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Service Level Agreement</h4>
-            <p>The Service Level Agreement is Our commitment to the availability of services purchased by customers.</p>
-          </div>
-        </div>
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Privacy Notice</h4>
-            <p>The Privacy Notice describes how BUPE Tech collects, uses and discloses personal and other information shaerd with us.</p>
-          </div>
-        </div>
-        <div class="terms-col terms-col--no-mb">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Data Processing Addendum</h4>
-            <p>The User Agreement governs your use of BUPE Tech’s online work collaboration services.</p>
-          </div>
-        </div>
-        <div class="terms-col terms-col--no-mb">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Mobile EULA</h4>
-            <p>The Mobile EULA governs your use of the BUPE mobile application for Android and iOS.</p>
-          </div>
-        </div>
+       </div>
+
       </div>
     </div>
   </section>
@@ -51,73 +30,112 @@
     }" class="terms-service terms-service--sec-policies-bg-img shadow border-top-0 border-bottom-0">
     <div class="container">
       <h2 class="sec-title">Policies</h2>
-      <div class="terms">
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Acceptable Use Policy</h4>
-            <p>This policy covers permissible and prohibited activities relating to content or data entered by users into BUPE system.</p>
-          </div>
-        </div>
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Usage Limits Policy</h4>
-            <p>This policy describes the limits associated with your subscription plan.</p>
-          </div>
-        </div>
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Travel &amp; Expense Policy</h4>
-            <p>This policy outlines BUPE Tech’s allowable business travel expenses.</p>
+     
+
+        <div class="terms">
+        <div  v-for="item in this.bodyData.polices" :key="item.id" class="terms-col">
+          <div @click="go(item.slug)" class="term-block terms-service__video">
+            <img
+              class="term-block__icon"
+              v-if="item.image_url.length > 0"
+              v-bind:src="item.image_url"
+              :alt="item.title"
+            />
+            <h4 class="term-block__title">{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
           </div>
         </div>
       </div>
-    </div>
+    </div>   
+
   </section>
 
   <section class="terms-service">
     <div class="container">
       <h2 class="sec-title">Miscellaneous</h2>
       <div class="terms">
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Report Abuse</h4>
-            <p>Report here if you feel a person or company has violated our Acceptable Use Policy.</p>
+            <div  v-for="item in this.bodyData.miscellaneous" :key="item.id" class="terms-col">
+          <div @click="go(item.slug)" class="term-block terms-service__video">
+            <img
+              class="term-block__icon"
+              v-if="item.image_url.length > 0"
+              v-bind:src="item.image_url"
+              :alt="item.title"
+            />
+            <h4 class="term-block__title">{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
           </div>
-        </div>
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Content Issues</h4>
-            <p>If you believe any content on the website is in violation of your IP rights, please notify us through the use of this form.</p>
-          </div>
-        </div>
-        <div class="terms-col">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Interlectual Property</h4>
-            <p>This IP page provides information relating to BUPE Tech's Intellectual Property and information for content disputes.</p>
-          </div>
-        </div>
-        <div class="terms-col terms-col--no-mb">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Code of Conduct & Ethics</h4>
-            <p>BUPE Tech’s code of business conduct and ethics for employees.</p>
-          </div>
-        </div>
-        <div class="terms-col terms-col--no-mb">
-          <div class="term-block">
-            <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Insurance Certificate</h4>
-            <p>BUPE Tech's certificate of liability insurance.</p>
-          </div>
-        </div>
+       </div>
+
       </div>
     </div>
   </section>
 
 </template>
+
+<script>
+
+import axios from 'axios';
+import router from "../router";
+export default ({
+  name:'PrivarcyTerms',
+  data(){
+    return{
+      bodyData:{privacy:[],policies:[],miscellaneous:[]},
+
+      loading: true,
+      errored: false,
+    }
+  },
+  methods:{
+
+    handleBlur(e){
+      e.target.classList.remove('active');
+
+
+    },
+     go(slug) {
+
+     if (slug)   
+      router.push({
+        path:'/privarcy-terms/'+slug,
+
+      });
+    },
+  getDocument(type){
+
+      axios.post(`${process.env.VUE_APP_BASE_URL}/api/articles/index`, {type})
+            .then((response)=>{                            
+              if(response.status === 200){
+                  this.bodyData[type] = response.data.data ;
+               console.log(this.bodyData);
+              } else {
+                  this.$toast.show('Unable to procceed, Please check your Given details. ', {
+                      type: 'success',
+                      position: 'top-left',
+                      className:'toast-failed',
+                  });
+              }
+            })
+            .catch((error)=>{  
+                           
+                for (var key in error.response.data.errors) {                    
+                  this.$toast.show(error.response.data.errors[key], {
+                    type: 'error',
+                    position: 'top-left',
+                    pauseOnHover: true,
+                    className:'toast-failed',
+                  }
+                  );
+              }
+            })
+    }},
+  mounted: function(){
+  
+    
+      this.getDocument('service');
+      this.getDocument('polices');
+      this.getDocument('miscellaneous');
+  }
+  })
+  </script>
