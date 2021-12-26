@@ -48,7 +48,7 @@
         'url(' + require(`@/assets/images/sec-clt-bg-img.jpg`) + ')',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
-    }" class="terms-service terms-service--sec-policies-bg-img">
+    }" class="terms-service terms-service--sec-policies-bg-img shadow border-top-0 border-bottom-0">
     <div class="container">
       <h2 class="sec-title">Policies</h2>
       <div class="terms">
