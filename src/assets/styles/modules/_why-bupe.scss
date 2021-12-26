@@ -11,16 +11,14 @@
   }
 
   &__content {
-    margin-left: 4.5rem;
-    margin: 2em 0;
     .tag {
       font-size: 0.9375rem;
       font-weight: 500;
       text-transform: uppercase;
-      //text-align: center;
 
       @include atSmall {
         font-size: 1.125rem;
+        text-align: center;
       }
 
       @include atLarge {
@@ -29,16 +27,16 @@
     }
 
     .title {
-      font-size: 2.5rem;
+      font-size: 1.25rem;
       font-weight: 700;
-      text-align: left;
 
       @include atSmall {
         font-size: 1.375rem;
+        text-align: center;
       }
 
       @include atMedium {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
 
       @include atLarge {
@@ -48,28 +46,27 @@
   }
 
   &__video {
-    margin-top: unset;
-    margin-left: unset;
+    margin-top: 0.9375rem;
 
-    @include atMedium {
-      margin-top: 0.9375rem;
-      //margin-left:2rem;
-    }
     @include atLarge {
       margin-top: unset;
-      margin-left: unset;
     }
   }
 
-  .strategy-top {
+  .strategy {
     @include atLarge {
-      margin-top: 3.5rem;
+      margin-top: 2.5rem;
     }
   }
 
   .watch-demo {
-    margin: auto;
-    display: block;
+    width: 50%;
+
+    @include atSmall {
+      width: initial;
+      margin: auto;
+      display: block;
+    }
 
     @include atLarge {
       margin-top: 2.5rem;
@@ -97,7 +94,6 @@
     .title {
       font-size: 1.25rem;
       font-weight: 700;
-      text-align: left;
       margin-bottom: 0.9375rem;
 
       @include atSmall {
@@ -108,18 +104,19 @@
       @include atLarge {
         font-size: 1.875rem;
         margin-bottom: 1.875rem;
-        text-align: center;
       }
     }
 
     .subscription {
       font-size: 1rem;
       color: $darkGreen;
-      text-align: left;
+
+      @include atSmall {
+        text-align: center;
+      }
 
       @include atLarge {
         font-size: 1.125rem;
-        text-align: center;
       }
     }
 
@@ -134,8 +131,11 @@
     .lets-give-title {
       font-size: 1.25rem;
       font-weight: 700;
-      text-align: center;
       margin-top: 1.25rem;
+
+      @include atSmall {
+        text-align: center;
+      }
 
       @include atMedium {
         font-size: 1.875rem;
@@ -147,13 +147,27 @@
     }
 
     .talk-us {
-      margin: auto;
-      display: block;
+      width: 50%;
       margin-top: 1.25rem;
+
+      @include atSmall {
+        width: initial;
+        margin: auto;
+        display: block;
+      }
 
       @include atLarge {
         margin-top: 2.5rem;
       }
     }
+  }
+
+  .leaf__left-img {
+    left: 0;
+    top: 75%;
+  }
+
+  .leaf__right-img {
+    top: 133%;
   }
 }

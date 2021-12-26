@@ -1,6 +1,10 @@
 .management-strategy {
   padding-bottom: 0;
 
+  @include atLarge {
+    padding: 1.875rem 0;
+  }
+
   &--no-pb {
     padding-bottom: unset;
   }
@@ -9,7 +13,7 @@
     padding-top: 0.9375rem;
 
     @include atLarge {
-      padding-top: 4.5rem;
+      padding-top: 2.5rem;
     }
 
     &--no-pt {
@@ -20,17 +24,15 @@
 
     .title {
       font-size: 1.25rem;
-      text-align: left;
       font-weight: 700;
       margin-bottom: 1.25rem;
 
       @include atSmall {
-        text-align: left;
         font-size: 1.375rem;
+        text-align: center;
       }
 
       @include atMedium {
-        text-align: left;
         font-size: 1.875rem;
       }
 
@@ -42,17 +44,15 @@
 
     .subtitle {
       font-size: 1.125rem;
-      text-align: left;
       font-weight: 700;
 
       @include atSmall {
         font-size: 1.25rem;
-        text-align: left;
+        text-align: center;
       }
 
       @include atMedium {
         font-size: 1.375rem;
-        text-align: left;
       }
 
       @include atLarge {
@@ -63,7 +63,10 @@
     p {
       font-size: 1rem;
       color: $darkGreen;
-      text-align: left;
+
+      @include atSmall {
+        text-align: center;
+      }
 
       @include atLarge {
         font-size: 1.125rem;
