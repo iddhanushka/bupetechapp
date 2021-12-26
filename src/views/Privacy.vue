@@ -1,7 +1,7 @@
 <template>
 <section class="terms-service">
     <div class="container">
-      <h1 class="main-title">Legal & Privacy</h1>
+      <h1 class="main-title">Legal &amp; Privacy</h1>
       <h2 class="sec-title">Terms of Service</h2>
       <div class="terms">
         <div class="terms-col">
@@ -43,7 +43,12 @@
     </div>
   </section>
 
-  <section class="terms-service terms-service--sec-policies-bg-img">
+  <section  :style="{
+      backgroundImage:
+        'url(' + require(`@/assets/images/sec-clt-bg-img.jpg`) + ')',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+    }" class="terms-service terms-service--sec-policies-bg-img">
     <div class="container">
       <h2 class="sec-title">Policies</h2>
       <div class="terms">
@@ -64,7 +69,7 @@
         <div class="terms-col">
           <div class="term-block">
             <img class="term-block__icon" src="../assets/images/hand-icon.png" alt="">
-            <h4 class="term-block__title">Travel & Expense Policy</h4>
+            <h4 class="term-block__title">Travel &amp; Expense Policy</h4>
             <p>This policy outlines BUPE Tech’s allowable business travel expenses.</p>
           </div>
         </div>
