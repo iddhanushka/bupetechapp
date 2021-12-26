@@ -15,17 +15,17 @@
       <div class="vision">
         <h2 class="title">Our Core Values</h2>
         <ol>
-        <li>Primary focus of our system solution is to solve key pain pints with regard to Performance Management in Enterprises</li>
-<li>Value of the system solution we offer always exceeds the price</li>
-<li>We believe in simplicity with ease of use of our solution and hence not to add more problems on the top of what you have</li>
-<li>The point you subscribe to our solution, is the time you go live and start benefiting from it, so we call it Plug and Play</li>
-<li>We continuously innovate and reinvent ourselves to offer you the best and the latest solutions in the space we operate in</li>
-<li>We believe in each one in our team has the equal opportunity make a difference</li>
-<li>The impact we create in your work place and in your workforce is one of the criteria that we use to measure our success</li>
-<li>We want to create an environment where everyone has the equal opportunity to spell-out their thoughts loud and constantly challenge the way we do things</li>
-<li>We do not confine ourselves to silos its all about "US”, "We" and "Together as a one Team” not "You”, "Me” and "Individual Brilliance"</li>
-<li>We are passionate about what we do, so we don’t take any stress</li>
-</ol>
+          <li class="list-item">Primary focus of our system solution is to solve key pain pints with regard to Performance Management in Enterprises</li>
+          <li class="list-item">Value of the system solution we offer always exceeds the price</li>
+          <li class="list-item">We believe in simplicity with ease of use of our solution and hence not to add more problems on the top of what you have</li>
+          <li class="list-item">The point you subscribe to our solution, is the time you go live and start benefiting from it, so we call it Plug and Play</li>
+          <li class="list-item">We continuously innovate and reinvent ourselves to offer you the best and the latest solutions in the space we operate in</li>
+          <li class="list-item">We believe in each one in our team has the equal opportunity make a difference</li>
+          <li class="list-item">The impact we create in your work place and in your workforce is one of the criteria that we use to measure our success</li>
+          <li class="list-item">We want to create an environment where everyone has the equal opportunity to spell-out their thoughts loud and constantly challenge the way we do things</li>
+          <li class="list-item">We do not confine ourselves to silos its all about "US”, "We" and "Together as a one Team” not "You”, "Me” and "Individual Brilliance"</li>
+          <li class="list-item">We are passionate about what we do, so we don’t take any stress</li>
+        </ol>
       </div>
       <div class="row">
         <div class="col-xl-4 col-lg-4">

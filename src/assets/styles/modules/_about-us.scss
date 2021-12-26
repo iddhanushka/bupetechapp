@@ -77,6 +77,18 @@
         text-align: unset;
       }
     }
+
+    .list-item {
+      font-size: 1rem;
+      color: #464646;
+      font-weight: 400;
+      margin-bottom: 20px;
+      font-family: "Inter", Helvetica, sans-serif;
+
+      @include atLarge {
+        font-size: 1.375rem;
+      }
+    }
   }
 
   &__apex {
