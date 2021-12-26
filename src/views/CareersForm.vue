@@ -1,7 +1,7 @@
 <template>
   <div class="apply-developer">
     <div class="row">
-      <div class="col-xl-6 col-same-height">
+      <div class="col-xl-6 col-lg-6 col-same-height">
         <div class="apply-developer__form">
           <h1 class="title">Apply for Senior Backend Developer</h1>
           <div class="form-block">
@@ -11,7 +11,7 @@
               method="post"
               enctype="multipart/form-data"
             >
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-md-6 col-sm-6">
                 <label for="fName" class="form-label"
                   ><span class="asterisk">*</span>First Name</label
                 >
@@ -23,7 +23,7 @@
                   id="fName"
                 />
               </div>
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-md-6 col-sm-6">
                 <label for="sName" class="form-label"
                   ><span class="asterisk">*</span>Second Name</label
                 >
@@ -35,7 +35,7 @@
                   id="sName"
                 />
               </div>
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-md-6 col-sm-6">
                 <label for="email" class="form-label"
                   ><span class="asterisk">*</span>Email</label
                 >
@@ -47,7 +47,7 @@
                   id="email"
                 />
               </div>
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-md-6 col-sm-6">
                 <label for="pNbr" class="form-label"
                   ><span class="asterisk">*</span>Phone Number</label
                 >
@@ -74,7 +74,7 @@
               <div class="resume">
                 <label class="resume-title">Resume</label>
                 <div class="row">
-                  <div class="col-xl-5">
+                  <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
                     <label class="upload-btn-title"
                       >Please upload a resume</label
                     >
@@ -98,7 +98,7 @@
                       >.PDF, .DOC, .DOCX Max 5MB</span
                     >
                   </div>
-                  <div class="col-xl-6">
+                  <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7">
                     <div class="capture">
                       <Captcha @capture="getCapture" @verified="getVerified" />
                     </div>
@@ -121,7 +121,7 @@
         </div>
       </div>
 
-      <div class="col-xl-6 col-same-height">
+      <div class="col-xl-6 col-lg-6 col-same-height">
         <div class="apply-developer__details">
           <h1 class="title">{{ jobDescription.name }}</h1>
           <div class="description">

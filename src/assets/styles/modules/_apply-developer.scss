@@ -2,17 +2,37 @@
   overflow-x: hidden;
 
   .col-same-height {
-    flex: 1;
+    @include atLarge {
+      flex: 1;
+    }
   }
 
   &__form {
-    padding: 5.625rem 2.5rem 2.5rem 5.625rem;
+    padding: 30px 12px;
+
+    @include atLarge {
+      padding: 50px 30px;
+    }
+
+    @include atExtraLarge {
+      padding: 5.625rem 2.5rem 2.5rem 5.625rem;
+    }
 
     .title {
-      font-size: 1.875rem;
+      font-size: 18px;
       font-weight: 700;
-      text-align: center;
-      margin-bottom: 3.75rem;
+      margin-bottom: 20px;
+
+      @include atSmall {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 40px;
+      }
+
+      @include atLarge {
+        font-size: 1.875rem;
+        margin-bottom: 3.75rem;
+      }
     }
 
     .resume {
@@ -39,7 +59,6 @@
         padding: 0.5rem 1.875rem;
         border: 0.125rem solid $blue;
         border-radius: 0.1875rem;
-        cursor:pointer;
       }
 
       .file-format-text {
@@ -58,17 +77,38 @@
   &__details {
     height: 100%;
     background-color: $lightBlue;
-    padding: 10rem 2.5rem 2.5rem 3.75rem;
+    padding: 30px 12px;
+
+    @include atLarge {
+      padding: 100px 30px 50px 30px;
+    }
+
+    @include atExtraLarge {
+      padding: 10rem 2.5rem 2.5rem 3.75rem;
+    }
 
     .title {
-      font-size: 1.875rem;
+      font-size: 18px;
       font-weight: 700;
       text-align: left;
-      margin-bottom: 3.125rem;
+      margin-bottom: 20px;
+
+      @include atSmall {
+        font-size: 22px;
+        margin-bottom: 3.125rem;
+        text-align: center;
+      }
+
+      @include atLarge {
+        font-size: 1.875rem;
+        text-align: unset;
+      }
     }
 
     .description {
-      padding-left: 2.5rem;
+      @include atLarge {
+        padding-left: 2.5rem;
+      }
     }
 
     .des-list {
@@ -77,9 +117,18 @@
 
     p,
     .list-line {
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: 400;
       color: $darkGreen;
+
+      @include atSmall {
+        text-align: center;
+      }
+
+      @include atLarge {
+        font-size: 1.25rem;
+        text-align: unset;
+      }
     }
   }
 }

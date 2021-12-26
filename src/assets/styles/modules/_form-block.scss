@@ -16,7 +16,10 @@
   .input-field {
     border: 1px solid $lightGray;
     border-radius: 0.5rem;
-    height: 2.848rem;
+
+    @include atLarge {
+      height: 2.848rem;
+    }
 
     &:focus {
       box-shadow: none;
@@ -36,11 +39,18 @@
   .capture {
     border: 1px solid $lightGray;
     height: 77px;
+    margin-top: 20px;
+
+    @include atSmall {
+      margin-top: unset;
+    }
   }
 
   .form-submit-btn {
-    margin: auto;
-    display: block;
+    @include atSmall {
+      margin: auto;
+      display: block;
+    }
 
     @include atLarge {
       margin-top: 1.25rem;

@@ -59,6 +59,10 @@
 
   &--submit {
     border: none;
-    width: 10.6875rem;
+    width: 50%;
+
+    @include atSmall {
+      width: 10.6875rem;
+    }
   }
 }
