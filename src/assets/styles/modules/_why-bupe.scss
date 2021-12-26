@@ -11,6 +11,12 @@
   }
 
   &__content {
+    padding-top: 20px;
+
+    @include atLarge {
+      padding-top: unset;
+    }
+
     .tag {
       font-size: 0.9375rem;
       font-weight: 500;
