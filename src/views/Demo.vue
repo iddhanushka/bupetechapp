@@ -3,7 +3,7 @@
     <div class="container">
       <h1 class="main-title">See BUPE in action</h1>
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6">
           <div class="watch-demo-action__content">
             <div class="demo-video">
               <img
@@ -36,12 +36,12 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6">
           <div class="watch-demo-action__form">
             <h3 class="title">Register to watch the demo video</h3>
             <div class="form-block">
               <form class="row g-4" @submit="sendDemoRequest" method="post">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6">
                   <label for="email" class="form-label">*Email</label>
                   <input
                     type="email"
