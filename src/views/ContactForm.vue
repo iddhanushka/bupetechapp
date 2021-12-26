@@ -6,27 +6,27 @@
             <h1 class="title">Contact our solutions team </h1>
             <div class="form-block">
               <form class="row g-4" @submit="sendContacDetails" method="post">
-                <div class="col-xl-6 ">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="fname" class="form-label"><span class="asterisk">*</span>First Name</label>
                   <input maxlength="50" type="text" required  v-model="posts.fname" class="form-control input-field" id="fname">
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="sname" class="form-label"><span class="asterisk">*</span>Second Name</label>
                   <input maxlength="50" type="text"  required  v-model="posts.sname" class="form-control input-field" id="sname">
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="email" class="form-label"><span class="asterisk">*</span>E mail Address</label>
                   <input maxlength="50" type="email" required v-model="posts.email" class="form-control input-field" id="email">
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="phone" class="form-label">Phone Number</label>
                   <input maxlength="16" type="tel"  pattern="[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*" required v-model="posts.phone" class="form-control input-field" id="phone">
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="title" class="form-label"><span class="asterisk">*</span>Job Title</label>
                   <input maxlength="50" type="text"  required v-model="posts.title" class="form-control input-field" id="title">
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="role" class="form-label"><span class="asterisk">*</span>Select Your Role</label>
                   <select id="role" v-model="posts.role" class="form-select selector-field">
                     <option selected value="">Select a job role..</option>
@@ -34,7 +34,7 @@
                     <option value="Manager">Manager</option>
                   </select>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="company_size" class="form-label"><span class="asterisk">*</span>Company Size</label>
                   <select id="company_size" v-model="posts.company_size" class="form-select selector-field">
                     <option value="" selected>Select Company Size..</option>
@@ -45,7 +45,7 @@
                       <option value="Above 750K USD">Above 750K USD</option>
                   </select>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                   <label for="company_name" class="form-label">Company Name</label>
                   <input maxlength="50" type="text" v-model="posts.company_name" class="form-control input-field" id="company_name">
                 </div>

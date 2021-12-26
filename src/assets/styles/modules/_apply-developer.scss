@@ -113,6 +113,25 @@
 
     .des-list {
       list-style: none;
+      padding-left: 0;
+
+      @include atSmall {
+        padding-left: revert;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+      }
+
+      @include atLarge {
+        position: unset;
+        left: unset;
+        transform: unset;
+      }
+
+      .list-line {
+        text-align: left;
+      }
     }
 
     p,
