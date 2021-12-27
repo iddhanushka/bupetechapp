@@ -49,6 +49,8 @@
               <span
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
+                :style="{backgroundImage:'url(' + require(`@/assets/images/prev-arrow.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}"
+           
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
@@ -74,6 +76,7 @@
             >
               <span
                 class="carousel-control-next-icon"
+                :style="{backgroundImage:'url(' + require(`@/assets/images/next-arrow.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}"
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
