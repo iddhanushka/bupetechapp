@@ -13,22 +13,35 @@
   .nav-link.active {
     background-color: $silver;
     color: $purple;
+    border-top: unset !important;
+    border-bottom: unset !important;
   }
 
   .nav-link {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: $purple;
     font-weight: 700;
     text-align: left;
     border-radius: unset;
+
+    &:not(:first-child) {
+      border-top: 1px solid $lightBlue;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $lightBlue;
+    }
+
+    @include atLarge {
+      font-size: 1.125rem;
+    }
   }
 
   .privacy-navtab-container {
-    grid-template-columns: 100%;
     @include atLarge {
-    grid-template-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+      column-gap: 1.25rem;
     }
-    column-gap: 1.25rem;
   }
 
   &__content {
