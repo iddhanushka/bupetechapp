@@ -83,7 +83,41 @@
     }
 
     .carousel-indicators {
-      bottom: -60px;
+      bottom: -70px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      width: unset;
+      height: unset;
+      background-color: unset;
+    }
+
+    .carousel-control-prev-icon {
+      background-image: url("/app/assets/images/prev-arrow.png");
+      // position: relative;
+      // left: 24vw;
+    }
+
+    .carousel-control-next-icon {
+      background-image: url("/app/assets/images/next-arrow.png");
+      // position: relative;
+      // right: 24vw;
+    }
+
+    .number-indicator.one {
+      //   position: relative;
+      //   left: 36vw;
+      font-size: 20px;
+      font-weight: 700;
+      color: $purple;
+    }
+
+    .number-indicator.two {
+      //   position: relative;
+      //   left: 37vw;
+      font-size: 20px;
+      font-weight: 700;
+      color: $purple;
     }
   }
 }
