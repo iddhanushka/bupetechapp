@@ -10,8 +10,7 @@
                 <form action="">
                   <div class="col-xl-2 col-lg-3">
                     <label for="comSize" class="form-label location"
-                      >Location</label
-                    >
+                      >Location</label>
                     <select
                       placeholder="Any"
                       id="inputState"
@@ -37,11 +36,12 @@
         <div
           id="carouselVecancies"
           class="carousel slide"
-          data-bs-ride="carousel"
-        >
+          data-interval="false">
+        
           <div class="carousel-indicators">
-            <button
-              class="carousel-control-prev"
+           
+  <button
+              class=""
               type="button"
               data-bs-target="#carouselVecancies"
               data-bs-slide="prev"
@@ -49,10 +49,11 @@
               <span
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
+                :style="{backgroundImage:'url(' + require(`@/assets/images/prev-arrow.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}"
+           
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
-
    <button
               type="button"
                data-bs-target="#carouselVecancies"
@@ -65,15 +66,16 @@
             <span class="number-indicator">{{index+1}}</span>
             </button>
 
- 
+
             <button
-              class="carousel-control-next"
+              class=""
               type="button"
               data-bs-target="#carouselVecancies"
               data-bs-slide="next"
             >
               <span
                 class="carousel-control-next-icon"
+                :style="{backgroundImage:'url(' + require(`@/assets/images/next-arrow.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}"
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
