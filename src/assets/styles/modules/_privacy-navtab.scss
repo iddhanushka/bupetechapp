@@ -91,5 +91,15 @@
       font-size: 1rem;
       color: $blue;
     }
+
+    .tab-content {
+      .active {
+        padding-top: 20px;
+
+        @include atLarge {
+          padding-top: unset;
+        }
+      }
+    }
   }
 }
