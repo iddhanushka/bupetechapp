@@ -40,8 +40,9 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
-            <button
-              class="carousel-control-prev"
+           
+  <button
+              class=""
               type="button"
               data-bs-target="#carouselVecancies"
               data-bs-slide="prev"
@@ -54,7 +55,6 @@
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
-
    <button
               type="button"
                data-bs-target="#carouselVecancies"
@@ -67,9 +67,9 @@
             <span class="number-indicator">{{index+1}}</span>
             </button>
 
- 
+
             <button
-              class="carousel-control-next"
+              class=""
               type="button"
               data-bs-target="#carouselVecancies"
               data-bs-slide="next"
