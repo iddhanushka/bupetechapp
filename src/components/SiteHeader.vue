@@ -8,7 +8,7 @@
           navbar-toggleable-md
         "
       >
-        <div class="container container--custom-fluid">
+        <div class="container-fluid">
           <div class="site-header__menubar">
             <div class="site-logo">
               <router-link class="navbar-brand" to="/"
