@@ -37,7 +37,7 @@
         <div
           id="carouselVecancies"
           class="carousel slide"
-          data-bs-ride="carousel"
+          data-interval="false">
         >
           <div class="carousel-indicators">
            
