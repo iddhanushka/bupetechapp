@@ -8,7 +8,7 @@
             <div class="job-listing__location">
               <div class="form-block">
                 <form action="">
-                  <div class="col-xl-2">
+                  <div class="col-xl-2 col-lg-3">
                     <label for="comSize" class="form-label location"
                       >Location</label
                     >

@@ -7,10 +7,10 @@
            <div class="col-xl-11">
             <h1 class="careers__main-title">Careers</h1>
             <div class="row">
-              <div class="col-xl-7">
+              <div class="col-xl-7 col-lg-7">
                 <img class="careers__img" src="../assets/images/careers-man.png" alt="">
               </div>
-              <div class="col-xl-5">
+              <div class="col-xl-5 col-lg-5">
                 <div class="details">
                   <h4 class="careers__subtitle">Careers at bupe tech</h4>
                   <h3 class="careers__title">Step in to explore the wealth of career opportunities and take your career to the next level</h3>

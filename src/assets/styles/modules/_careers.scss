@@ -1,12 +1,28 @@
 .careers {
-  padding: 4.375rem 0;
+  padding: 30px 0;
   background: linear-gradient(109.98deg, rgba(248, 248, 248, 0.4) 8.99%, rgba(223, 223, 223, 0.4) 51.88%, rgba(239, 239, 239, 0.4) 94.78%);
   opacity: 0.9;
 
+  @include atSmall {
+    padding: 40px 0;
+  }
+
+  @include atLarge {
+    padding: 4.375rem 0;
+  }
+
   &__main-title {
-    font-size: 1.875rem;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 2.188rem;
+
+    @include atSmall {
+      font-size: 24px;
+    }
+
+    @include atLarge {
+      font-size: 1.875rem;
+    }
   }
 
   &__img {
@@ -15,44 +31,118 @@
     display: block;
   }
 
+  .details {
+    padding-top: 30px;
+
+    @include atLarge {
+      padding-top: unset;
+    }
+  }
+
   &__subtitle {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 0.4375rem;
+
+    @include atSmall {
+      text-align: center;
+    }
+
+    @include atLarge {
+      font-size: 1.125rem;
+      text-align: unset;
+    }
   }
 
   &__title {
-    font-size: 1.875rem;
+    font-size: 18px;
     font-weight: 700;
-    margin-bottom: 2.313rem;
+    margin-bottom: 20px;
+
+    @include atSmall {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    @include atLarge {
+      font-size: 1.875rem;
+      margin-bottom: 2.313rem;
+      text-align: unset;
+    }
   }
 
   p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: $darkGreen;
+
+    @include atSmall {
+      text-align: center;
+    }
+
+    @include atLarge {
+      font-size: 1.125rem;
+      text-align: unset;
+    }
   }
 
   &__ap-btn {
     margin-top: 0.938rem;
+    width: 70%;
+
+    @include atSmall {
+      margin: auto;
+      display: block;
+      margin-top: 0.938rem;
+    }
+
+    @include atLarge {
+      width: unset;
+      margin: unset;
+      display: inline-block;
+      margin-top: 0.938rem;
+    }
   }
 
   &__bottom-title {
-    font-size: 1.875rem;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 25px;
     font-weight: 700;
-    text-align: center;
-    margin-top: 3.75rem;
+
+    @include atSmall {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    @include atLarge {
+      font-size: 1.875rem;
+      margin-top: 3.75rem;
+    }
   }
 }
 
 .job-listing {
   background-color: $lightWhite;
-  padding: 1.25rem 0 4.375rem;
+
+  @include atLarge {
+    padding: 1.25rem 0 4.375rem;
+  }
 
   &__title {
-    font-size: 1.875rem;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 25px;
+
+    @include atSmall {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    @include atLarge {
+      font-size: 1.875rem;
+      text-align: unset;
+    }
   }
 
   &__location {
@@ -79,43 +169,43 @@
       color: $darkGreen;
       margin-top: 1.563rem;
       margin-bottom: 1.25rem;
-      margin-left: 3.125rem;
+
+      @include atLarge {
+        margin-left: 3.125rem;
+      }
     }
 
     .carousel-indicators {
-      bottom: -70px;
+      bottom: -77px;
     }
 
     .carousel-indicators [data-bs-target] {
       width: unset;
       height: unset;
       background-color: unset;
+      text-indent: unset;
     }
 
     .carousel-control-prev-icon {
       background-image: url("/app/assets/images/prev-arrow.png");
-      // position: relative;
-      // left: 24vw;
+      position: relative;
+      top: 2px;
     }
 
     .carousel-control-next-icon {
       background-image: url("/app/assets/images/next-arrow.png");
-      // position: relative;
-      // right: 24vw;
+      position: relative;
+      top: 2px;
     }
 
     .number-indicator.one {
-      //   position: relative;
-      //   left: 36vw;
-      font-size: 20px;
+      font-size: 23px;
       font-weight: 700;
       color: $purple;
     }
 
     .number-indicator.two {
-      //   position: relative;
-      //   left: 37vw;
-      font-size: 20px;
+      font-size: 23px;
       font-weight: 700;
       color: $purple;
     }
