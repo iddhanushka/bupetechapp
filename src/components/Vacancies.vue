@@ -38,7 +38,7 @@
           id="carouselVecancies"
           class="carousel slide"
           data-interval="false">
-        >
+        
           <div class="carousel-indicators">
            
   <button
