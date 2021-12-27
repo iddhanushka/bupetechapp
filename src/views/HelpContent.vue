@@ -1,7 +1,8 @@
 <template>
       <div class="help-content">
     <div class="wrapper wrapper--header">
-      <h1 class="help-content__title">Documentation</h1>
+      <div class="container-fluid">
+        <h1 class="help-content__title">Documentation</h1>
       <div class="help-content__accordion">
         <div class="accordion" id="accordionDocument">
           <div v-for="(items,pdx) in menuData"  :key="items.id"  class="accordion-item">
@@ -23,7 +24,7 @@
                       </div>
                     </div>
         
-                    <div class="privacy-navtab__content">
+                    <div class="privacy-navtab__content privacy-navtab__content--position-top">
                       <div class="tab-content" id="v-pills-tabContent">
 
                           <div v-for="(item,idx) in items.body"  :key="item.id" :class="idx==0?'tab-pane fade show active':'tab-pane fade show'" :id="'v-pills-'+item.id" role="tabpanel" :aria-labelledby="'v-pills-'+item.id+'-tab'" v-html="item.content"></div>
@@ -37,6 +38,7 @@
           </div>
 
         </div>
+      </div>
       </div>
     </div>
   </div>
