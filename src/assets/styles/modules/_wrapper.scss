@@ -38,7 +38,7 @@
   }
 }
 
-.container container--custom {
+.container {
   &--custom-height {
     @include atLarge {
       min-height: 53.125rem;
