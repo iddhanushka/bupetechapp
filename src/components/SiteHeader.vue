@@ -181,7 +181,7 @@
                     >Contact</a>
                   <div class="underline"></div>
                 </li>
-                 <li class="nav-item menu-list nav-item__mobile-only">
+                 <li class="nav-item menu-list nav-item__mobile-only menu-list-btn">
                    
            <div class="column-m">
            <button @click="go('/demo')" class="button button--blue">{{$t(button1)}}</button>{{" "}}
