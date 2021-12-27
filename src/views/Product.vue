@@ -1,6 +1,6 @@
 <template>
  <div class="product">
-    <div class="container">
+    <div class="container container--custom">
       <h1 class="title">Design how business should run and monitor right through it from 
         company, people and business perspective with BUPE.</h1>
       <div class="row">

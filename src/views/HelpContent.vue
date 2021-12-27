@@ -13,7 +13,7 @@
             <div :id="'collapse'+items.id" :class="items.slug==slug?'accordion-collapse collapse show':'accordion-collapse collapse' " :aria-labelledby="'heading'+pdx" data-bs-parent="#accordionDocument">
               <div class="accordion-body">
                 <div class="privacy-navtab">
-                  <div class="d-grid align-items-start privacy-navtab-container">
+                  <div class="d-grid align-items-start privacy-navtab-container container--custom">
                     <div class="privacy-navtab__menu">
                       <div class="privacy-navtab__links">
                         <div class="nav flex-column nav-pills me-3" :id="'v-pills-'+items.id+'-tab'" role="tablist" aria-orientation="vertical">

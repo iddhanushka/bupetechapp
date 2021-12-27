@@ -1,6 +1,6 @@
 <template>
   <div class="watch-demo-action">
-    <div class="container">
+    <div class="container container--custom">
       <h1 class="main-title">See BUPE in action</h1>
       <div class="row">
         <div class="col-xl-6 col-lg-6">

@@ -20,7 +20,7 @@
           </li>
         </ul>
       </div>
-     <div class="wrapper-container" :style="{backgroundImage:'url(' + require(`@/assets/images/kpi-solution-bg.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">  
+     <div class="wrapper-container container--custom" :style="{backgroundImage:'url(' + require(`@/assets/images/kpi-solution-bg.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">  
        <div class="wrapper">
       <div class="kpi-detail-tabs__content"  >
         <div class="tab-content" id="myTabContent">

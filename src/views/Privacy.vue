@@ -1,6 +1,6 @@
 <template>
 <section class="terms-service">
-    <div class="container">
+    <div class="container container--custom">
       <h1 class="main-title">Legal &amp; Privacy</h1>
       <h2 class="sec-title">Terms of Service</h2>
       <div class="terms">
@@ -28,7 +28,7 @@
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     }" class="terms-service terms-service--sec-policies-bg-img shadow border-top-0 border-bottom-0">
-    <div class="container">
+    <div class="container container--custom">
       <h2 class="sec-title">Policies</h2>
      
 
@@ -51,7 +51,7 @@
   </section>
 
   <section class="terms-service">
-    <div class="container">
+    <div class="container container--custom">
       <h2 class="sec-title">Miscellaneous</h2>
       <div class="terms">
             <div  v-for="item in this.bodyData.miscellaneous" :key="item.id" class="terms-col">

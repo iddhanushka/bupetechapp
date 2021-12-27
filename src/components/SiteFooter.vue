@@ -1,6 +1,6 @@
 <template>
    <footer class="site-footer">
-    <div class="container">
+    <div class="container container--custom">
       <div class="row">
         <div class="col-xl-12">
           <div class="row justify-content-center">

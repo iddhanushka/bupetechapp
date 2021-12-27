@@ -1,6 +1,6 @@
 <template>
   <section class="terms-service" >
-    <div class="container">
+    <div class="container container--custom">
       <h1 class="main-title">Help &amp; Training Center</h1>
       <h2 class="sec-title">BUPE Help Articles</h2>
       <div class="terms">

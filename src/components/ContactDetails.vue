@@ -1,6 +1,6 @@
 <template>
      <section class="contact-info" id="contact-info">
-        <div class="container">
+        <div class="container container--custom">
         <h1 class="main-title">Contact Information</h1>
         <div class="row">
             <div class="col-xl-12">

@@ -1,7 +1,7 @@
 <template>
   <section class="why-bupe">
   
-    <div class="container">
+    <div class="container container--custom">
       <div class="row">
         <div class="col-xl-6 col-lg-6 ">
           <div class="why-bupe__content">

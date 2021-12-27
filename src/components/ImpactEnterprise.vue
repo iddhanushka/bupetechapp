@@ -1,6 +1,6 @@
 <template>
   <section class="impact-enterprise">
-    <div class="container container--custom">
+    <div class="container container--custom container container--custom--custom">
       <div class="impact">
         <div class="row">
           <div class="col-xl-5 col-lg-5">

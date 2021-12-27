@@ -1,7 +1,7 @@
 <template>
   <section
     class="contact" :style="{backgroundImage:'url(' + require(`@/assets/images/call-center.png`) + ')',backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}">
-    <div class="container container--custom-height">
+    <div class="container container--custom container container--custom--custom-height">
       <div class="row">
         <div class="col-xl-12">
           <div class="row justify-content-center">
@@ -60,7 +60,7 @@
   </section>
 
   <section class="contact-info">
-    <div class="container">
+    <div class="container container--custom">
       <h1 class="main-title">Contact Information</h1>
       <div class="row">
         <div class="col-xl-12">
