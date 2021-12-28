@@ -24,7 +24,7 @@
                       </div>
                     </div>
         
-                    <div class="privacy-navtab__content privacy-navtab__content--position-top">
+                    <div :style="{top:(-85-pdx*60)+'px'}" class="privacy-navtab__content privacy-navtab__content--position-top">
                       <div class="tab-content" id="v-pills-tabContent">
 
                           <div v-for="(item,idx) in items.body"  :key="item.id" :class="idx==0?'tab-pane fade show active':'tab-pane fade show'" :id="'v-pills-'+item.id" role="tabpanel" :aria-labelledby="'v-pills-'+item.id+'-tab'" v-html="item.content"></div>

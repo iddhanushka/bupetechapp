@@ -127,6 +127,7 @@ export default {
       numberOfJobs: 0,
       loading: true,
       location: "Any",
+      carouselSize:3,
       errored: false,
     };
   },
@@ -144,7 +145,7 @@ export default {
             Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
               arr.slice(i * size, i * size + size)
             );
-          this.axiosResult = chunk(response.data.data, 3);
+          this.axiosResult = chunk(response.data.data, this.carouselSize);
          
         })
         .catch((error) => {
@@ -173,14 +174,24 @@ export default {
           Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
             arr.slice(i * size, i * size + size)
           );
-        this.axiosResult = chunk(tempitems, 3);
+        this.axiosResult = chunk(tempitems, this.carouselSize);
          console.log( this.axiosResult);
     },
   },
   computed: {
     pageCount() {
-      return Object.keys(this.axiosResult).length / 3;
+      return Object.keys(this.axiosResult).length / this.carouselSize;
     }
   },
+  mounted: function () {
+    const screenSize=window.innerWidth;
+    if (screenSize<420){
+        this.carouselSize=1;
+    } else if (screenSize<800){
+      this.carouselSize=2;
+
+    }
+    
+  }
 };
 </script>

@@ -124,10 +124,16 @@
 
 .job-listing {
   background-color: $lightWhite;
+  margin-bottom:3rem;
+
+
 
   @include atLarge {
     padding: 1.25rem 0 4.375rem;
+    margin-bottom:unset;
   }
+
+
 
   &__title {
     font-size: 20px;
@@ -159,9 +165,16 @@
   &__roles {
     .jobs {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+     
       column-gap: 2.5rem;
       padding: 0.625rem 0.313rem;
+      @include atSmall {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include atLarge {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
 
     .title {
