@@ -48,13 +48,34 @@
     &--position-top {
       @include atLarge {
         position: relative;
-       // top: -85px;
+        // top: -85px;
       }
     }
 
     p {
       font-size: 0.938rem;
       color: $darkGreen;
+    }
+
+    .doc-list-item {
+      font-size: 0.938rem;
+      color: $darkGreen;
+    }
+
+    .tr-header {
+      background-color: $middleGray;
+    }
+
+    .high {
+      background-color: $lightGren;
+    }
+
+    .mid {
+      background-color: $orange;
+    }
+
+    .low {
+      background-color: $darkRed;
     }
 
     .list {
