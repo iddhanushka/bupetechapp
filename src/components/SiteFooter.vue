@@ -48,7 +48,7 @@
          <img class="leaf__left-img" src="../assets/images/leaf-footer.png" alt="">
        </div>
      </div> 
-  </footer>  
+  </footer> 
 
 </template>
 <script>

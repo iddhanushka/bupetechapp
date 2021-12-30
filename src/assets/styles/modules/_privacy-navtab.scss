@@ -122,5 +122,13 @@
         }
       }
     }
+
+    .table-responsive-sm {
+      width: 95vw;
+
+      @include atSmall {
+        width: auto;
+      }
+    }
   }
 }
