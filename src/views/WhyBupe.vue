@@ -6,7 +6,7 @@
         <div class="col-xl-6 col-lg-6 ">
           <div class="why-bupe__content">
             <h5 class="tag">Why Bupe?</h5>
-            <h1 class="title">To reach the true potential of your company in an ever challenging and dynamic world.</h1>
+            <h1 class="title">To reach the true potential of your company in an everchallenging and dynamic world.</h1>
           </div>
         </div>
 
@@ -14,7 +14,7 @@
           <div class="why-bupe__video">
             <div class="demo-video">
                 <video
-                style="width: 100%"
+                
                 class="elementor-video"
                 :src="bupe_video_url"
                 controls=""
@@ -28,7 +28,7 @@
       </div>
      
       <div class="strategy">
-        <div class="management-strategy ">
+        <div class="why-management-strategy ">
           <div class="row">
             <div class="col-xl-6 col-lg-6">
               <div class="management-strategy__img">
