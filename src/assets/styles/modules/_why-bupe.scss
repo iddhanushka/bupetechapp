@@ -15,6 +15,7 @@
 
     @include atLarge {
       padding-top: unset;
+      padding-left:6rem;
     }
 
     .tag {
@@ -59,11 +60,16 @@
     }
   }
 
-  .strategy {
+  .demo-video{
+    
     @include atLarge {
-      margin-top: 2.5rem;
+      padding-left:3rem;
     }
+    .elementor-video{
+       width:100%;
+     }
   }
+
 
   .watch-demo {
     width: 50%;
