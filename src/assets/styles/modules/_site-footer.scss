@@ -118,7 +118,7 @@
         width: 1.125rem;
 
         @include atMedium {
-          top: 0.189rem;
+          top: 1px;
           width: unset;
         }
       }
