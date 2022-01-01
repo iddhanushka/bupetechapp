@@ -63,7 +63,7 @@
   .demo-video{
     
     @include atLarge {
-      padding-left:3rem;
+      margin-left:3rem;
     }
     .elementor-video{
        width:100%;
