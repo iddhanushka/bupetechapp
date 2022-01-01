@@ -45,15 +45,12 @@
       @include atLarge {
         border-bottom: 2px solid $blue;
         position: relative;
-        top: 1.313rem;
+        top: 1.0625rem;
       }
     }
 
     .logo {
-     
       max-width: 18%;
-
-     
 
       @include atMedium {
         max-width: 12%;
