@@ -29,7 +29,7 @@
                           <p>At every level, Ceylinco Insurance
                             workforce always aware how their 
                             work today, taking the company
-                            to new heights tommorow.
+                            to new heights tomorrow.
                             </p>
                         </div>
                     </li>
@@ -53,7 +53,7 @@
                           <p>At every level, Ceylinco Insurance
                             workforce always aware how their 
                             work today, taking the company
-                            to new heights tommorow.
+                            to new heights tomorrow.
                             </p>
                         </div>
                     </li>
@@ -77,7 +77,7 @@
                           <p>At every level, Ceylinco Insurance
                             workforce always aware how their 
                             work today, taking the company
-                            to new heights tommorow.
+                            to new heights tomorrow.
                             </p>
                         </div>
                     </li>
@@ -131,7 +131,7 @@
             <h4 class="service-block__title">Help &amp; Documentation</h4>
             <p>Start right here for operation of the solution and to deep dive with the philosophy behind.
 </p>
-            <a class="visit-more" href="">How to guides ></a> <br/>
+            <!-- <a class="visit-more" href="">How to guides ></a> <br/> -->
              <router-link class="visit-more" to="/help">Full documentation ></router-link>
           </div>
         

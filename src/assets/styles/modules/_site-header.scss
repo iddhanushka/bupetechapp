@@ -45,7 +45,7 @@
       @include atLarge {
         border-bottom: 2px solid $blue;
         position: relative;
-        top: 1.0625rem;
+        top: 15px;
       }
     }
 
@@ -106,6 +106,7 @@
 
       h4 {
         color: $blue;
+        cursor: pointer;
 
         @include atMedium {
           color: $purple;
@@ -237,6 +238,7 @@
           }
           img {
             width: 80%;
+            cursor: pointer;
           }
           li.image {
             width: 15%;

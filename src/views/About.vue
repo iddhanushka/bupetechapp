@@ -72,7 +72,7 @@
                 <div class="card-body">
                   <h4 class="management-crew__title">{{item.name}}</h4>
                   <h5 class="card-title management-crew__subtitle">{{item.title}}</h5>
-                  <b-button variant="outline-info" data-bs-toggle="modal" @click="readBio(item.description)" data-bs-target="#readModal">Read Bio ></b-button>
+                  <a class="card-title management-crew__read-bio" variant="outline-info" data-bs-toggle="modal" @click="readBio(item.description)" data-bs-target="#readModal">Read Bio ></a>
                 </div>
               </div>
             </div>

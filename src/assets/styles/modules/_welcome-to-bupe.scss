@@ -15,7 +15,7 @@
   }
 
   &__partners {
-    padding: 2.5rem 0;
+    padding: 3.125rem 0;
     .list {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -29,6 +29,14 @@
 
       .logo {
         margin: auto;
+
+        &--ml-0 {
+          margin-left: 0;
+        }
+
+        &--mr-0 {
+          margin-right: 0;
+        }
       }
 
       .partner-img {
@@ -64,11 +72,11 @@
 
       @include atMedium {
         font-size: 2.75rem;
-        margin-bottom: 5.625rem;
+        margin-bottom: 2.5rem;
       }
     }
   }
-/*
+  /*
   .leaf__left-img {
     //top: 60%;
 

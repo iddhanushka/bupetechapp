@@ -75,6 +75,10 @@
     }
 
     .business-indicators {
+      @include atLarge {
+        padding-left: 7px;
+      }
+
       &--mb {
         margin-bottom: 1.875rem;
       }

@@ -11,17 +11,13 @@
     padding: 5rem 0;
   }
 
-  &__video{
-     cursor:pointer;
-
+  &__video {
+    cursor: pointer;
   }
 
-  &__article{
-    cursor:pointer;
-
- }
-
-  
+  &__article {
+    cursor: pointer;
+  }
 
   &--sec-policies-bg-img {
     background-image: url("/app/assets/images/sec-bg-img.jpg");
@@ -32,7 +28,6 @@
     background-image: url("/app/assets/images/sec-clt-bg-img.jpg");
     background-size: cover;
   }
-
 
   .terms {
     display: grid;
@@ -99,6 +94,16 @@
 
     @include atLarge {
       font-size: 1.875rem;
+    }
+  }
+}
+
+.modal {
+  .modal-body {
+    padding: 10px !important;
+
+    iframe {
+      width: 100%;
     }
   }
 }
